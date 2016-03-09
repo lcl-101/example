@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        canvas{
+            background: #dfdfdf;position: relative;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var cans=document.getElementsByTagName('canvas')[0];
+            var obj=cans.getContext("2d");
+            var  arr=[];
+            cans.onmousedown=function(e){
+                var dw=e.layerX;
+                var dh=e.layerY;
+                obj.beginPath();
+                obj.moveTo(dw,dh);
+                cans.onmousemove=function(e){
+                    var cw=e.layerX;
+                    var ch=e.layerY;
+
+                    obj.lineTo(cw,ch);
+                    obj.stroke();
+                    cans.onmouseup=function(){
+//                        obj.closePath();
+                        cans.onmousemove="";
+                    }
+                }
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<canvas width="1000px" height="500px"></canvas>
+</body>
+</html>

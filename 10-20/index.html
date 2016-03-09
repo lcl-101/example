@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var canvas=document.getElementsByTagName('canvas')[0];
+            var cobj=canvas.getContext('2d');
+            var x=0;
+
+//            var numy=0;
+//            setInterval(function(){
+//                x+=10;
+////                numy+=10;
+////                cobj.translate(numx,numy);
+//                cobj.clearRect(-100,-100,500,300);
+//                cobj.save();
+//                cobj.translate(100,100);
+//                cobj.rotate(x*Math.PI/180);
+//                cobj.fillStyle="red";
+//                cobj.fillRect(-50,-50,100,100);
+//                cobj.restore();
+//                cobj.fillRect(100,100,100,100);
+//            },60)
+            var num=127;
+//            var speed=2;
+            function move(){
+//                num+=speed;
+                cobj.beginPath();
+                cobj.clearRect(0,0,canvas.width,canvas.height);
+                cobj.font='20px 黑体';
+                //100-cobj.measureText(num/360*100+'%').width/2
+                var w=100-cobj.measureText(changeTwoDecimal(num/360*100)+'%').width/2;
+                cobj.fillText(changeTwoDecimal(num/360*100)+'%',w,100+10);
+                cobj.lineWidth=5;
+                cobj.strokeStyle='red';
+                cobj.arc(100,100,30,0,num*Math.PI/180);
+                cobj.stroke();
+                cobj.closePath();
+                var a=num/360*100;
+                var t=requestAnimationFrame(move);
+//                if(a==90){
+//                    cancelAnimationFrame(t);
+//                }
+
+                function changeTwoDecimal(x)
+                {
+                    var f_x = parseFloat(x);
+                    if (isNaN(f_x))
+                    {
+                        return false;
+                    }
+                    f_x = Math.round(f_x *100)/100;
+                    return f_x;
+                }
+            }
+            move()
+        }
+
+    </script>
+    <style>
+        canvas{
+            background: #e3e3e3;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500px" height="300px"></canvas>
+</body>
+</html>

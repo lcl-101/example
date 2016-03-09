@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script src="person.js"></script>
+    <script>
+        window.onload=function(){
+            var canvas=document.getElementsByTagName('canvas')[0];
+            var cobj=canvas.getContext('2d');
+            var widths=document.documentElement.clientWidth;
+            var heights=document.documentElement.clientHeight;
+            canvas.width=widths;
+            canvas.height=heights;
+
+            var canvas=document.getElementsByTagName('canvas')[0];
+            var cobj=canvas.getContext('2d');
+            var persons=new person(canvas,cobj);
+
+            var init=0;
+            var initA=0;
+            var time=0;
+            var rectArr=[];
+            var t=setInterval(function(){
+                cobj.clearRect(-10,0,canvas.width,canvas.height);
+                if(init<200){
+                    init+=persons.speed;
+                }
+                if(time%3000==0){
+                    var rects=new rect(canvas,cobj);
+                    rectArr.push(rects);
+                }
+                time+=60;
+                persons.x=init;
+//                persons.y=200;
+                initA+=persons.speedA;
+                var angle1=Math.sin(initA)*persons.angle1;
+                var angle2=Math.sin(initA)*persons.angle2;
+                var angle3=Math.sin(initA)*persons.angle3;
+                var angle4=Math.sin(initA)*persons.angle4;
+                persons.draw(angle1,angle2,angle3,angle4);
+
+                for(var i=0;i<rectArr.length;i++){
+                    rectArr[i].x-=10;
+                    rectArr[i].y=210;
+                    rectArr[i].draw();
+                }
+                if(hit(rectArr,persons)){
+                    clearInterval(t);
+                    alert("new game");
+                    location.reload();
+                }
+            },60);
+            //判断两个物体碰撞
+            //obj1是多物体  obj2是单物体
+            function hit(obj1,obj2){
+                for(var i= 0;i<obj1.length;i++){
+                    var x1=obj1[i].x;
+                    var y1=obj1[i].y;
+                    var r1=x1+obj1[i].width;
+                    var t1=y1+obj1[i].height;
+                    var x2=obj2.x;
+                    var y2=obj2.y;
+                    var r2=x2+obj2.width;
+                    var t2=y2+obj2.height;
+                    if(!(x2>r1||r2<x1||y2>t1||t2<y1)){
+                        return obj1[i];
+                    }
+                }
+                return false;
+            };
+            var flag=true;
+            document.body.onclick=function(){
+                if(!flag){
+                    return;
+                }
+                flag=false;
+                var inita=0;
+                var speeda=15;
+                var k=setInterval(function(){
+                    if(inita>180){
+                        clearInterval(k);
+                        inita=0;
+                        flag=true;
+                    }else{
+                        persons.y=Math.sin(inita*Math.PI/180)*-100+200;
+                        inita+=speeda;
+                    }
+                },60)
+            }
+            document.onkeydown=function(e){
+
+                if(!flag){
+                    return;
+                }
+                flag=false;
+                if(e.keyCode==32){
+                    var inita=0;
+                    var speeda=15;
+                    var k=setInterval(function(){
+                        if(inita>180){
+                            clearInterval(k);
+                            inita=0;
+                            flag=true;
+                        }else{
+                            persons.y=Math.sin(inita*Math.PI/180)*-100+200;
+                            inita+=speeda;
+                        }
+                    },60)
+
+                }
+            }
+        }
+    </script>
+    <style>
+        html,body{
+            width: 100%;height:100%;margin:0;padding: 0;overflow: hidden;
+        }
+        canvas{
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+</body>
+</html>

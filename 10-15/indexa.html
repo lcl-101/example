@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+    $(function(){
+        $(function(){
+            var scene=$('.scene');
+            var arr=[];
+            var num;
+            for(var i=0;i<10;i++){
+                num++;
+                if(i==0){
+                    num="576px";
+                }else if(i==1){
+                    num="512px";
+                }else if(i==2){
+                    num="448px";
+                }else if(i==3){
+                    num="384px";
+                }else if(i==4){
+                    num="320px";
+                }else if(i==5){
+                    num="256px";
+                }else if(i==6){
+                    num="192px";
+                }else if(i==7){
+                    num="128px";
+                }else if(i==8){
+                    num="64px";
+                }else if(i==9){
+                    num="0px";
+                }
+                var smallScene=$("<div>").css({
+                    width:"64px",
+                    height:"42.7px",
+                    perspective:"6000px",
+                    transformOrigin:num+"center",
+                    float:'left'
+                }).appendTo(scene);
+                var box=$("<div>").css({
+                    width:"64px",height:"100%",
+                    position:"relative",
+                    transformStyle:"preserve-3d",
+//                    transformOrigin:"center center 375px",
+                    transition:"transform 2s ease "
+                }).appendTo(smallScene);
+                arr.push(box);
+                for(var j=0;j<2;j++){
+                    var panel=$("<div>").css({
+                        position:"absolute",
+                        left:0,
+                        top:0
+                    })
+                    if(j==0){
+                        panel.css({
+                            width:"64px",
+                            height:"42.7px",
+                            background:"url(1.jpg) no-repeat "+i*-64+"px 0"
+                        })
+                    }else if(j==1){
+                        panel.css({
+                            width:"64px",
+                            height:"42.7px",
+                            transform:"translateZ(-0.1px) rotateY(180deg)",
+                            background:"url(2.jpg) no-repeat "+i*-64+"px 0"
+                        })
+                    }
+                    panel.appendTo(box);
+                }
+            }
+            var angle=0;
+            setInterval(function(){
+                angle+=180;
+                for(var i=0;i<arr.length;i++) {
+                    arr[i].css({
+                        transform: "rotateY(" + angle + "deg)",
+                        transition:"transform 2s ease "
+                    })
+                }
+            },5000)
+        })
+    })
+    </script>
+    <style>
+        .scene{
+            width:640px;height:427px;margin:0 auto;
+        }
+
+        /*@-webkit-keyframes lunbo {*/
+            /*0% {transform:rotateY(0deg)}*/
+            /*50% {transform:rotateY(180deg)}*/
+            /*100% {transform:rotateY(360deg)}*/
+        /*}*/
+        /*.box{*/
+            /*width: 800px;height:427px;margin:100px auto;*/
+        /*}*/
+        /*.scene{*/
+            /*width: 160px;height:427px;perspective: 2000px;margin:100px auto;float:left;*/
+        /*}*/
+        /*.one{*/
+            /*position: relative;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*/!*background: red;*!/*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-style:preserve-3d;*/
+            /*/!*z-index: 1;*!/*/
+            /*-webkit-animation: lunbo 6s linear infinite;*/
+        /*}*/
+        /*.two{*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top:0;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*background: url("1.jpg");*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-origin: center;*/
+            /*transform: translateZ(0px);*/
+        /*}*/
+        /*.three{*/
+            /*position: absolute;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*background: url("2.jpg");*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-origin:center;*/
+            /*transform: translateZ(-0.1px) rotateY(180deg);*/
+        /*}*/
+        /*.scene1{*/
+            /*width: 160px;height:427px;perspective: 2000px;margin:100px auto;float:left;*/
+        /*}*/
+        /*.one1{*/
+            /*position: relative;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*/!*background: red;*!/*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-style:preserve-3d;*/
+            /*/!*z-index: 1;*!/*/
+            /*-webkit-animation: lunbo 6s linear infinite;*/
+            /*transition:transform 2s ease;*/
+        /*}*/
+        /*.two1{*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top:0;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*background: url("1.jpg") no-repeat -160px 0;*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-origin: center;*/
+            /*transform: translateZ(0px);*/
+        /*}*/
+        /*.three1{*/
+            /*position: absolute;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*background: url("2.jpg") no-repeat -160px 0;*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-origin:center;*/
+            /*transform: translateZ(-0.1px) rotateY(180deg);*/
+        /*}*/
+
+        /*.scene2{*/
+            /*width: 160px;height:427px;perspective: 2000px;margin:100px auto;float:left;*/
+        /*}*/
+        /*.one2{*/
+            /*position: relative;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*/!*background: red;*!/*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-style:preserve-3d;*/
+            /*/!*z-index: 1;*!/*/
+            /*-webkit-animation: lunbo 6s linear infinite;*/
+            /*transition:transform 2s ease;*/
+        /*}*/
+        /*.two2{*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top:0;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*background: url("1.jpg") no-repeat -320px 0;*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-origin: center;*/
+            /*transform: translateZ(0px);*/
+        /*}*/
+        /*.three2{*/
+            /*position: absolute;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*background: url("2.jpg") no-repeat -320px 0;*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-origin:center;*/
+            /*transform: translateZ(-0.1px) rotateY(180deg);*/
+        /*}*/
+
+        /*.scene4{*/
+            /*width: 160px;height:427px;perspective: 2000px;margin:100px auto;float:left;*/
+        /*}*/
+        /*.one4{*/
+            /*position: relative;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*/!*background: red;*!/*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-style:preserve-3d;*/
+            /*/!*z-index: 1;*!/*/
+            /*-webkit-animation: lunbo 6s linear infinite;*/
+            /*transition:transform 2s ease;*/
+        /*}*/
+        /*.two4{*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top:0;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*background: url("1.jpg") no-repeat -480px 0;*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-origin: center;*/
+            /*transform: translateZ(0px);*/
+        /*}*/
+        /*.three4{*/
+            /*position: absolute;*/
+            /*width:160px;*/
+            /*height:427px;*/
+            /*background: url("2.jpg") no-repeat -480px 0;*/
+            /*font-size: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 300px;*/
+            /*color:white;*/
+            /*transform-origin:center;*/
+            /*transform: translateZ(-0.1px) rotateY(180deg);*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="scene"></div>
+    <!--<div class="box">-->
+        <!--<div class="scene">-->
+            <!--<div class="one">-->
+                <!--<div class="three"></div>-->
+                <!--<div class="two"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="scene1">-->
+            <!--<div class="one1">-->
+                <!--<div class="three1"></div>-->
+                <!--<div class="two1"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="scene2">-->
+            <!--<div class="one2">-->
+                <!--<div class="three2"></div>-->
+                <!--<div class="two2"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="scene4">-->
+            <!--<div class="one4">-->
+                <!--<div class="three4"></div>-->
+                <!--<div class="two4"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</body>
+</html>

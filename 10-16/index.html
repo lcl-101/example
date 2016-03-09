@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        canvas{
+            background: #dfdfdf;position: relative;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var cans=document.getElementsByTagName('canvas')[0];
+            var obj=cans.getContext("2d");
+//            obj.fillStyle='red';
+//            obj.fillRect(0,0,100,100);
+
+//            obj.beginPath();
+//            obj.moveTo(100,100);
+//            obj.lineTo(200,200);
+//            obj.stroke();
+//            obj.closePath();
+            //绘制直线
+            function drawrect(x,y,w,h,color){
+                var obj=cans.getContext("2d");
+                obj.beginPath();
+                obj.fillStyle=color;
+                obj.fillRect(x,y,w,h);
+                obj.closePath();
+            }
+//            drawrect(100,100,20,20,'blue');
+//            drawrect(10,10,20,20,'red');
+            //绘制线条
+            var obj=cans.getContext("2d");
+            obj.strokeStyle='red';
+            var arr=[];
+            cans.onmousedown=function(e){
+                var dw=e.layerX;
+                var dh=e.layerY;
+                var date=obj.getImageData(0,0,cans.width,cans.height);
+                arr.push(date);
+                cans.onmousemove=function(e){
+                    var cw=e.layerX;
+                    var ch=e.layerY;
+                    obj.clearRect(0,0,cans.width,cans.height);
+                    obj.putImageData(date,0,0);
+                    obj.beginPath();
+                    obj.moveTo(dw,dh);
+                    obj.lineTo(cw,ch);
+                    obj.stroke();
+                    obj.closePath();
+                    cans.onmouseup=function(){
+                        cans.onmousemove="";
+                    }
+                }
+            }
+            var btn=document.getElementById('btn');
+            btn.onclick=function(){
+                if(arr.length==0){
+                    alert('no element');
+                    return;
+                }
+                var dates=arr.pop();
+                obj.putImageData(dates,0,0);
+            }
+        }
+    </script>
+</head>
+<body>
+    <canvas width="1000px" height="500px"></canvas>
+    <input type="button" id="btn" value="back"/>
+</body>
+</html>
