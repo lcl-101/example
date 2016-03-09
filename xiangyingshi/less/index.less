@@ -1,0 +1,47 @@
+@import "var.less";
+@import "base.less";
+.container{
+  &{
+    width:496px;height:auto;
+    margin:0 auto;
+  }
+  &>.row{
+    width:100%;height:100%;overflow:hidden;
+  }
+  &-fulid{
+    width:100%;height:auto;overflow:hidden;margin:0 auto;
+  }
+  &-fulid>.row{
+    width:100%;height:100%;overflow: hidden;
+  }
+}
+
+.response(@type,@i:1) when(@i<=@cols){
+  .container>.row>.col-@{type}-@{i}{
+    float:left;height:100%;
+    width:@i*100%/@cols;
+  }
+  .container-fulid>.row>.col-@{type}-@{i}{
+    float:left;height:100%;
+    width:@i*100%/@cols;
+  }
+
+  .response(@type,@i+1);
+}
+/*–°∆¡*/
+.response(s);
+/*÷–∆¡*/
+@media screen and (min-width: @num1) {
+  .response(m);
+  .container{
+    width:@num1;
+  }
+}
+
+/*¥Û∆¡*/
+@media screen and (min-width: @num2) {
+  .response(l);
+  .container{
+    width:@num2;
+  }
+}

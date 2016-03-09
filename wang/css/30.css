@@ -1,0 +1,256 @@
+/* CSS Document
+    Created on : 2015-10-26, 14:21:37
+    tip     :  双十一
+*/
+@charset "utf-8";
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, lengend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width:100%;
+    min-width: 1000px;
+    _width:expression((documentElement.clientWidth < 1000) ? "1000px" : "auto" );
+    font: 14px "微软雅黑","宋体", tahoma, Arial, Verdana;
+    color:#fff;
+    background:#2f313b;
+}
+fieldset,img{ border:0;}
+input,lable,select,option,textarea,button,fieldset,legend{ font-family: "微软雅黑","宋体", tahoma, Arial, Verdana;}
+input{vertical-align:middle;padding-left:5px;color:#fff;background:#2f313b;}
+ul,li{ list-style-type:none;}
+.f_l{ float:left;}
+.f_r{ float:right;}
+.clear{ clear:both;}
+a{color: #fff; text-decoration:none; background:none;}
+a:hover{text-decoration: none;}
+.clearfix { clear: both;}
+a:-webkit-any-link { text-decoration: none;}
+html{overflow-y:scroll;}
+/*.display { display: none;}*/
+
+
+.wrap { width:100%;background:#2f313b;}
+.contain{margin:0 auto;width:1000px; }
+
+/* 0、code */
+.code {padding-top:70px;height:390px; color:#fff; background: url("../../../images/zhuanti/30/HB.png") no-repeat center 0; }
+
+.code h4{text-align: center;height:36px;font-size: 26px; color:#fff;background:url("../../../images/zhuanti/30/title-bg.png") no-repeat center center; }
+.code h5 {text-align: center; line-height: 50px; font-size: 18px;}
+.code .challenge { margin-top: 80px; width:158px; height:158px; position: relative;}
+.code .challenge-lf {margin-left: 255px;}
+.code .challenge-rg {margin-right: 255px;}
+.lef-mask{position:absolute;left:158px;top:0;width:0px;height:158px;overflow: hidden;z-index: 888;}
+.code .lf-info{padding:15px;width:404px; height:130px;line-height:18px;
+    font-size:12px;background:#a03537;z-index: 888; }
+.code .rg-info{position:absolute;right:158px;top:0;padding:18px 15px 18px 21px;width:397px; height:122px;line-height:21px;font-size:12px;background:#a03537;z-index: 889;  }
+
+
+    /* 1、banner */
+.banner {  height:670px;background:url("../../../images/zhuanti/30/banner1.jpg") no-repeat center center;}
+
+/* 2、ranking 声望榜  */
+.ranking { width:100%; height:892px;background:url("../../../images/zhuanti/30/bg-rank.png") no-repeat center 60px #2f313b;}
+.ranking .contain { padding-top:100px;}
+.ranking .contain P.title{ margin-left:350px ; width:287px; height:58px;background:url("../../../images/zhuanti/30/SHW-title.png") no-repeat 0 0;}
+
+.ranking .contain .rank-bk1 { position: relative; margin:45px auto; padding-left:75px;width:605px; height:461px;background: url("../../../images/zhuanti/30/rank-bk1.png") no-repeat 0 0;}
+.ranking .contain .rank-bk1 span.span-height { text-align:center; height:84px; line-height: 92px; font-size: 20px; display: inline-block;}
+.span-a1 { margin-left: 0px; width:110px; }
+.span-a2 {width:120px;}
+.span-a3 {width:180px;}
+.span-a4 { width:80px; color:red; }
+.new { position:absolute;right:74px; top:30px; text-align:center;width:34px; height: 48px; line-height: 60px; display: inline-block;background: url("../../../images/zhuanti/30/new0.png") no-repeat center 0; }
+.new:hover {background:url("../../../images/zhuanti/30/new1.png") no-repeat center 0;}
+.new:visited { background:url("../../../images/zhuanti/30/new2.png") no-repeat center 0;}
+
+div.competi{width:530px; height:255px; overflow-y:auto;}
+div.competi ul li { height: 50px; background:#2b2d37;}
+div.competi ul li.ou{ background:#272a35;}
+div.competi ul li span{text-align:center; height:50px;line-height: 50px;display: inline-block; font-size: 16px;}
+#gold { background: url("../../../images/zhuanti/30/list-1.png")  no-repeat center center;}
+#silver { background: url("../../../images/zhuanti/30/list-2.png")  no-repeat center center;}
+#bronze { background: url("../../../images/zhuanti/30/list-3.png")  no-repeat center center;}
+.pm { margin-top:32px; height:40px;line-height: 22px; color:#c9c9c9; }
+.pm .pm-me {padding-left:30px;height:30px;background: url("../../../images/zhuanti/30/new-PM.png") no-repeat 0 0;}
+.pm .register,.reg-hover { width:72px;font-size: 30px; color:#6a9e06; text-align:center; display: inline-block; cursor:pointer; }
+.pm .reg-hover:hover { color:#aed725; }
+.pm .pm-chaju { margin-left:82px;width:264px;height:30px; background:url("../../../images/zhuanti/30/chaju-bg.png") no-repeat 0 20px;}
+.pm .num { width:140px;}
+
+.ranking .contain .share { margin:30px auto;padding-top:30px;width:680px; height:130px;background:url("../../../images/zhuanti/30/share.png");}
+.share .sh-title { margin-left:60px; margin-bottom:10px;width: 570px; height:45px; line-height:45px;color:#00d3fc;font-size:16px; background: #2a2d37;}
+.share .sh-content { padding-left:40px; width:590px; height:30px;}
+.share .sh-content span { padding-left:30px;width:170px;height:30px;line-height:30px;display:inline-block;font-size:18px;color:#fff; }
+.share .sh-content a {padding-left:47px;width:120px;height:30px;line-height:28px;display:inline-block;cursor: pointer;font-size:14px;color:#fff;}
+.share .sh-content a.sh-weixin {background:#2f313b url("../../../images/zhuanti/30/fx-weixin（0）.png") no-repeat 0 0;}
+.share .sh-content a.sh-copy { background:url("../../../images/zhuanti/30/fx-copy（0）.png") no-repeat 0 0;}
+.share .sh-content a.sh-weixin:hover{background:url("../../../images/zhuanti/30/fx-weixin（1）.png") no-repeat 0 0;}
+.share .sh-content a.sh-copy:hover {background:url("../../../images/zhuanti/30/fx-copy（1）.png") no-repeat 0 0;}
+
+/* 3、声望榜规则 */
+.wrap .rule{ margin-top:0px;height:440px; position:relative;background:url("../../../images/zhuanti/30/kayano22.png") no-repeat 540px 0;}
+.rule-title { width:174px; height: 60px; position:absolute;left:225px;top:60px;background:url("../../../images/zhuanti/30/swrule-logo.png") no-repeat 0 0; }
+.rule-fot{ width:234px; height: 132px; position:absolute;left:130px;bottom:0;background:url("../../../images/zhuanti/30/WAVE.png") no-repeat 0 0; }
+div.rule-txt {position:absolute;left:220px;bottom:0px; width:660px; height:285px; font-size: 16px;}
+div.rule-txt p { width:auto;height:26px; line-height:26px;}
+p.rule-txt1{ padding-left:18px}
+P.rule-txt2 {padding-left:99px}
+P.rule-txt3 {padding-left:196px}
+p.rule-txt4 {padding-left:160px}
+p.rule-txt5 {padding-left:190px}
+.hbiao { height:262px; background:url("../../../images/zhuanti/30/HB.png") no-repeat center center;}
+
+/* 4、新老用户投资   */
+.invest { height:auto;  overflow: auto;}
+.invest h3{ margin:0 auto; padding-left:41px;width:537px; height:56px; color:#fff;}
+.invest h3.tit-invest { background:url("../../../images/zhuanti/30/title1.png") no-repeat center center;}
+.invest h3.tit-new { background:url("../../../images/zhuanti/30/title1.png") no-repeat center center;}
+
+.tit-old-h{ margin-left: 23px; text-align: center; width:210px; height:50px;line-height:46px; color: #7e191b;font-size:20px;  background:#a03537; display: inline-block; cursor: pointer;}
+.tit-old-h:hover { color: #fff;background:url("../../../images/zhuanti/30/active-bg.png") no-repeat 0 2px;}
+.active {font-size:26px;color: #fff;line-height:46px; background:url("../../../images/zhuanti/30/active-bg.png") no-repeat 0 2px;}
+.now-11-box .rank-bk1 { display: block;}
+
+
+.qxkan { margin:0 auto; width:537px; height:210px;background:url("../../../images/zhuanti/30/QiangXianKan.png") no-repeat center center;}
+#before-11 {   display: none;            /*11-11之前不显示*/}
+/* 4-1、老用户投资表格   */
+.newer-11 {margin:0 auto; width:620px;height:461px;background: url("../../../images/zhuanti/30/rank-bk1.png") no-repeat 0 0;   }
+
+
+/* 4-2、新用户投资表格   */
+.bdan-rule { position: relative; width:1000px; height:516px; background:url("../../../images/zhuanti/30/new-old-bg.png")  no-repeat center 0;}
+.txt-rule {position: absolute; color:#fff; }
+.pose-lf {left:175px; top:184px;width:295px;  height:75px;}
+.pose-rg {right:125px; top:50px; width:355px;  height:75px;}
+.marg{ margin-bottom:30px;}
+
+.txt-rule span.tit {font-size:18px; line-height:26px; display: inline-block;}
+.txt-rule p {padding-left:14px;font-size:16px;  line-height:24px; }
+.txt-rule p span { width:200px; display: inline-block;}
+
+.pose-bt { position:absolute;left:0;bottom:0;margin-left:175px; margin-top:0;width:500px; height:230px; overflow:hidden;}
+.pose-bt span.tit {padding-top:0;}
+
+/* 4-3、新老用户内容 */
+/*#newer-11 {       display: none;  /!*11-11之前不显示*!/}*/
+
+#older-11 {       /* display: none; 11-11之前不显示*/}
+.now-11-box {margin:0 auto; width:700px; height:auto; }
+.invest .now-11 {position: relative; margin:45px auto; padding-left:75px;width:605px; height:461px; background: url("../../../images/zhuanti/30/rank-bk1.png") no-repeat 0 0; }
+.invest span.span-height { text-align:center; height:84px; line-height: 92px; font-size: 20px; display: inline-block;}
+.invest .span-a2 {width:200px;}
+.new { position:absolute;right:74px; top:30px; text-align:center;width:34px; height: 48px; line-height: 60px; display: inline-block;background: url("../../../images/zhuanti/30/new0.png") no-repeat center 0; cursor: pointer }
+.new:hover {background:url("../../../images/zhuanti/30/new1.png") no-repeat center 0;}
+.invest p.pm-me { padding-left:30px;height:30px;background:url("../../../images/zhuanti/30/new-PM1.png") no-repeat 0 0;}
+.invest p.note { line-height: 50px; font-size: 14px; color: #923438; display: block;}
+
+/* 5、奖品兑换区   */
+.prize { width: 1000px;height: 480px; background:url("../../../images/zhuanti/30/HB.png") no-repeat center 0;}
+.prize .title {padding-top:65px; padding-bottom: 60px; text-align:center; font-size:28px; background: url("../../../images/zhuanti/30/sqr-long.png") no-repeat center 75px;}
+.prize-div {margin: 0 auto; width:840px; height: 150px; overflow: hidden;}
+.prize-div ul {  width:100%;}
+.prize-div ul li { float:left;;width:200px; height:150px; color: #fff; background: #2f313b; }
+.prize-div ul li.last {width:239px; height:150px;}
+.prize-div ul li.last p{width:239px;height:104px;}
+.prize-div ul li p {width:200px; height:104px; cursor: pointer;}
+.prize-div ul li a { text-align:center;width:100%; height:48px; line-height:48px;  font-size:14px;background:url("../../../images/zhuanti/30/sqr-sh.png") no-repeat center 12px; display: inline-block; }
+.prize-div ul li a p.p1 {  width: 100%; height:14px; line-height:30px; font-size:14px;}
+.img1 {background: url("../../../images/zhuanti/30/img1-0.png")  no-repeat center center;}
+.img1:hover { background: url("../../../images/zhuanti/30/img1-1.png")  no-repeat center center;}
+.img2 {background: url("../../../images/zhuanti/30/img2-0.png")  no-repeat center center;}
+.img2:hover { background: url("../../../images/zhuanti/30/img2-1.png")  no-repeat center center;}
+.img3 {background: url("../../../images/zhuanti/30/img3-0.png")  no-repeat center center;}
+.img3:hover { background: url("../../../images/zhuanti/30/img3-1.png")  no-repeat center center;}
+.img4 {background: url("../../../images/zhuanti/30/img4-0.png")  no-repeat center center;}
+.img4:hover { background: url("../../../images/zhuanti/30/img4-1.png")  no-repeat center center;}
+
+
+
+/* 5-2、奖品兑换框   */
+.exchange { text-align: center; height:43px; line-height:43px; font-size:18px; border: 1px solid #fff;}
+div.exchange-ago {margin: 75px auto 0;width:245px; /* display: none; 11-11之前的奖品兑换框*/}
+div.exchange-lafer {margin: 75px auto 0;width:414px; height:45px;/* display: none; 11-11 奖品兑换框*/ }
+input.exchange-txt{text-align:left;padding-left:20px;width:260px; color:#6c737a;  }
+input.exchange-btn{width:130px; height:45px; line-height:40px;  cursor: pointer; }
+input.exchange-btn:hover { font-size:20px;line-height:36px;  }
+input.exchange-btn:visited { font-size:18px; }
+
+/* 6.温馨提示  */
+.prompt {height:800px; color:#fff; background:url("../../../images/zhuanti/30/HB.png") no-repeat center 0;}
+.prompt-box { margin:0 auto; padding:120px 10px 0;width:730px;height:500px;}
+.prompt-box h5 { padding-left:60px; padding-bottom:40px;height:34px;font-size: 28px; background:url("../../../images/zhuanti/30/prompt-bg.png") no-repeat 0 0;}
+.prompt-box p {  font-size:16px;line-height:30px; }
+.prompt-box p.txt-p { line-height: 20px;}
+.prompt-box p.txt-p1 { margin-top: 30px;}
+.prompt-box p.pad-l { padding:0 0 6px 16px;}
+.prompt-box p.pad-t { margin-top: 8px; }
+.pad-tit {  padding-left:32px; }
+a.prompt-btn {margin:70px auto ; text-align: center;width:270px; height:55px; line-height:52px; font-size:30px; display: block;border: 1px solid #fff;color: #fff;}
+a.prompt-btn:hover{ font-size: 26px;color: #fff;}
+
+
+
+.closed {
+    background: rgba(0, 0, 0, 0) url("../../../images/zhuanti/30/closed.png") no-repeat scroll left top;
+    cursor: pointer;
+    height: 21px;
+    left: 436px;
+    position: relative;
+    top: 20px;
+    width: 21px;
+}
+/*微信弹窗*/
+.weixin_dialog{
+    display:none;
+    width:345px;
+    height:310px;
+    background-color: #fff;
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin-top: -155px;
+    margin-left: -173px;
+    z-index: 200;
+}
+.div-qrcode .closed{
+    left:316px;
+    top:6px;
+}
+.div-qrcode p{
+    font-size: 17px;
+    color:#ff5400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.qrcode-img{
+    margin-left:75px;
+}
+
+/*一直在最下面*/
+.disblock{
+    display: block;
+}
+
+/*  兑换框  */
+.convert {margin-left: -242px;margin-top: -202px;display:none;position: fixed;top:50%; left:50%; text-align:center; width:485PX; height:405PX; color:#d2d2d2; border-radius: 5px; background:#fff;}
+.convert .info { text-align: center;line-height:40PX; color:#494949;}
+.info input {  margin-bottom:12px; width:310PX; height:40PX;color:#878786; border:#d2d2d2 1px solid; border-radius: 5px;background:#fff; }
+.convert h2 {  margin-top:36px; font-size:30px;color:#cc2d29;}
+.convert p {font-size:16px;color:#878786;}
+.convert p span {color:#cc2d29;}
+/*.convert a{background-image: }*/
+
+.enter { text-align: center; width:160PX;height:40PX;font-size:16px;color:#fff; border:0; background:#cc2d29;border-radius: 5px;}
+.enter-to {margin-top:36px; text-align: center; width:160PX;height:40PX;font-size:16px;color:#fff; border:0; background:#cc2d29;border-radius: 5px;}
+.enter:hover,.enter-to:hover {background:#ec2520;/* 点击按钮后的颜色 background:#b71c18;*/}
+.success p { line-height:30px;font-size:18px;}
+.success h2 {margin:36px 0;}
+
+.title_margin{margin-bottom: 30px;}
+
+#competi { position: relative;overflow: hidden;}
+ul.ul-list { position: absolute;width:525px; height:230px;}

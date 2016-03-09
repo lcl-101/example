@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="iconfont.css"/>
+    <script src="function.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            var videos=$('video')[0];
+            var play=$('.play');
+            var plays=$('.plays');
+            play.click(function(){
+                clearInterval(t);
+                if(videos.paused){
+                    $(this).attr({class:'pause'});
+                    $(plays).attr({class:'pauses'});
+                    $(plays).css({opacity:0,transition:'all 3s ease 2s',zIndex:-1});
+                    videos.play();
+                }else{
+                    $(this).attr({class:'play'});
+                    $(plays).attr({class:'plays'});
+                    $(plays).css({opacity:0,transition:'all 3s ease 2s',zIndex:-1});
+                    videos.pause();
+                }
+            });
+            plays.click(function(){
+                clearInterval(t);
+                if(videos.paused){
+                    $(this).attr({class:'pauses'});
+                    $(play).attr({class:'pause'});
+                    videos.play();
+                }else{
+                    $(this).attr({class:'plays'});
+                    $(play).attr({class:'play'});
+                    videos.pause();
+                }
+                $(plays).css({opacity:0,transition:'all 3s ease 2s',zIndex:-1});
+            });
+            $('.videos').hover(function(){
+                $('.box').css({opacity:1,zIndex:1});
+            },function(){
+                $('.box').css({opacity:0,zIndex:-1});
+            });
+            $('.videos').bind('dblclick',function(){
+                clearInterval(t);
+                videos.pause();
+                $(plays).attr({class:'plays'});
+                $(play).attr({class:'play'});
+                $(plays).css({opacity:1,transition:'all 3s ease',zIndex:3});
+            })
+            videos.ontimeupdate=function(){
+                var bili=videos.currentTime/videos.duration;
+                var bili2=$('.progress').width()-$('.progress-control').width();
+                $('.progress-bar').css({width:bili*100+'%'});
+                $('.progress-control').css({left:bili2*bili+'px'});
+                var times1=videos.currentTime.toFixed(2);
+                $('.currenttime')[0].innerHTML=times1;
+                if(videos.currentTime==videos.duration){
+                    $(plays).attr({class:'plays'});
+                    $(play).attr({class:'play'});
+                    $(plays).css({opacity:1,transition:'all 3s ease',zIndex:3});
+                }
+            };
+            $('.mask').click(function(e){
+                clearInterval(t);
+                var x1= e.offsetX;
+                var y1= e.offsetY;
+                var bili=x1/$(this).width();
+                var bili2=$('.progress').width()-$('.progress-control').width();
+                $('.progress-bar').css({width:bili*100+'%'});
+                $('.progress-control').css({left:bili2*bili+'px'});
+                videos.currentTime=videos.duration*bili;
+            });
+            var obj=drag($('.progress-control')[0],{dragy:false,sidex:[0,$('.progress').width()-$('.progress-control').width()],animate:false},function(x,y){
+                var bili=(x)/($('.progress').width()-4);
+                $('.progress-bar').css({width:bili*100+'%'});
+                videos.currentTime=videos.duration*bili;
+            });
+            var num=5;
+            $('.quikeright').click(function(){
+                clearInterval(t);
+                videos.currentTime+=num;
+            });
+            var aa=0.3;
+            var t;
+            $('.quike1').bind('click',function(){
+                t=setInterval(function(){
+                        if(videos.currentTime>28.54){
+                            clearInterval(t);
+                            $(plays).attr({class:'plays'});
+                            $(play).attr({class:'play'});
+                            $(plays).css({opacity:1,transition:'all 3s ease',zIndex:3});
+                            videos.pause();
+                            aa=0.3;
+                        }
+                        aa+=0.3;
+                        videos.currentTime=aa;
+                    },40)
+            });
+            $('.quikeleft').click(function(){
+                clearInterval(t);
+                videos.currentTime-=num;
+            })
+            $('.sound').click(function(){
+                if(videos.muted){
+                    videos.muted=false;
+                    $(this)[0].innerHTML='&#xe607;';
+                }else{
+                    videos.muted=true;
+                    $(this)[0].innerHTML='&#xe606;';
+                }
+            });
+            $('.mask2').click(function(e){
+                var x1= e.offsetX;
+                var y1= e.offsetY;
+                var bili=x1/$(this).width();
+                var bili2=$('.mask2').width()-$('.sound-control').width();
+                $('.sound-bar').css({width:bili*100+'%'});
+                $('.sound-control').css({left:bili2*bili+'px'});
+                videos.volume=bili;
+            });
+            var obj2=drag($('.sound-control')[0],{dragy:false,sidex:[0,$('.mask2').width()-$('.sound-control').width()],animate:false},function(x,y){
+                var bili=(x)/($('.mask2').width()-3);
+                $('.sound-bar').css({width:bili*100+'%'});
+                videos.volume=bili;
+            });
+            $('.full').click(function(){
+                videos.webkitRequestFullscreen();
+            })
+            videos.onloadedmetadata=function(){
+                var times=videos.duration.toFixed(2);
+                $('.duration')[0].innerHTML=times;
+            }
+        })
+    </script>
+    <style>
+        .videos{
+            width: 800px;
+            height:314px;
+            margin:30px auto;
+            position: relative;
+        }
+        .plays{
+            position: absolute;
+            width:100px;height:100px;border-radius: 50%;
+            background: rgba(0,0,0,0.5);
+            margin:auto auto;
+            left:0;right:0;top:0;bottom:0;
+            cursor: pointer;z-index: 3;
+        }
+        .plays:before{
+            content: '';
+            display: block;
+            border-left:40px solid white;
+            border-right: 0;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            margin-left: 35px;margin-top: 20px;
+        }
+        .pauses{
+            position: absolute;
+            width:100px;height:100px;border-radius: 50%;
+            background: rgba(0,0,0,0.5);
+            margin:auto auto;
+            left:0;right:0;top:0;bottom:0;
+            cursor: pointer;z-index: 3;
+        }
+        .pauses:before{
+            content: "";
+            display: inline-block;
+            width: 15px;height:50px;background: white;
+            margin-top: 25px;margin-left: 29px;
+        }
+        .pauses:after{
+            content: "";
+            display: inline-block;
+            width: 15px;height:50px;background: white;
+            margin-top: 25px;margin-left: 10px;
+        }
+        .box{
+            position: absolute;
+            width: 40%;
+            height:100px;
+            border:1px solid rgba(0,0,0,0.5);
+            background:rgba(0,0,0,0.5);
+            bottom: -10px;
+            margin:auto auto;
+            left: 0;right:0;
+            border-radius: 8px;
+            opacity: 0;
+            z-index: -1;
+            transition: all 1s ease;
+        }
+        .play{
+            position: absolute;
+            width: 30px;height:30px;
+            margin: auto auto;
+            left: 0;right:0;
+            top:20px;
+            cursor: pointer;
+        }
+        .play:before{
+            content: '';
+            display: block;
+            border-left:20px solid white;
+            border-right: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            margin-left: 5px;margin-top: 5px;
+        }
+        .pause{
+            position: absolute;
+            width: 30px;height:30px;
+            margin: auto auto;
+            left: 0;right:0;
+            top:20px;
+            cursor: pointer;
+        }
+        .pause:before{
+            content: "";
+            display: inline-block;
+            width: 5px;height:20px;background: white;
+            margin-top: 5px;margin-left: 8px;
+        }
+        .pause:after{
+            content: "";
+            display: inline-block;
+            width: 5px;height:20px;background: white;
+            margin-top: 5px;margin-left:4px;
+        }
+        .progress{
+            position: absolute;
+            width:210px;
+            height:8px;
+            margin:auto auto;
+            left:0;right:0;
+            bottom:18px;
+            border-radius: 8px;
+            border:1px solid rgba(0,0,0,0.5);
+        }
+        .progress-control{
+            position:absolute;z-index: 2;
+            width:8px;height:8px;background: black;border-radius: 50%;cursor: pointer;
+        }
+        .progress-bar{
+            position: absolute;
+            width: 0;height:100%;background: white;border-radius: 8px;
+        }
+        .mask{
+            position: absolute;top:0;left: 0;z-index: 1;
+            width: 100%;height:100%;border-radius: 8px;cursor: pointer;
+        }
+        .quikeleft{
+            position: absolute;
+            color:white;top:27px;left:118px;cursor: pointer;
+        }
+        .quikeright{
+            position: absolute;
+            color:white;top:26px;right:120px;cursor: pointer;
+        }
+        .sound{
+            position: absolute;
+            color:white;top:26px;left: 30px;cursor: pointer;
+        }
+        .sound-bar{
+            position: absolute;top:31px;left: 50px;width: 50px;height:6px;
+            cursor: pointer;border-radius: 8px;
+        }
+        .mask2{
+            position: absolute;top:0;left: 0;width: 50px;height:6px;border:1px solid rgba(0,0,0,0.5);
+            cursor: pointer;border-radius: 8px;z-index: 1;
+        }
+        .sound-control{
+            position: absolute;width: 6px;height: 6px;border-radius: 50%;background: white;top:1px;right: 0;z-index: 2;
+        }
+        .full{
+            position: absolute;color: white;top:26px;right:40px;cursor: pointer;
+        }
+        .duration{
+            position: absolute;bottom: 20px;left:16px;width:20px;height:10px;color:white;font-size: 10px;
+        }
+        .currenttime{
+            position: absolute;bottom: 20px;right:16px;width:20px;height:10px;color:white;font-size: 10px;
+        }
+        .quike1{
+            position:absolute;top:27px;color:white;right:90px;font-size: 10px;cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="videos">
+        <div class="plays"></div>
+        <video src="video.mp4" width="800px" poster="aa.png"></video>
+        <div class="box">
+            <!--播放按钮-->
+            <div class="play"></div>
+            <!--快进，快退-->
+            <div class="quikeleft iconfont">&#xe60c;</div>
+            <div class="quikeright iconfont">&#xe60b;</div>
+            <!--进度条-->
+            <div class="progress">
+                <div class="mask"></div>
+                <div class="progress-control"></div>
+                <div class="progress-bar"></div>
+            </div>
+            <!--声音-->
+            <div class="sound iconfont">&#xe607;</div>
+            <div class="sound-bar">
+                <div class="mask2"></div>
+                <div class="sound-control"></div>
+            </div>
+            <!--全屏-->
+            <div class="full iconfont">&#xe603;</div>
+            <div class="duration"></div>
+            <div class="currenttime"></div>
+            <!--快进-->
+            <div class="quike1">2x</div>
+        </div>
+    </div>
+</body>
+</html>

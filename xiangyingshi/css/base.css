@@ -1,0 +1,32 @@
+body,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  border: 0px;
+}
+a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+body {
+  font: 12px/1.5 "Microsoft YaHei";
+  color: #8c8c8c;
+  background: #fff;
+}

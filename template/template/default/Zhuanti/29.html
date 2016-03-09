@@ -1,0 +1,276 @@
+<!--#include file="wcg_header.html"-->
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link href="../Public/css/zhuanti/29/29.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+    div.overlay{position:fixed;top:0;left:0;z-index:100000;background:url(__TPL__Public/images/zhuanti/15/overlaybg.png) repeat;width:100%;height:100%;}
+    #zhuantilogin a{color:#292825; text-decoration: none;}
+    #zhuantilogin a:hover{text-decoration:underline;}
+</style>
+<!--<script src="https://www.wangcaigu.com/template/default/Public/js/jquery-1.11.2.min.js"></script>-->
+<!--<script src="https://www.wangcaigu.com/template/default/Public/js/jquery.superslide.2.1.1.js"></script>-->
+<script type="text/javascript" src="../Public/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../Public/js/jquery.qrcode.min.js"></script>
+<script src="../Public/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="../Public/js/wcg.src.analysis.js" type="text/javascript"></script>
+<script src="../Public/js/ZeroClipboard.min.js" type="text/javascript"></script>
+<script src="../Public/js/zhuanti/29/29.js" type="text/javascript"></script>
+<!--banner-->
+<body>
+<input type="hidden" id="islogin" value="<?php echo($viewModel->isLogin); ?>"  />
+<div class="banner">
+    <div class="pic_banner">
+        <a href="#new_new"><p class="olduser"></p></a>
+        <a href="https://www.wangcaigu.com/user/registershow?nsrc=yqhy001"><p class="newuser"></p></a>
+    </div>
+</div>
+<div class="main_content">
+    <div class="main_big_bg">
+        <!-- 排行开始 -->
+        <div class="paihang">
+            <div class="paihang_qiehuan">
+                <p class="ch_qiehuan"></p>
+                <p class="tz_qiehuan"></p>
+            </div>
+            <div class="paihang_list">
+                <p class="list_txt">
+                    <span class="sp1">名次</span><span class="sp2">用户名</span>
+                    <span class="sp3">成功邀请</span><span class="sp4">被邀请人投资总额</span>
+                </p>
+                 <p class="list_bg"></p>
+                <div>
+                    <p class="list_135">
+                        <span class="sp1">1</span><span class="sp2">k***7</span>
+                        <span class="sp3">154人</span><span class="sp4">1,115,111元</span>
+                    </p>
+                    <p class="list_246">
+                        <span class="sp1">2</span><span class="sp2">m***m</span>
+                        <span class="sp3">72人</span><span class="sp4">866,562元</span>
+                    </p>
+                    <p class="list_135">
+                        <span class="sp1">3</span><span class="sp2">l***u</span>
+                        <span class="sp3">15人</span><span class="sp4">753,246元</span>
+                    </p>
+                    <p class="list_246">
+                        <span class="sp1">4</span><span class="sp2">q***k</span>
+                        <span class="sp3">13人</span><span class="sp4">588,611元</span>
+                    </p>
+                    <p class="list_135">
+                        <span class="sp1">5</span><span class="sp2">t***8</span>
+                        <span class="sp3">21人</span><span class="sp4">677,668元</span>
+                    </p>
+                    <p class="list_246">
+                        <span class="sp1">6</span><span class="sp2">f***9</span>
+                        <span class="sp3">16人</span><span class="sp4">352,111元</span>
+                    </p>
+                </div>
+            </div>
+            <div class="ph_ruler"><!-- 规则 -->
+                <p>活动时间：即日起至2015年11月31日</p>
+                <p>参与用户：<span>累计投资额达1万元的谷东</span></p>
+                <p>活动奖品：500元京东E卡</p>
+                <p>活动内容：</p>
+                <p>1、活动期间内参与用户可用个人邀请链接邀请好友注册并投资</p>
+                <p>2、被邀请人在活动期间内单笔投资达3000元及以上，邀请人即增加一个成功邀<p class="suojin">请</p></p>
+                <p>
+                3、截止2015年11月31日24：00成功邀请好友<span>人数最多</span>
+                及被邀请人<span>投资总额最多</span><p class="suojin">的谷东将分别获得一张500元京东E卡</p>
+                </p>
+                <p>4、本活动投资包含债权转让，不含生利宝</p>
+            </div><!-- 规则结束 -->
+        </div><!-- 排行结束 -->
+        <a name="new_new"></a>
+        <div class="yaoqing"><!-- 独乐乐不如众乐乐开始 -->
+            
+            <div style="width:711px;height:162px"></div>
+            <div class="login_user"><!-- 登录 -->
+                <dl>
+                    <dt><div class="login_user-headphoto"></div>
+                        <img src="../Public/images/zhuanti/29/touxiang.png" /></dt>
+                    <dd>
+                        <p class="p1">登录</p>
+                        <p class="p2">登录后查看</p>
+                        <a href="javascript:;">查看邀请详情>></a>
+                    </dd>
+                </dl>
+
+                <!--登陆后的用户-->
+                <!--<div class="logined-user">-->
+                    <!--<div><img src="../Public/images/zhuanti/29/head-photo-top.png" /></div>-->
+                    <!--<div>-->
+                        <!--<p class="p1">Macably</p>-->
+                        <!--<p class="p2">兑换值5</p>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<a href="javascript:;">查看邀请详情>></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <p class="no_dhz">您目前没有兑换值哦~   快去邀请好友~~</p>
+            </div>
+
+            <div class="logined-in">
+                <span>邀请详情</span>
+                <div class="logined-list">
+                    <div class="logined-title">
+                        <a href="javascript:;">序号</a>
+                        <a href="javascript:;">姓名</a>
+                        <a href="javascript:;">单笔投资过3000元</a>
+                    </div>
+                    <ul>
+                        <li><p class="num"></p><p class="name">王小二</p><p class="pan">是</p></li>
+                        <li><p class="num"></p><p class="name">王小二</p><p class="pan">--</p></li>
+                        <li><p class="num"></p><p class="name">--</p><p class="pan">--</p></li>
+                    </ul>
+                    <div class="btn">确定</div>
+                </div>
+            </div>
+
+            <div class="share"><!-- 分享模块 -->
+                <p class="share_link">
+                    https://www.wangcaigu.com/user/reg/code-
+                </p>
+                <div class="share_list">
+                    <p class="weixin"></p>
+                    <a class="weibo" href="javascript:void(0)"></a>
+
+                    <p class="copy_link" id="copy-button" >
+                        
+                    </p>
+
+                </div><!-- 分享模块结束 -->
+                <div class="jiangpin"><!-- 奖品 -->
+                    <dl>
+                        <dt class="jd_50"></dt>
+                        <dt class="jd_50_hover jd_card"></dt>
+                        <dd class="jiangpin_dd"><button class="jd_50_dh">1M兑换</button></dd>
+                    </dl>
+                    <dl>
+                        <dt class="chapai"></dt>
+                        <dt class="chapai_hvoer xiaomi"></dt>
+                        <dd class="jiangpin_dd"><button class="xiaomi_dh">1M兑换</button></dd>
+                    </dl>
+                    <dl>
+                        <dt class="daijq"></dt>
+                        <dt class="daijq_hvoer daijinquan"></dt>
+                        <dd class="jiangpin_dd"><button class="djq_dh">1M兑换</button></dd>
+                    </dl>
+                    <dl class="jd_last">
+                        <dt class="jd_300"></dt>
+                        <dt class="jd_300_hover jd_card_300"></dt>
+                        <dd class="jiangpin_dd"><button class="jd_300_dh">5M兑换</button></dd>
+                    </dl>
+                </div><!-- 奖品结束 -->
+                <div class="old_ruler">
+                    <p>活动时间：即日起至2015年11月31日</p>
+                    <p>参与用户：<span>累计投资总额达1万元的谷东</span></p>
+                    <p>活动内容：</p>
+                    <p>1、活动期间内参与用户可用个人邀请链接邀请好友注册并投资</p>
+                    <p>2、被邀请人在活动期间内单笔投资达3000元及以上，邀请人即可获得1M兑换值</p>
+                    <p>3、参与用户单日最高可获得10M兑换值</p>
+                    <p>4、兑换值会在被邀请人投资项目满标后2小时内系统自动加到邀请人账户</p>
+                    <p>5、参与用户登录旺财谷账户即可在本专题页面查看兑换值数量，并兑换相应礼品</p>
+                    <p>6、本活动兑换值将于11月31日24：00清零，过期作废</p>
+                    <p>7、本活动投资包含债权转让，不含生利宝</p>
+                    <p class="old_ruler_sj">本活动最终解释权归旺财谷所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- 主要内容结束 -->
+<!-- 遮罩层 -->
+<div class="mask_layder"></div>
+<!-- 获奖插排窗口弹窗 -->
+<div class="hj_dialog xiaomi_jp">
+    <p class="closed"></p>
+    <p class="gx_txt">恭喜您</p>
+    <p class="wt_jiangpin">您已经成功兑换<span>小米插线板</span>一个<br />请在下方填写有效邮寄地址</p>
+    <div class="user_mes">
+        <div class="user_name"><p class="name_txt">姓名：</p><input id="txt_username_xiaomi" type="text" class="sr_name" /></div>
+        <div class="user_phone"><p class="phone_txt">手机：</p><input id="txt_mobile_xiaomi" type="text" class="sr_phone" /></div>
+        <div class="user_address"><p class="adress_txt">地址：</p><input id="txt_addr_xiaomi" type="text" class="sr_address" /></div>
+    </div>
+    <button id="btn_xiaomi_cxb" class="submit_01 submit_gg">确定</button>
+</div>
+<!-- 获奖50京东E卡 -->
+<div class="hj_dialog hj_jd_50">
+    <p class="closed"></p>
+    <p class="gx_txt">恭喜您</p>
+    <p class="wt_jiangpin">您已经成功兑换<span class="jd_ecard_300">50元京东E卡</span>一张<br />
+        请在下方填写接受卡密手机号码
+    </p>
+    <div class="user_mes">
+        <div class="user_name"><p class="name_txt">姓&nbsp;&nbsp;名：</p><input id="txt_username_50" type="text" class="sr_name" /></div>
+        <div class="user_phone">
+            <p class="phone_txt">手&nbsp;&nbsp;机：</p>
+            <input id="txt_mobile_50" type="text" class="sr_phone sr_phone_jd" />
+            <button id="btn_yzm_50" class="yzm">发送验证码</button>
+        </div>
+        <div class="user_address"><p class="adress_txt">验证码：</p><input id="txt_yzm_50" type="text" class="sr_address" /></div>
+    </div>
+    <button id="btn_jd_coupon_50" class="submit_01 submit_gg">确定</button>
+</div>
+<!-- 获奖300京东E卡 -->
+<div id="" class="hj_dialog hj_jd_300">
+    <p class="closed"></p>
+    <p class="gx_txt">恭喜您</p>
+    <p class="wt_jiangpin">您已经成功兑换<span class="jd_ecard_300">300元京东E卡</span>一张<br />
+        请在下方填写接受卡密手机号码
+    </p>
+    <div class="user_mes">
+        <div class="user_name"><p class="name_txt">姓&nbsp;&nbsp;名：</p><input type="text" class="sr_name" /></div>
+        <div class="user_phone">
+            <p class="phone_txt">手&nbsp;&nbsp;机：</p>
+            <input id="txt_mobile_300" type="text" class="sr_phone sr_phone_jd" />
+            <button id="btn_yzm_300" class="yzm">发送验证码</button>
+        </div>
+        <div class="user_address"><p class="adress_txt">验证码：</p><input id="txt_yzm_300" type="text" class="sr_address" /></div>
+    </div>
+    <button id="btn_jd_coupon_300" class="submit_01 submit_gg">确定</button>
+</div>
+<!-- 获奖66元京东券 -->
+<div class="hj_dialog hj_djq">
+    <p class="closed"></p>
+    <p class="gx_txt djq_gx_txt">恭喜您</p>
+    <p class="djq_txt djq_txt_01">您已经成功兑换<span>66元旺财谷代金券</span>一张</p>
+    <p class="djq_txt djq_txt_02">系统会在2个小时内发放到您旺财谷账户中</p>
+    <p class="djq_txt djq_txt_last">如有疑问请致电：400-888-6268</p>
+    <button id="btn_wcg_coupon" class="submit_01 submit_djq">确定</button>
+</div>
+ <!-- 微信二维码弹出 -->
+                <div class="weixin_dialog div-qrcode">
+                    <p class="closed"></p>
+                    <p>扫描下方二维码<br />给好友分享30元代金券</p>
+                    <div class="qrcode-img"></div>
+                </div>
+<div style="clear:both;"></div>
+<!--#include file="wcg_footer.html"-->
+
+<div id="zhuantilogin" class="overlay" style="display: none;">
+    <div style="position: relative;left:50%;width:420px;margin-left:-210px;top:50%;margin-top:-110px;z-index:200000;background:#f8f8f8;box-shadow: 2px 2px 10px #909090;overflow: hidden;">
+        <div style="border-bottom: 1px solid #c9c9c9;height: 42px;line-height: 42px;padding-left: 18px;">
+            <span style="font-weight: bold;">登录</span>
+            <p id="loginclose" style="float: right;height:42px;width:43px;cursor: pointer;border-left: 1px solid #ecebeb;background:url(__TPL__Public/images/zhuanti/15/checkclose2.png) center no-repeat;margin:0;"></p>
+        </div>
+        <div style="width:330px;margin:30px auto;background:#ff2400;overflow: hidden;background:#f8f8f8;font-size: 14px;color: #292825;">
+            <div style="margin:10px 0">
+                <span style="width:60px;float:left;line-height:30px">用户名：</span>
+                <input style="width:170px; border:1px solid #cbcbcb;height: 22px;padding:5px 0px 5px 8px" id="loginname" type="text">
+                <a href="/user/registershow" style="margin-left: 10px;">免费注册？</a>
+            </div>
+            <div style="margin:10px 0">
+                <span style="width:60px;float:left;line-height: 30px;">密码：</span>
+                <input style="width:170px; border:1px solid #cbcbcb;height:22px;padding:5px 0 5px 8px" id="loginpwd" type="password">
+                <a href="/forget/index_1.html" style="margin-left: 10px;">忘记密码？</a>
+            </div>
+            <div id="loginerror" style="color:red"></div>
+            <div style="width:330px; margin-top:20px;">
+                <div id="login-btn" style="height:30px;background:#2ea4d2;color:#FFFFFF;text-align: center;line-height: 30px;cursor: pointer; border-radius: 5px;">  
+                    确 定
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,331 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+body{
+    font:16px/1.5 "Microsoft YaHei";
+}
+/*banner*/
+.banner{
+    width: 100%;
+}
+.banner img{
+    max-width: 100%;
+}
+/*wang-content*/
+.wang-content{
+    width: 100%;
+    height: 566px;
+}
+.what-wang{
+    width:944px;
+    height: 260px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.person {
+    width: 150px;
+    margin-left: 97px;
+}
+.person img{
+    float: left;
+    margin-top: 40px;
+}
+.inner-wang {
+    width:600px;
+    padding-left: 5px;
+    float: left;
+    margin-top: 76px;
+}
+.inner-wang div{
+    font-size: 22px;
+    color: #1195d1;
+}
+.inner-wang p{
+    margin-top: 20px;
+    line-height: 24px;
+    color: #59595d;
+}
+.about-wang {
+    width:944px;
+    height: 356px;
+    margin: 0 auto;
+}
+.about-wang-title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+.about-wang-title img{
+    float: left;
+    margin-top: 11px;
+    margin-right: 5px;
+}
+.about-wang-title span{
+    float: left;
+    font-size: 22px;
+    color: #1195d1;
+}
+.about-wang-content{
+    float: left;
+    width: 31%;
+    line-height: 25px;
+    text-align: justify;
+    padding: 11px;
+    color: #59595d;
+}
+/*shuo*/
+.about {
+    width: 100%;
+    height: 580px;
+    background: url('../images/banner1.png') no-repeat 0 0;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: 100%;
+    background-attachment: fixed;
+}
+.about-box{
+    width:944px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.about-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.about-title img{
+    float: left;
+    margin-top: 11px;
+    margin-right: 5px;
+    /*width: 20px;*/
+}
+.about-title span{
+    float: left;
+    font-size: 22px;
+    color: #1195d1;
+}
+.about-top{
+    width: 100%;
+    height: 220px;
+    background: url("../images/beijing.png") no-repeat 0 0;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: 100%;
+}
+.lefts{
+    margin-left: 8px;
+}
+.about-header{
+    float: left;
+    width: 166px;
+    padding-top: 20px;
+    text-align: center;
+}
+.about-top img{
+    /*width: 88px;*/
+}
+.about-header p{
+    font-size: 10px;
+    color: #59595d;
+}
+.about-content{
+    float: left;
+    width: 363px;
+    font-size: 16px;
+    color: #59595d;
+    padding: 10px;
+    margin-top: 10px;
+}
+.about-top1{
+    margin-top: 20px;
+}
+/*baozhang*/
+.baozhang{
+    width:944px;
+    height: 350px;
+    margin: 0 auto;
+}
+.baozhang-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+.baozhang-title img{
+    float: left;
+    margin-top: 11px;
+    margin-right: 5px;
+}
+.baozhang-title span{
+    float: left;
+    font-size: 22px;
+    color: #1195d1;
+}
+.baozhang-table{
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+    text-align: center;
+    /*padding-left: 40px;*/
+}
+.baozhang-table div{
+    text-align: left;
+    padding-left: 48px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #59595d;
+}
+.imgss {
+    margin-top: 10px;
+}
+/*合作伙伴*/
+.partner-box{
+    width: 100%;
+    background: #f7f8f8;
+}
+.partner{
+    width:944px;
+    height: 186px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.partner-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.partner-title img{
+    float: left;
+    margin-top: 11px;
+    margin-right: 5px;
+}
+.partner-title span{
+    float: left;
+    font-size: 22px;
+    color: #1195d1;
+}
+.shangbiao{
+    padding: 10px;
+}
+.biao img{
+    float: left;
+    margin-left: 10px;
+}
+/*平台*/
+.pingtai{
+    width:944px;
+    height: 580px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.pingtai-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.pingtai-title img{
+    float: left;
+    margin-top: 11px;
+    margin-right: 5px;
+}
+.pingtai-title span{
+    float: left;
+    font-size: 22px;
+    color: #1195d1;
+}
+.pingtai-btn{
+    float: left;
+    width: 290px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.btn{
+    width: 240px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #e5e5e5;
+    border-radius: 8px;
+    color: #595757;
+    font-size: 14px;
+    cursor: pointer;
+}
+.computer{
+    float: left;
+    width: 480px;
+    height: 275px;
+    position: relative;
+}
+.computer-content{
+    position: absolute;
+    top:38px;
+    left:38px;
+    width: 480px;
+    height: 275px;
+    overflow: hidden;
+}
+.computer-content img{
+    position: absolute;
+    top:0;
+    left: 0;
+    max-width: 100%;
+}
+/*hope*/
+.hope-box{
+    width: 100%;
+    background: #f7f8f8;
+}
+.hope{
+    width:944px;
+    height: 330px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/ren.png") no-repeat center bottom;
+    overflow: hidden;
+}
+.hope-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.hope-title img{
+    float: left;
+    margin-top: 11px;
+    margin-right: 5px;
+}
+.hope-title span{
+    float: left;
+    font-size: 22px;
+    color: #1195d1;
+}
+.hope-look{
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+    font-size: 14px;
+    color: #1195d1;
+}
+.hope-look a{
+    color: #1195d1;
+}

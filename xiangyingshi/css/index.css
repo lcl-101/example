@@ -1,0 +1,666 @@
+body,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  border: 0px;
+}
+a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+body {
+  font: 12px/1.5 "Microsoft YaHei";
+  color: #8c8c8c;
+  background: #fff;
+}
+.container {
+  width: 496px;
+  height: auto;
+  margin: 0 auto;
+}
+.container > .row {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container-fulid {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.container-fulid > .row {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*С��*/
+.container > .row > .col-s-1 {
+  float: left;
+  height: 100%;
+  width: 5%;
+}
+.container-fulid > .row > .col-s-1 {
+  float: left;
+  height: 100%;
+  width: 5%;
+}
+.container > .row > .col-s-2 {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+.container-fulid > .row > .col-s-2 {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+.container > .row > .col-s-3 {
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+.container-fulid > .row > .col-s-3 {
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+.container > .row > .col-s-4 {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+.container-fulid > .row > .col-s-4 {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+.container > .row > .col-s-5 {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+.container-fulid > .row > .col-s-5 {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+.container > .row > .col-s-6 {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.container-fulid > .row > .col-s-6 {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.container > .row > .col-s-7 {
+  float: left;
+  height: 100%;
+  width: 35%;
+}
+.container-fulid > .row > .col-s-7 {
+  float: left;
+  height: 100%;
+  width: 35%;
+}
+.container > .row > .col-s-8 {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+.container-fulid > .row > .col-s-8 {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+.container > .row > .col-s-9 {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+.container-fulid > .row > .col-s-9 {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+.container > .row > .col-s-10 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+.container-fulid > .row > .col-s-10 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+.container > .row > .col-s-11 {
+  float: left;
+  height: 100%;
+  width: 55%;
+}
+.container-fulid > .row > .col-s-11 {
+  float: left;
+  height: 100%;
+  width: 55%;
+}
+.container > .row > .col-s-12 {
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+.container-fulid > .row > .col-s-12 {
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+.container > .row > .col-s-13 {
+  float: left;
+  height: 100%;
+  width: 65%;
+}
+.container-fulid > .row > .col-s-13 {
+  float: left;
+  height: 100%;
+  width: 65%;
+}
+.container > .row > .col-s-14 {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+.container-fulid > .row > .col-s-14 {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+.container > .row > .col-s-15 {
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+.container-fulid > .row > .col-s-15 {
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+.container > .row > .col-s-16 {
+  float: left;
+  height: 100%;
+  width: 80%;
+}
+.container-fulid > .row > .col-s-16 {
+  float: left;
+  height: 100%;
+  width: 80%;
+}
+.container > .row > .col-s-17 {
+  float: left;
+  height: 100%;
+  width: 85%;
+}
+.container-fulid > .row > .col-s-17 {
+  float: left;
+  height: 100%;
+  width: 85%;
+}
+.container > .row > .col-s-18 {
+  float: left;
+  height: 100%;
+  width: 90%;
+}
+.container-fulid > .row > .col-s-18 {
+  float: left;
+  height: 100%;
+  width: 90%;
+}
+.container > .row > .col-s-19 {
+  float: left;
+  height: 100%;
+  width: 95%;
+}
+.container-fulid > .row > .col-s-19 {
+  float: left;
+  height: 100%;
+  width: 95%;
+}
+.container > .row > .col-s-20 {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.container-fulid > .row > .col-s-20 {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+/*����*/
+@media screen and (min-width: 800px) {
+  .container > .row > .col-m-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container-fulid > .row > .col-m-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container > .row > .col-m-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container-fulid > .row > .col-m-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container > .row > .col-m-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container-fulid > .row > .col-m-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container > .row > .col-m-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container-fulid > .row > .col-m-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container > .row > .col-m-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container-fulid > .row > .col-m-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container > .row > .col-m-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container-fulid > .row > .col-m-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container > .row > .col-m-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container-fulid > .row > .col-m-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container > .row > .col-m-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container-fulid > .row > .col-m-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container > .row > .col-m-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container-fulid > .row > .col-m-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container > .row > .col-m-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container-fulid > .row > .col-m-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container > .row > .col-m-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container-fulid > .row > .col-m-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container > .row > .col-m-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container-fulid > .row > .col-m-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container > .row > .col-m-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container-fulid > .row > .col-m-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container > .row > .col-m-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container-fulid > .row > .col-m-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container > .row > .col-m-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container-fulid > .row > .col-m-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container > .row > .col-m-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container-fulid > .row > .col-m-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container > .row > .col-m-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container-fulid > .row > .col-m-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container > .row > .col-m-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container-fulid > .row > .col-m-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container > .row > .col-m-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container-fulid > .row > .col-m-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container > .row > .col-m-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container-fulid > .row > .col-m-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    width: 800px;
+  }
+}
+/*����*/
+@media screen and (min-width: 1240px) {
+  .container > .row > .col-l-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container-fulid > .row > .col-l-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container > .row > .col-l-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container-fulid > .row > .col-l-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container > .row > .col-l-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container-fulid > .row > .col-l-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container > .row > .col-l-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container-fulid > .row > .col-l-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container > .row > .col-l-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container-fulid > .row > .col-l-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container > .row > .col-l-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container-fulid > .row > .col-l-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container > .row > .col-l-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container-fulid > .row > .col-l-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container > .row > .col-l-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container-fulid > .row > .col-l-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container > .row > .col-l-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container-fulid > .row > .col-l-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container > .row > .col-l-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container-fulid > .row > .col-l-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container > .row > .col-l-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container-fulid > .row > .col-l-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container > .row > .col-l-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container-fulid > .row > .col-l-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container > .row > .col-l-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container-fulid > .row > .col-l-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container > .row > .col-l-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container-fulid > .row > .col-l-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container > .row > .col-l-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container-fulid > .row > .col-l-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container > .row > .col-l-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container-fulid > .row > .col-l-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container > .row > .col-l-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container-fulid > .row > .col-l-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container > .row > .col-l-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container-fulid > .row > .col-l-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container > .row > .col-l-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container-fulid > .row > .col-l-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container > .row > .col-l-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container-fulid > .row > .col-l-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    width: 1240px;
+  }
+}

@@ -1,0 +1,18 @@
+/*reset tag*/
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,form,input{
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-weight:normal;
+}
+body{
+	font:12px "Microdsoft yahei","Arial";
+	
+}
+img{
+	border:0;
+}
+a{
+	text-decoration:none;
+	color:#333;	
+}
