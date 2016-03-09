@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            var videos=$('video')[0];
+            var play=$('input');
+            play.click(function(){
+                videos.play();
+            })
+        })
+    </script>
+    <style>
+        .videos{
+            width: 600px;
+            height:256px;
+            margin:0 auto;
+            position: relative;
+        }
+        .play{
+            position: absolute;
+            left: 20px;
+            bottom: 4px;
+            border: 0;
+            background: white;
+            cursor: pointer;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="videos" >
+        <video src="video.mp4" controls="controls">
+        </video>
+        <input type="button" value="play" class="play"/>
+    </div>
+</body>
+</html>

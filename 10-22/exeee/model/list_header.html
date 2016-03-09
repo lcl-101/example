@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			window.onload=function(){
+				document.addEventListener("plusready",function(){
+					var back=document.getElementsByClassName("back")[0];
+					back.onclick=function(){
+						var win=plus.webview.getWebviewById("list_con.html");
+						alert(win);
+						win.canBack(function(e){
+							alert(e.canBack)
+							if(e.canBsack>0){
+								win.back();
+							}else{
+								alert(win.parent());
+								win.parent().close('slide-out-right');
+							}
+						})
+					}
+				},false)
+			}
+		</script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class=" mui-icon mui-icon-left-nav mui-pull-left back"></a>
+			<h1 class="mui-title">list-header</h1>
+		</header>
+	</header>
+	</body>
+</html>

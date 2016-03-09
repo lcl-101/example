@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+			<script src="../js/mui.min.js"></script>
+			<script src="../js/index_con.js"></script>
+		<title></title>
+		<style>
+			nav{
+				width:100%;height: 44px;
+				background: #eee;padding: 10px;
+			}
+			nav a{
+				margin-right: 10px;color:#000;font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a href="http://baidu.com" class="abc">aaa</a>
+			<a href="http://dcloud.io/" class="abc">bbb</a>
+			<a href="{$v[url]}" class="abc">ccc</a>
+			<a href="{$v[url]}" class="abc">ddd</a>
+			<a href="{$v[url]}" class="abc">eee</a>
+		</nav>
+		
+		<!--轮播-->
+		<div class="mui-slider">
+  <div class="mui-slider-group mui-slider-loop">
+    <!--支持循环，需要重复图片节点-->
+    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="4.jpg" /></a></div>
+    <div class="mui-slider-item"><a href="#"><img src="1.jpg" /></a></div>
+    <div class="mui-slider-item"><a href="#"><img src="2.jpg" /></a></div>
+    <div class="mui-slider-item"><a href="#"><img src="3.jpg" /></a></div>
+    <div class="mui-slider-item"><a href="#"><img src="4.jpg" /></a></div>
+    <!--支持循环，需要重复图片节点-->
+    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="1.jpg" /></a></div>
+  </div>
+</div>
+<!--列表-->
+		<ul class="mui-table-view">
+	<li class="mui-table-view-cell mui-media">
+		<a href="javascript:;" class="abcd">
+			<img class="mui-media-object mui-pull-left" src="../images/shuijiao.jpg">
+			<div class="mui-media-body">
+				幸福
+				<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+			</div>
+		</a>
+	</li>
+	<li class="mui-table-view-cell mui-media">
+		<a href="javascript:;" class="abcd">
+			<img class="mui-media-object mui-pull-left" src="../images/muwu.jpg">
+			<div class="mui-media-body">
+				木屋
+				<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+			</div>
+		</a>
+	</li>
+	<li class="mui-table-view-cell mui-media">
+		<a href="javascript:;" class="abcd">
+			<img class="mui-media-object mui-pull-left" src="../images/cbd.jpg">
+			<div class="mui-media-body">
+				CBD
+				<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+			</div>
+		</a>
+	</li>
+</ul>
+	</body>
+</html>
