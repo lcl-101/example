@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        .houzi {
+            float: left;
+            width: 100%;
+            min-width: 1057px;
+            height: 438px;
+            overflow: hidden;
+            background: url(images/houzi.png) center 0 no-repeat;
+            background-size: 1423px;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            margin-top: -350px;
+        }
+        .active-box {
+            position: relative;
+            height: 413px;
+            background: url("images/active1.png") no-repeat center 0;
+            background-size: 1423px;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            width: 100%;
+        }
+        .active-title {
+            width: 600px;
+            height: 95px;
+            background: url("images/active-title.png") no-repeat 0 0;
+            background-size: 100%;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            text-align: center;
+            line-height: 92px;
+            color: #ff0000;
+            font-size: 26px;
+        }
+        .fan-box {
+            position: relative;
+            width: 100%;
+            height: 599px;
+            background: url("images/fanxi.png") no-repeat center 0;
+            background-size: 1423px;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+        }
+        .fanxi-title {
+            position: absolute;
+            top: 56px;
+            left: 50%;
+            margin-left: -300px;
+            width: 600px;
+            height: 95px;
+            background: url("images/fanxi-title.png") no-repeat 0 0;
+            background-size: 100%;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            text-align: center;
+            line-height: 92px;
+            color: #fff17f;
+            font-size: 26px;
+        }
+        .bottom-box {
+            position: relative;
+            width: 100%;
+            height: 738px;
+            background: url("images/bottom.png") no-repeat center 0;
+            background-size: 1423px;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+        }
+        .bottom-title {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -300px;
+            width: 600px;
+            height: 95px;
+            background: url("images/bottom-title.png") no-repeat 0 0;
+            background-size: 100%;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            text-align: center;
+            line-height: 93px;
+            color: #dc2323;
+            font-size: 26px;
+        }
+        .bottom-active {
+            font-size: 18px;
+            color: #ac5d18;
+            background: url("images/one.png") no-repeat 0 0;
+            background-size: 24px;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            padding-left: 28px;
+            margin-top: 8px;
+        }
+        .bottom-active1 {
+            font-size: 18px;
+            color: #ac5d18;
+            background: url("images/two.png") no-repeat -1px 0;
+            background-size: 25px;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            padding-left: 28px;
+            margin-top: 8px;
+        }
+        .bottom-active2 {
+            font-size: 18px;
+            color: #ac5d18;
+            background: url("images/three.png") no-repeat 0 0;
+            background-size: 24px;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            padding-left: 28px;
+            margin-top: 8px;
+        }
+        .bottom-active3 {
+            font-size: 18px;
+            color: #ac5d18;
+            background: url(images/four.png) no-repeat -1px 0;
+            background-size: 24px;
+            -ms-behavior: url(css/backgroundsize.min.htc);
+            behavior: url(css/backgroundsize.min.htc);
+            padding-left: 28px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+<!--#include file="wcg_header.html"-->
+    <!--banner-box-->
+    <div id="banner-box">
+        <div class="banner-box">
+            <img src="images/wangnian.png" alt="">
+        </div>
+        <div class="banner-box">
+            <img src="images/jiaxi.png" alt="">
+        </div>
+        <div class="banner-box">
+            <img src="images/jiaxi1.png" alt="">
+        </div>
+        <div class="banner-box">
+            <img src="images/jiaxi2.png" alt="">
+        </div>
+        <div class="houzi"></div>
+    </div>
+    <div style="clear: both"></div>
+    <!--active-box-->
+    <div id="active-box">
+        <div class="active-box">
+            <!--<img src="images/active1.png" alt="">-->
+            <div id="activOne" class="activOne">
+                <div class="active-title">项目加息10天，收益全部翻番</div>
+                <div class="active-content">活动期间，无论投资项目期限长短，均可享受<span>10天翻倍加息。</span><br/>举个例子：投资90天的项目将获得100天的收益~</div>
+                <div class="active-btn"><a href="/deal.html">去享受翻倍加息</a></div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <!--fan-box-->
+    <div id="fan-box">
+        <div class="fan-box">
+            <div class="fanxi-title">赚 翻 语 录</div>
+            <!--<img src="images/fanxi.png" alt="">-->
+            <div id="fanOne">
+                <div class="fanOne-content"><span>k***y：</span>2016年，这理财的计息日是要打破366天了！</div>
+                <div class="fanOne-content"><span>m***g：</span>折合年化收益，短期项目加息快1%了，够意思！</div>
+                <div class="fanOne-content"><span>m***e：</span>不错，年底旺财谷也给“双薪”了啊！</div>
+                <div class="fanOne-content"><span>h***0：</span>这算是谷东在旺财谷的年终奖吗！</div>
+                <div class="fanOne-content"><span>l***i：</span>对于加息这种活动真的完全没有抵抗力！</div>
+                <div class="fanOne-content"><span>6***6：</span>打算把年终奖揣几天的，这个活动让我忍不住啊！</div>
+                <div class="fanOne-content"><span>7***u：</span>这个活动好，收益更加跑赢CPI了，喜欢！</div>
+                <div class="fanOne-content"><span>t***4：</span>到处红包大战，这个还有点新意@~@！</div>
+                <div class="fanOne-content"><span>s***c：</span>翻倍又加息，也真是赶上好时候了！</div>
+                <div class="fanOne-content"><span>f***i：</span>不为别的，就为过年图个翻倍加息的好彩头也要参与！</div>
+                <div class="fanOne-content"><span>y***s：</span>年底各种花钱，总算看到点儿奔头了！</div>
+                <div class="fanOne-content"><span>v***t：</span>各种活动各种奖品，还是加息最实在！</div>
+                <div class="fanOne-content"><span>s***i：</span>刺激，秒杀余额宝的节奏啊开门红！</div>
+                <div class="fanOne-content"><span>q***g：</span>这活动不错，玩儿得够大够给力！</div>
+                <div class="fanOne-content"><span>c***y：</span>白赚10天利息啊，各位土豪还不出手！</div>
+                <div class="fanOne-content"><span>d***i：</span>小弟我先投啦~机会留给有准备的人！</div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <!--bottom-box-->
+    <div id="bottom-box">
+        <div class="bottom-box">
+            <div class="bottom-title">活 动 规 则</div>
+            <!--<img src="images/bottom.png" alt="">-->
+            <div class="bottom-content">
+                <div class="bottom-active">活动时间：2月5日—2月14日</div>
+                <div class="bottom-active1">活动期间投资的项目，均可享受10天翻倍加息<br/><span>*债权转让、生利宝不参与此活动</span></div>
+                <div class="bottom-active2">翻倍加息计算方法=实际投资额*项目利率*翻倍时间/360天；例：用户拿10万元投资期限90天、年化10%的项目，10天翻倍加息可多赚277.8元；</div>
+                <div class="bottom-active3">加息奖励将于活动结束后的5个工作日内，发放到用户的账户中心；</div>
+                <div class="bottom-tishi">*本活动最终解释权归旺财谷所有</div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+<!--#include file="wcg_footer.html"-->
+</body>
+</html>

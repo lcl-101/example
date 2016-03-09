@@ -1,0 +1,262 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+    background: #fff;
+}
+i{
+    font-style: normal;
+}
+/*banner-box*/
+#banner-box {
+    width: 100%;
+    min-width: 1057px;
+    overflow: hidden;
+}
+.banner-box {
+    width: 100%;
+}
+.banner-box img {
+    float: left;
+    width: 100%;
+}
+
+.houzi {
+    float: left;
+    width: 100%;
+    min-width: 1057px;
+    height: 438px;
+    overflow: hidden;
+    background: url(../images/houzi.png) center 0 no-repeat;
+    background-size: 1423px;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+    margin-top: -350px;
+}
+
+/*active-box*/
+#active-box {
+    width: 100%;
+    min-width: 1057px;
+    overflow: hidden;
+}
+.active-box {
+    position: relative;
+    height: 413px;
+    background: url("../images/active1.png") no-repeat center 0;
+    background-size: 1423px;
+    -ms-behavior: url('backgroundsize.min.htc');
+    behavior: url('backgroundsize.min.htc');
+    width: 100%;
+}
+.active-box img {
+    float: left;
+    width: 100%;
+    min-width: 1300px;
+}
+#activOne {
+    position: absolute;
+    top:50px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    height: 300px;
+}
+.active-title {
+    width: 600px;
+    height: 95px;
+    background: url("../images/active-title.png") no-repeat 0 0;
+    background-size: 100%;
+    -ms-behavior: url('backgroundsize.min.htc');
+    behavior: url('backgroundsize.min.htc');
+    text-align: center;
+    line-height: 92px;
+    color: #ff0000;
+    font-size: 26px;
+}
+.active-content {
+    width: 550px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 40px;
+}
+.active-content {
+    font-size: 18px;
+    color: #ac5d18;
+}
+.active-content span {
+    font-size: 26px;
+}
+.active-btn {
+    width: 210px;
+    height: 46px;
+    background: #e62222;
+    border-radius: 8px;
+    behavior: url(ie-css3.htc);
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 46px;
+}
+.active-btn a {
+    color: #fff;
+}
+.active-btn a:hover {
+    color: #fff;
+}
+/*fan-box*/
+#fan-box {
+    width: 100%;
+    min-width: 1057px;
+    overflow: hidden;
+}
+.fan-box {
+    position: relative;
+    width: 100%;
+    height: 599px;
+    background: url("../images/fanxi.png") no-repeat center 0;
+    background-size: 1423px;
+    -ms-behavior: url('backgroundsize.min.htc');
+    behavior: url('backgroundsize.min.htc');
+}
+.fanxi-title {
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    height: 95px;
+    background: url("../images/fanxi-title.png") no-repeat 0 0;
+    background-size: 100%;
+    -ms-behavior: url('backgroundsize.min.htc');
+    behavior: url('backgroundsize.min.htc');
+    text-align: center;
+    line-height: 92px;
+    color: #fff17f;
+    font-size: 26px;
+}
+#fanOne {
+    position: absolute;
+    top:160px;
+    left: 50%;
+    margin-left: -252px;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 15px;
+    background:#831212;
+    padding-top: 8px;
+}
+.fanOne-content {
+    font-size: 18px;
+    color: #fecb70;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+.fanOne-content span {
+    color: #fff;
+}
+/*bottom-box*/
+#bottom-box {
+    width: 100%;
+    min-width: 1057px;
+    overflow: hidden;
+}
+.bottom-box {
+    position: relative;
+    width: 100%;
+    height: 738px;
+    background: url("../images/bottom.png") no-repeat center 0;
+    background-size: 1423px;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+}
+.bottom-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    height: 95px;
+    background: url("../images/bottom-title.png") no-repeat 0 0;
+    background-size: 100%;
+    -ms-behavior: url('backgroundsize.min.htc');
+    behavior: url('backgroundsize.min.htc');
+    text-align: center;
+    line-height: 93px;
+    color: #dc2323;
+    font-size: 26px;
+}
+.bottom-content {
+    position: absolute;
+    top:100px;
+    left: 50%;
+    margin-left: -252px;
+    width: 500px;
+    height: 300px;
+    margin-top: 14px;
+    z-index: 10;
+}
+.bottom-active {
+    font-size: 18px;
+    color: #ac5d18;
+    background: url("../images/one.png") no-repeat 0 0;
+    background-size: 24px;
+    -ms-behavior: url('backgroundsize.min.htc');
+    behavior: url('backgroundsize.min.htc');
+    padding-left: 28px;
+    margin-top: 8px;
+}
+.bottom-active1 {
+    font-size: 18px;
+    color: #ac5d18;
+    background: url("../images/two.png") no-repeat -1px 0;
+    background-size: 25px;
+    -ms-behavior: url('backgroundsize.min.htc');
+    behavior: url('backgroundsize.min.htc');
+    padding-left: 28px;
+    margin-top: 8px;
+}
+.bottom-active1 span {
+    font-size: 14px;
+}
+.bottom-active2 {
+    font-size: 18px;
+    color: #ac5d18;
+    background: url("../images/three.png") no-repeat 0 0;
+    background-size: 24px;
+    -ms-behavior: url('backgroundsize.min.htc');
+    behavior: url('backgroundsize.min.htc');
+    padding-left: 28px;
+    margin-top: 8px;
+}
+.bottom-active3 {
+    font-size: 18px;
+    color: #ac5d18;
+    background: url(../images/four.png) no-repeat -1px 0;
+    background-size: 24px;
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+    padding-left: 28px;
+    margin-top: 8px;
+}
+.bottom-tishi {
+    font-size: 14px;
+    color: #ac5d18;
+    background-size: 24px;
+    padding-left: 28px;
+    margin-top: 38px;
+}
