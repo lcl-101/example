@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置IE浏览器的解析模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <!--视窗设置 -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--banner-->
+        <div class="row">
+            <div class="col-xs-12 banner">
+                <img src="images/banner.png" alt="">
+            </div>
+        </div>
+        <!--content-->
+        <div class="row content-top">
+            <div class="col-xs-12">
+                <img src="images/content-top.png" alt="">
+            </div>
+        </div>
+        <div class="row content">
+            <div class="error-information">请输入正确的手机号</div>
+            <div class="container">
+                <!--pnone-->
+                <div class="row">
+                    <div class="phone"><input type="tel" maxlength="11" placeholder="请输入手机号"></div>
+                </div>
+                <!--btn-->
+                <div class="row">
+                    <div class="col-xs-1“2">
+                        <a href="" class="btn"><input type="submit" value="点击领取红包"></a>
+                    </div>
+                </div>
+                <!--活动规则-->
+                <div class="row guizhe">
+                    <div class="col-xs-12 active">
+                        <img src="images/xian.png" alt="">
+                        <div class="rule">活动规则</div>
+                    </div>
+                </div>
+
+                <div class="row rule-box">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">1.红包新老用户同享</div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row rule-box">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">2.红包可与其他优惠券叠加使用</div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row rule-box">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">3.投标时可勾选红包，使用红包时，账户绑定的手
+                        机号码必须为抢红包时手机号码</div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row rule-box">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">4.领取后一周内未注册则红包消失</div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row rule-box">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">5.本活动最终解释权归旺财谷所有</div>
+                    <div class="col-xs-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row content-footer">
+            <div class="col-xs-12">
+                <img src="images/content-footer.png" alt="">
+            </div>
+        </div>
+        <div class="row content-footer red">
+            <div class="col-xs-12">
+                <img src="images/red.png" alt="">
+            </div>
+        </div>
+        <!--旺财谷app-->
+        <div class="wang-app">
+            <div class="wang-app-bj"><img src="images/white.png" alt=""></div>
+            <!--<div class="wang-app-content">下载旺财谷App，体验更多精彩！</div>-->
+            <div class="wang-app-down"><a href="https://m.wangcaigu.com/download/down-load-app"><img src="images/down.png" alt=""></a></div>
+            <div class="wang-app-close"><img src="images/close.png" alt=""></div>
+        </div>
+        <script>
+            $(function(){
+                $('.wang-app-close').on('click',function(){
+                    $('.red').css({display:'none'});
+                    $('.wang-app').css({display:'none'});
+                })
+            })
+        </script>
+    </div>
+</body>
+</html>

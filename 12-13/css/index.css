@@ -1,0 +1,237 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+    background: #f4f4f7;
+}
+i{
+    font-style: normal;
+}
+
+/*ablut*/
+.about-box {
+    position: fixed;
+    right:0;
+    top:50%;
+    margin-top: -223px;
+    width: 36px;
+    height: 150px;
+    z-index: 999;
+}
+.about-img {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    padding-top: 8px;
+    text-align: center;
+    background: #f44336;
+    top:-38px;
+}
+.about-img p{
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    height: 38px;
+    line-height: 30px;
+    color: #fff;
+}
+.about-right {
+    position: relative;
+    float: right;
+    width: 36px;
+    height: 188px;
+}
+.about-right .about-img1{
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url("../images/about.png") no-repeat 0 0;
+    z-index: 1;
+}
+.about-right .about-img1:hover{
+    transition:all 0.3s linear;
+    background: url("../images/about-hover.png") no-repeat 0 0;
+}
+.about-right .about-img2{
+    position: relative;
+    display: block;
+    margin-top: 2px;
+    width: 36px;
+    height: 36px;
+    background: url("../images/about.png") no-repeat 0 -38px;
+}
+.about-left {
+    position: absolute;
+    top:0px;
+    right: -300px;
+    float: left;
+    text-align: center;
+    width: 120px;
+    height: 76px;
+    padding-right: 38px;
+    opacity: 0;
+    background:url("../images/about-weixin.png") no-repeat right 0px;
+}
+.about-right .about-img3{
+    position: relative;
+    display: block;
+    margin-top: 2px;
+    width: 36px;
+    height: 36px;
+    background: url("../images/about.png") no-repeat 0 -76px;
+}
+.about-line {
+    position: absolute;
+    top:0;
+    right: -300px;
+    width: 180px;
+    height: 36px;
+    padding-right: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    background:#f44336 url("../images/about-hover.png") no-repeat right -38px;
+    opacity: 0;
+}
+.about-qq {
+    position: absolute;
+    top:0;
+    right: -300px;
+    width: 250px;
+    height: 36px;
+    padding-right: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    background:#f44336 url("../images/about-hover.png") no-repeat right -76px;
+    opacity: 0;
+}
+.about-right .about-img4{
+    position: relative;
+    display: block;
+    margin-top: 2px;
+    width: 36px;
+    height: 36px;
+    background: url("../images/about.png") no-repeat 0 -114px;
+}
+.about-tel {
+    position: absolute;
+    top:0;
+    right: -213px;
+    width: 177px;
+    height: 36px;
+    padding-right: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    background:#f44336 url("../images/about-hover.png") no-repeat right -114px;
+    opacity: 0;
+}
+.about-right .about-img5{
+    position: relative;
+    display: block;
+    margin-top: 2px;
+    width: 36px;
+    height: 36px;
+    background: url("../images/about.png") no-repeat 0 -152px;
+}
+
+
+.about-computer {
+    position: absolute;
+    top:-152px;
+    left: -300px;
+    width:296px;
+    height:328px;
+    border: 1px solid #f44336;
+    cursor: default;
+    background: #fff;
+}
+.computer-title {
+    width: 100%;
+    text-align: center;
+    color: #272728;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.computer-content {
+    width: 256px;
+    height:240px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.invest {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.invest span {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #6e6e72;
+}
+#borrowAmount {
+    outline: none;
+    padding-left: 10px;
+    width: 157px;
+    height: 23px;
+    border: 1px solid #d5d5d8;
+    border-right: 0;
+    float: right;
+    font-size: 12px;
+    color: #757579;
+    line-height: 23px;
+}
+.invest p {
+    float: right;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid #d5d5d8;
+    border-left: 0;
+    background: #efeff3;
+    color: #99999d;
+}
+#repayment {
+    outline: none;
+    padding-left: 10px;
+    width: 157px;
+    height: 23px;
+    border: 1px solid #d5d5d8;
+    border-right: 0;
+    float: right;
+    font-size: 12px;
+    color: #757579;
+    line-height: 23px;
+}
+#yearRate {
+    outline: none;
+    padding-left: 10px;
+    width: 157px;
+    height: 23px;
+    border: 1px solid #d5d5d8;
+    border-right: 0;
+    float: right;
+    font-size: 12px;
+    color: #757579;
+    line-height: 23px;
+}
