@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *[data-role*="a"]{
+            width:100px;height:100px;background: #64ff5b;
+        }
+        ::selection{
+            background: red;
+        }
+        input:disabled{
+            border: 1px solid red;
+        }
+        .one{
+            width:500px;border: 1px solid red;
+        }
+        .one:before,.one:after{
+            content:"";
+            display:block;
+        }
+        .one:after{
+            clear:both;
+        }
+        .one>div{
+            width:100px;height:200px;border:1px solid blue;float:left;
+        }
+        @-webkit-keyframes myfirst
+        {
+            0%   {background: red; left:0px; top:0px;}
+            25%   {background: green; left:0px; top:0px;}
+            50%   {background: blue; left:0px; top:0px;}
+            100% {background: #ff16cd; left:100px; top:0px;}
+        }
+        .two{
+            width: 400px;
+            height:100px;
+            background: #ff4c4c;
+            -webkit-border-radius:50px;
+            -moz-border-radius:50px;
+            -o-border-radius:50px;
+            -ms-border-radius:50px;
+            /*border:1px solid #402fff;*/
+            /*transition: all 1s ease;*/
+        }
+        .two:hover{
+            -webkit-animation: myfirst 0s linear 1s infinite alternate;
+        }
+        .bb{
+            width:200px;height:200px;
+            border: 1px solid red;
+            box-shadow:5px 5px 10px #333;
+            border-image-source:url("20140118115453185.jpg");
+            border-image-width:20px;
+            border-image-slice:33.33%;
+            border-image-repeat:round;
+            background: #ffac66;
+        }
+        .lunbo{
+            width: 200px;height:200px;border: 1px solid red;
+            background-image:url("1.jpg"),url(2.jpg),url(3.jpg);
+            background-size:100% 100%,100% 100%,100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var div=document.getElementsByClassName("lunbo")[0];
+            var arr=getComputedStyle(div,null)['backgroundSize'].split(",");
+            var num=0;
+            setInterval(function(){
+                num++;
+                if(num==arr.length){
+                    num=0;
+                }
+                for(var i=0;i<arr.length;i++){
+                    arr[i]="0% 0%";
+                }
+                arr[num]="100% 100%";
+                div.style.backgroundSize=arr.join(",");
+            },1000)
+        }
+
+    </script>
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            src: url('http://at.alicdn.com/t/font_1444298247_7232647.eot'); /* IE9*/
+            src: url('http://at.alicdn.com/t/font_1444298247_7232647.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('http://at.alicdn.com/t/font_1444298247_7232647.woff') format('woff'), /* chrome、firefox */
+                    url('http://at.alicdn.com/t/font_1444298247_7232647.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+                    url('http://at.alicdn.com/t/font_1444298247_7232647.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        .icon{
+            font-family: iconfont;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="aa"></div>
+    <div data-role="bab">aa</div>
+    <div data-role="bb">ccc</div>
+    <input type="text" disabled/>
+    <input type="text" readonly value="123"/>
+    <div class="one">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="two"></div>
+    <div class="bb"></div>
+    <div class="lunbo"></div>
+    <!--<div class="icon">-->
+        <!--&#xe7d7;-->
+    <!--</div>-->
+</body>
+</html>
