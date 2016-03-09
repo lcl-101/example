@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置IE浏览器的解析模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <!--视窗设置 -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>完善银行卡信息</title>
+
+    <!-- Bootstrap -->
+    <!--1、加载Bottstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 加载Bootstrap的样式文件-->
+
+    <!-- 使得IE8也适合HTML5的元素和媒体查询-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 如果是IE9以下的版本，就引入下面两个JS文件-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/bind.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/wansanxinxi.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wansanxinxi.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+
+
+
+            $(function(){
+               var myScroll = new IScroll('#wrapper', { bounceEasing: 'elastic', bounceTime: 1200 });
+
+            })
+
+
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+    </script>
+    <style>
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 45px;
+            bottom: 48px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            width: 100%;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        #scroller ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: left;
+        }
+
+        #scroller li {
+            padding: 0 10px;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #e4e7ec;
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--title-->
+    <div class="row nav-height title">
+        <div class="col-xs-2 back"><img src="images/back.png" alt=""/></div>
+        <div class="col-xs-8 title">完善银行卡信息</div>
+        <div class="col-xs-2 back"><img src="images/tuichu.png" alt=""/></div>
+    </div>
+    <!--提示-->
+    <div class="row tishi">
+        <div class="col-xs-12">*请注意核对信息,填写错误会影响您的正常取现</div>
+    </div>
+
+    <!--省份选择-->
+    <div class="mask"></div>
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <div class="banks"></div>
+            <div class="banks1">
+                <img src="images/mask.png" alt="" class="mask-bank"/>
+                <div class="close"><img src="images/close.png" alt=""/></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>北京市</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>上海市</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>天津市</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>河北省</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>河北省</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>河南省</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div class="down">
+                                <span>山西省</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>陕西省</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>山东省</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sheng">
+                            <div>
+                                <span>湖南省</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!--<div class="swiper-pagination"></div>-->
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    <!--城市选择-->
+
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <div class="citys"></div>
+            <div class="citys1">
+                <img src="images/mask.png" alt="" class="mask-bank"/>
+                <div class="close"><img src="images/close.png" alt=""/></div>
+                <div id="wrapper">
+                    <div id="scroller">
+                        <ul>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                            <li class="shi">
+                                <span>Pretty row 1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="swiper-container">-->
+                    <!--<div class="swiper-wrapper">-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>太原市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>古交市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>吕梁市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>运城</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>太原市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>太原市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div class="down">-->
+                                <!--<span>太原市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>太原市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>太原市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="swiper-slide shi">-->
+                            <!--<div>-->
+                                <!--<span>太原市</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; Add Pagination &ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="swiper-pagination"></div>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    <form method="post" class="cmxform" id="form" action="">
+        <div class="row kahao">
+            <div class="col-xs-4 xian">分支行名称</div>
+            <div class="col-xs-8 xian" style="padding: 0">
+                <input type="text" placeholder="请输入分支行名称"/>
+            </div>
+        </div>
+
+        <div class="row kahao">
+            <div class="col-xs-4 xian">分支行省份</div>
+            <div class="col-xs-6 xian" style="padding: 0">
+                <!--<input type="text" placeholder="请选择所在省份"/>-->
+                <span class="selecter">请选择所在省份</span>
+            </div>
+            <div class="col-xs-2 xian"><img class="selecter" src="images/you.png" alt=""/></div>
+        </div>
+
+        <div class="row kahao">
+            <div class="col-xs-4 xian">分支行城市</div>
+            <div class="col-xs-6 xian" style="padding: 0">
+                <!--<input type="text" placeholder="请选择所在城市"/>-->
+                <span class="selecter-city">请选择所在城市</span>
+            </div>
+            <div class="col-xs-2 xian"><img class="selecter-city" src="images/you.png" alt=""/></div>
+        </div>
+        <!--提交按钮-->
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6 login-sign-btn">
+                <input id="signup-btn" class="btn-common btn-normal" name="signUp" type="submit" value="下一步" disabled >
+            </div>
+            <div class="col-xs-3"></div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

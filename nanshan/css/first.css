@@ -1,0 +1,351 @@
+@import url(public.css);
+body{
+	background:#333333;
+}
+/*top start*/
+.top{
+	width:1000px;
+	height:23px;
+	margin:0 auto;
+	background:#45515D;
+	color:white;
+	font-size:12px;
+	line-height:23px;
+	overflow:hidden;
+}
+.top span{
+	float:left;
+	margin-left:14px;
+}
+.top i{
+	float:right;
+	margin-right:14px;
+	color:red;
+	font-style:normal;
+	cursor:pointer;
+}
+.banner{
+	width:1000px;
+	height:565px;
+	margin:0 auto;
+	position:relative;
+}
+.logo{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100px;
+	height:91.6px;
+}
+.logo img{
+	float:left;
+	width:100px;
+	margin-top:10px;
+	margin-left:20px;
+}
+.navbar{
+	position:absolute;
+	top:91.6px;
+	width:950px;
+	height:61px;
+	margin-left:25px;
+	background:#242B32;
+	opacity:0.6;
+}
+.navbar1{
+	position:absolute;
+	top:91.6px;
+	width:950px;
+	height:61px;
+	margin-left:25px;
+}
+.navbar1 a{
+	float:left;
+	width:190px;
+	height:61px;
+	text-align:center;
+	line-height:61px;
+	color:#FFF;
+}
+.navbar1 a:hover{
+	background:url(../images/navbg.png) no-repeat 0 0;
+}
+.down{
+	position:absolute;
+	width:24px;
+	height:14px;
+	bottom:58px;
+	left:488px;
+	cursor:pointer;
+}
+.wrap{
+	position:absolute;
+	height:17px;
+	width:1000px;
+	color:white;
+	bottom:30px;
+	text-align:center;
+}
+/*top end*/
+/*tab start*/
+.tab{
+	width:1000px;
+	height:128px;
+	margin:0 auto;
+	background:white;
+	overflow:hidden;
+	position:relative;
+}
+.tab a{
+	width:28px;
+	height:17px;
+	position:absolute;
+	top:40px;
+	right:20px;
+	color:black;
+	padding-right:10px;
+	background:url(../images/img_16.jpg) no-repeat right center;
+}
+.tab span{
+	position:absolute;
+	width:600px;
+	height:30px;
+	text-align:center;
+	left:200px;
+	top:115px;
+}
+.tab-middle{
+	width:1000px;
+	height:48px;
+	margin-top:40px;
+}
+.fix{
+	width:460px;
+	height:48px;
+	margin:0 auto;
+	position:relative;
+}
+.ones{
+	width:72px;
+	height:17px;
+	position:absolute;
+	top:49px;
+	text-align:center;
+}
+.twos{
+	width:72px;
+	height:17px;
+	position:absolute;
+	top:49px;
+	left:92px;
+	text-align:center;
+}
+.threes{
+	width:72px;
+	height:17px;
+	position:absolute;
+	top:49px;
+	left:184px;
+	text-align:center;
+}
+.fours{
+	width:72px;
+	height:17px;
+	position:absolute;
+	top:49px;
+	left:276px;
+	text-align:center;
+}
+.fives{
+	width:72px;
+	height:17px;
+	position:absolute;
+	top:49px;
+	left:368px;
+	text-align:center;
+}
+
+.one{
+	float:left;
+	margin-right:20px;
+	width:72px;
+	height:48px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.one img{
+	margin-top:-48px;
+}
+.two{
+	float:left;
+	margin-right:20px;
+	width:72px;
+	height:48px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.two img{
+	margin-top:-48px;
+	margin-left:-92px;
+}
+.three{
+	float:left;
+	margin-right:20px;
+	width:72px;
+	height:48px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.three img{
+	margin-top:-48px;
+	margin-left:-184px;
+}
+.four{
+	float:left;
+	margin-right:20px;
+	width:72px;
+	height:48px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.four img{
+	margin-top:-48px;
+	margin-left:-276px;
+}
+.five{
+	float:left;
+	margin-right:20px;
+	width:72px;
+	height:48px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.five img{
+	margin-top:-48px;
+	margin-left:-368px;
+}
+/*tab end*/
+/*banner start*/
+.banm{
+	width:1000px;
+	height:280px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+.banner-box{
+	height:280px;
+}
+.left{
+	position:absolute;
+	left:0;
+	top:110px;
+	cursor:pointer;
+}
+.right{
+	position:absolute;
+	right:0;
+	top:110px;
+	cursor:pointer;
+}
+.dian{
+	position:absolute;
+	bottom:10px;
+	right:30px;
+}
+.point{
+	float:left;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:white;
+	margin-right:10px;
+	cursor:pointer;
+}
+.ban{
+	float:left;
+	width:1000px;
+	height:280px;
+	background:#d1ddf3;
+}
+.ban span{
+	display:block;
+	width:500px;
+	height:37px;
+	margin:0 auto;
+	text-align:center;
+	margin-top:5px;
+}
+/*banner end*/
+/*footer start*/
+.footer{
+	width:960px;
+	height:195px;
+	margin:0 auto;
+	background:white;
+	padding-left:40px;
+	position:relative;
+}
+.footer a{
+	width:300px;
+	height:145px;
+	float:left;
+	margin-right:10px;
+	margin-top:50px;
+	opacity:0.9;
+	color:black;
+}
+.foot1{
+	position:absolute;
+	width:200px;
+	border:1px solid #dfdfdf;
+	padding:10px;
+	background:white;
+	left:-20px;
+	top:20px;
+}
+.foot2{
+	position:absolute;
+	width:200px;
+	border:1px solid #dfdfdf;
+	padding:10px;
+	background:white;
+	left:300px;
+	top:20px;
+}
+.foot3{
+	position:absolute;
+	width:200px;
+	border:1px solid #dfdfdf;
+	padding:10px;
+	background:white;
+	left:600px;
+	top:20px;
+}
+.bottom{
+	width:1000px;
+	height:91px;
+	background:white;
+	margin:0 auto;
+	overflow:hidden;
+}
+.f1{
+	width:618px;
+	height:14.4px;
+	margin:24px auto;
+	margin-bottom:0;
+}
+.f1 a{
+	color:black;
+}
+.f2{
+	width:420px;
+	height:14.4px;
+	margin:0 auto;
+}
+.f3{
+	width:438px;
+	height:14.4px;
+	margin:0 auto;
+}
+/*footer end*/

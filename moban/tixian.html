@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置IE浏览器的解析模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <!--视窗设置 -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>提现</title>
+
+    <!-- Bootstrap -->
+    <!--1、加载Bottstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 加载Bootstrap的样式文件-->
+
+    <!-- 使得IE8也适合HTML5的元素和媒体查询-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 如果是IE9以下的版本，就引入下面两个JS文件-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/bind.css"/>
+    <link rel="stylesheet" href="css/chongzhi.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/tixian.css"/>
+</head>
+<body>
+<div class="container">
+    <!--title-->
+    <div class="row nav-height">
+        <div class="col-xs-2 back"><img src="images/back.png" alt=""/></div>
+        <div class="col-xs-8 title">提现</div>
+        <div class="col-xs-2 back"></div>
+    </div>
+    <!--银行卡-->
+    <div class="row bank-card" style="margin-bottom: 0!important;">
+        <div class="col-xs-2 bank-img"><img src="images/chongzhi.png" alt=""/></div>
+        <div class="col-xs-7 bank-content">
+            <div class="bank-content1">中国工商银行</div>
+            <div class="bank-content2">尾号7588 储蓄卡</div>
+        </div>
+        <div class="col-xs-3 bank-content">
+            <div class="bank-content1" style="text-align: right;padding-right: 15px">*小小</div>
+            <div class="bank-content2" style="text-align: right;padding-right: 15px">户名</div>
+        </div>
+    </div>
+    <!--可提现金额-->
+    <div class="row tixian">
+        <div class="hidden-xs col-sm-1"></div>
+        <div class="col-xs-4 col-sm-5">可提现金额：</div>
+        <div class="col-xs-8 col-sm-5">785886.18元</div>
+        <div class="hidden-xs col-sm-1"></div>
+    </div>
+    <!--提现金额-->
+    <form method="post" class="cmxform" id="form" action="">
+        <div class="row kahao">
+            <div class="hidden-xs col-sm-1"></div>
+            <div class="col-xs-3 col-sm-1">提现金额</div>
+            <div class="col-xs-7 col-sm-8"><input type="text" placeholder="输入充值金额"/></div>
+            <div class="col-xs-1 col-sm-1">元</div>
+            <div class="hidden-xs col-sm-1"></div>
+        </div>
+        <!--限额提醒-->
+        <div class="row dan">
+            <div class="col-xs-10">
+                <span>温馨提示：工行单日限额5万元</span>
+            </div>
+        </div>
+        <!--提交按钮-->
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6 login-sign-btn">
+                <input id="signup-btn" class="btn-common btn-normal" name="signUp" type="submit" value="提现" disabled >
+            </div>
+            <div class="col-xs-3"></div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

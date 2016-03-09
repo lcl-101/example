@@ -1,0 +1,109 @@
+.nav-box {
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+}
+.nav-box li {
+    float: left;
+    font-size: 16px;
+    color: #161616;
+    text-align: center;
+}
+.times {
+    height: 30px;
+    line-height: 30px;
+}
+/*Ô¤¸æÆÚ*/
+.column {
+    position: relative;
+    height: 150px;
+    background: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.column-title {
+    height:50px;
+    border-bottom: 1px dashed #e8e8e8;
+    line-height: 50px;
+    font-size: 16px;
+    color: #131313;
+}
+.column-title-rg {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    width: 150px;
+    height: 30px;
+    padding-left: 20px;
+    border: 1px solid #f85158;
+    border-radius: 40px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #f85158;
+}
+.column-title-rg1 {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    width: 150px;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 40px;
+    line-height: 30px;
+    font-size: 16px;
+    border: 1px solid #d4d4d4;
+    color: #d4d4d4;
+}
+.column-content {
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+.column-content li {
+    padding: 0;
+    padding-left: 15px;
+}
+.column-content div {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.column-content span {
+    padding-left: 10px;
+    color: #131313;
+}
+.money {
+    color: #f44336!important;
+}
+/*nav*/
+.dian {
+    color: #f77268;
+    box-sizing: border-box;
+    border-bottom: 2px solid #f77268!important;
+}
+.swiper-container {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    color: #131313;
+}
+.swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    border: 1px solid #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

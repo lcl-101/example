@@ -1,0 +1,43 @@
+
+.back {
+    height: 50px;
+    line-height: 45px;
+    background: #f34334;
+    text-align: center;
+}
+.back img {
+    height: 30px!important;
+    cursor: pointer;
+}
+.jiaoyi {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #f0f4fd;
+}
+.jiaoyi div {
+    padding: 0;
+}
+.bg-height div {
+    padding: 0;
+    text-align: center;
+}
+.data span {
+    display: block;
+    height: 40px;
+}
+.data1 {
+    line-height: 60px;
+}
+.data2 {
+    line-height: 20px;
+}
+.revenue {
+    color: #161616;
+}
+.money {
+    color: #ff493b;
+}
+.money1 {
+    color: #578640;
+}

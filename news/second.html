@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <meta name ="viewport" content ="width=device-width,">
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/second.css"/>
+    <link rel="stylesheet" href="css/listview.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <script src="js/touch.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/second.js"></script>
+</head>
+<body>
+    <header id="head">
+        <a href="index.html" class="logo"></a>
+    </header>
+    <!--title start-->
+    <ul class="title" data-role=list list-style=horizontal>
+        <li>新闻</li>
+        <li>娱乐</li>
+        <li>热点</li>
+        <li>体育</li>
+        <li>太原</li>
+        <li><div data-icon="downs" class="downs"></div></li>
+    </ul>
+    <ul class="title1" data-role=list list-style=horizontal>
+        <li>财经</li>
+        <li>科技</li>
+        <li>图片</li>
+        <li>跟贴</li>
+        <li>直播</li>
+        <li>更多</li>
+    </ul>
+    <!--title end-->
+    <!--banner start-->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".main_image").touchSlider({
+                flexible : true,
+                speed : 200,
+                counter : function (e){
+                    $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+                }
+            });
+        });
+    </script>
+    <div class="main_image">
+        <ul>
+            <li><span class="img_3"></span></li>
+            <li><span class="img_4"></span></li>
+            <li><span class="img_1"></span></li>
+        </ul>
+    </div>
+    <!--banner end-->
+    <!--news start-->
+    <ul class="news" data-role=list>
+        <li class="news1"><a href="inner.html">习近平金正恩这3年如何互动?</a></li>
+        <li class="news2"><a href="">[刘云山访问的5个细节]</a><a href="">[朝建党70周年阅兵]</a></li>
+        <li class="news2"><a href="">[专家解读朝鲜阅兵]</a><a href="">[习近平致金正恩亲署函]</a></li>
+    </ul>
+    <ul class="news" data-role=list>
+        <li class="news1"><a href="">安徽爆炸4个失联同学为同镇人</a></li>
+        <li class="news2"><a href="">[闻到液化气味难关阀门]</a><a href="">[爆炸原因初步判定]</a></li>
+        <li class="news2"><a href="">[17个死者中14人为学生]</a><a href="">[餐馆无营业执照]</a></li>
+    </ul>
+    <hr/>
+    <ul class="message" data-role=list>
+        <li><a href="">河北5A景区违规建287栋别墅<span>310跟贴</span></a></li>
+        <li><a href="">安徽官员忏悔:有两个长期情妇<span>1179跟贴</span></a></li>
+        <li><a href="">重庆一家报纸头版发催债公告<span>310跟贴</span></a></li>
+        <li><a href="">安徽爆炸案：餐馆无营业执照<span>310跟贴</span></a></li>
+        <li><a href="">北京自住房合同纳入重点监管<span>310跟贴</span></a></li>
+        <li><a href="">学者:中国在世慰安妇仅存20人<span>310跟贴</span></a></li>
+        <li><a href="">87年老校开学未等来一名学生<span>310跟贴</span></a></li>
+        <li><a href="">落马"大老虎"亲戚都当多大官?<span>310跟贴</span></a></li>
+    </ul>
+    <!--news end-->
+    <!--tab start-->
+    <ul class="tab" data-role=list list-style=horizontal>
+        <li>简约版</li>
+        <li>触屏版</li>
+        <li>电脑板</li>
+    </ul>
+    <!--tab end-->
+    <!--footer start-->
+    <footer>
+        <ul class="footer" data-role=list>
+            <li><a href="">给网易提意见</a></li>
+            <li><span>手机网易网: 163.com</span></li>
+        </ul>
+    </footer>
+    <!--footer end-->
+</body>
+</html>

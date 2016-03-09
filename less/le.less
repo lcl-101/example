@@ -1,0 +1,37 @@
+
+.border-radius(@a){
+  border-radius:@a;
+  -moz-border-radius:@a;
+  -webkit-border-radius:@a;
+  -o-border-radius:@a;
+  -ms-border-radius:@a;
+}
+.shadow(@inset:a,@x:0px,@y:0px,@f:15px,@c:#000)
+  when (@inset=a){
+  box-shadow:@x @y @f @c;
+  -moz-box-shadow:@x @y @f @c;
+  -webkit-box-shadow:@x @y @f @c;
+  -o-box-shadow:@x @y @f @c;
+  -ms-box-shadow:@x @y @f @c;
+  .border-radius(10%);
+}
+div{
+  //.border-radius(30%);
+  .shadow(a);
+  width:200px;
+  height:200px;
+  background:red;
+}
+//.one{
+//  .border-radius(30%);
+//}
+
+.aa(@i:1) when (@i<=10){
+  div@{i}{
+    width:@i*100%/10;
+  }
+  .aa(@i+1);
+}
+.aa();
+
+//ÒõÓ°

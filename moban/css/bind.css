@@ -1,0 +1,298 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+    color:#8c8c8c;
+}
+body{
+    font:12px/1.5 "Microsoft YaHei";
+    color:#8c8c8c;
+    background: #e7eaf1;
+}
+.container{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+/*hesder*/
+.title-box{
+    background: #f34334;
+}
+.back{
+    height: 50px;
+    line-height: 45px;
+    background: #f34334;
+    text-align: center;
+}
+.back img{
+    height: 30px!important;
+    cursor: pointer;
+}
+.title {
+    margin-bottom: 0!important;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+/*tishi*/
+.tishi {
+    height: 30px;
+    margin-bottom: 10px!important;
+    line-height: 30px;
+    color: #fff;
+    background: #6a6b6d;
+}
+
+.kahao {
+    margin-top: 0;
+    height: 46px;
+    color:#161616;
+    font-size: 14px;
+    line-height: 46px;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+.kahao div{
+    height: 46px;
+
+}
+.kahao div input{
+    float: left;
+    width: 100%;
+    height: 36px;
+    margin-top: 5px;
+    color:#8c8c8c!important;
+    font-size: 15px;
+    line-height: 36px;
+    border: 0;
+    outline: none;
+    resize: none;
+}
+.kahao img{
+    float: left;
+    height: 40px;
+    margin-top: 3px;
+}
+.kahao input {
+    width: 100%;
+}
+.xian {
+    border-bottom: 1px solid #e8eaf0!important;
+}
+.yanzhengma{
+    width: 100%;
+    height: 24px!important;
+    margin-top: 12px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 30px;
+    background: #f34334;
+}
+.tixing {
+    padding-top: 10px;
+}
+.tixing span{
+    float: left;
+    height: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+    color: #0081fe;
+}
+.notice {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0081fe;
+    color: #0081fe;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+.btn-common {
+    width:100%;
+    line-height:35px;
+    font-size:18px;
+    text-align: center;
+    border-radius: 18px;
+}
+.btn-normal {
+    color: #f34334;
+    background:#e7eaf1 ;
+    border: 1px solid #f34334;
+}
+.error-info {
+    position: absolute;
+    top:40%;
+    left:33.3%;
+    z-index: 99;
+    width:33.3%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    background: #000000;
+    opacity: 0.7;
+    filter: alpha(opacity:70);
+    border-radius: 10px;
+    display: none;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity:50);
+    display: none;
+}
+.bing-info {
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    z-index: 11;
+    width:70%;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    color: #6c6c6c;
+    opacity: 0.9;
+    filter: alpha(opacity:90);
+    display: block;
+}
+.bing-tishi {
+    margin-top: 10px;
+}
+.bing-info p {
+    width: 70%;
+    margin: 10px auto;
+}
+.bind-btn {
+    border-top: 1px solid #a0a0a0;
+}
+.bind-btn span {
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.bind-xian {
+    border-right: 1px solid #a0a0a0;
+}
+/*ÒøÐÐ¿¨Ñ¡Ôñ*/
+.banks {
+    position: absolute;
+    margin: 0 auto;
+    top:0;
+    left: -10000px;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.9;
+    z-index: 999;
+    filter: alpha(opacity:90);
+    /*display: none;*/
+}
+.banks1 {
+    position: absolute;
+    margin: 0 auto;
+    left: -10000px;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    z-index: 1001;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /*display: none;*/
+}
+
+.mask-bank {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.close {
+    position: absolute;
+    top:10px;
+    right:10px;
+    opacity: 1;
+}
+.close img {
+    height: 16px;
+}
+.swiper-container {
+    /*display: none;*/
+    width: 90%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: left!important;
+    font-size: 14px;
+    border-bottom: 1px solid #e4e7ec;
+    width: 100%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.swiper-slide div{
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+.xian span{
+    color:#161616;
+}
+.swiper-slide img {
+    float: left;
+    width: 26px;
+    padding-right: 4px;
+}
+.xian input {
+    float: left;
+    width: auto;
+}
+.xian img {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-top: 11px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.kaihu {
+    display: block;
+    color:#8c8c8c;
+    cursor: pointer;
+}
+.kaihu1 {
+    display: none;
+}

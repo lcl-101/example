@@ -1,0 +1,255 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+a:hover {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+    color: #8c8c8c;
+    background: #e7eaf1;
+    padding-bottom: 50px;
+}
+/*hesder*/
+
+.title {
+    height: 40px;
+    background: #f7403a;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+/*banner*/
+.container{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+.slideBox {
+    position: relative;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slideBox .hd {
+    position: absolute;
+    height: 28px;
+    line-height: 28px;
+    bottom: 1px;
+    z-index: 1;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.slideBox .hd li {
+    display:inline-block;
+    width:30px;
+    height:3px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    background:#333;
+    text-indent:-9999px;
+    overflow:hidden;
+    margin:0 6px;
+    opacity: 0.6;
+}
+.slideBox .hd li.on { background:#fff;  }
+.slideBox .bd {
+    position:relative;
+    z-index:0;
+}
+.slideBox .bd li {
+    position:relative;
+    text-align:center;
+}
+
+/*Ԥ����*/
+.column {
+    position: relative;
+    height: 180px;
+    background: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.column-title {
+    height:50px;
+    border-bottom: 1px dashed #e8e8e8;
+    line-height: 50px;
+    font-size: 16px;
+    color: #131313;
+}
+.column-title-rg {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    width: 150px;
+    height: 30px;
+    padding-left: 20px;
+    border: 1px solid #f85158;
+    border-radius: 40px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #f85158;
+}
+.column-title-rg1 {
+    border: 1px solid #d4d4d4;
+    color: #d4d4d4;
+}
+.column-content {
+    height: 100%;
+    margin: 0 auto;
+}
+.column-content li {
+    float: left;
+    /*width: 33.33%;*/
+    text-align: center;
+}
+.column-content li div {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #ff9836;
+}
+.column-lu {
+    font-size: 14px;
+    color: #ff9836!important;
+}
+.column-content li span {
+    font-size: 14px;
+    color: #737373;
+}
+.column-clock_per {
+    line-height: 60px;
+}
+.nock1{
+    position: relative;
+}
+.nock {
+    position: absolute;
+    margin: auto auto;
+    top:-25px;
+    left: 0;
+    right: 0;
+    width: 90px;
+}
+.column-clock {
+    position: absolute;
+    top:0;
+    left: 5px;
+    z-index: 10;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 20px!important;
+    border-radius: 50%;
+    font-size: 24px!important;
+    text-align: center;
+}
+.column-clock span{
+    display: block;
+    margin-top: 20px;
+    line-height: 10px;
+    color: #ff9836!important;
+}
+/*footer*/
+.footer {
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 2px 5px #888888;
+}
+.footer-title {
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+.footer-inner{
+    display: block;
+    width: 30px;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.footer-inner1{
+    display: block;
+    width: 30px;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.footer-inner2{
+    display: block;
+    width: 30px;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.footer-title .shouye {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url("../images/footer2.png") no-repeat -145px -57px;
+    background-size: 200px;
+    font-size: 18px;
+}
+.shouye1{
+    color: #f44336;
+}
+.footer-title .licai {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url("../images/footer2.png") no-repeat -113px -3px;
+    background-size: 200px;
+    font-size: 18px;
+}
+.footer-title .zhanghu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url("../images/footer2.png") no-repeat -81px -3px;
+    background-size: 200px;
+    font-size: 18px;
+}
+.footer-title span img {
+    width: 26px;
+}
+/*���ظ���*/
+.load{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nodata {
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+}
+/*cvnvas*/
+canvas {
+    margin-top: 10px;
+}

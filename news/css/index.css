@@ -1,0 +1,202 @@
+body,
+p,
+form,
+ul,
+ol,
+dl,
+dd,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #333;
+  font-family: "����";
+}
+html {
+  font-size: 20px;
+}
+/*header start*/
+.top {
+  position: fixed!important;
+  background: white;
+  z-index: 10;
+  top: 0;
+}
+.logo {
+  width: 60%!important;
+}
+.top > li:first-child,
+.top > li:last-child {
+  width: 20%!important;
+}
+.top > li:last-child {
+  text-align: right;
+}
+.top > li > a {
+  font-size: 2rem!important;
+}
+.top > li {
+  border: 0!important;
+  border-bottom: 2px solid #ef2d36!important;
+  padding: 1rem;
+  height: 4rem;
+  line-height: 2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.top > li > div {
+  width: 100%;
+  height: 100%;
+  background: url("../images/logo.svg") no-repeat center center;
+  background-size: contain;
+}
+/*header end*/
+/*title star*/
+.title > li {
+  margin-top: 4rem;
+  border: 0!important;
+  color: #555;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 30px!important;
+  font-family: "����";
+}
+.title > li:hover {
+  color: #ef2d36;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/*header end*/
+/*lunbotu start*/
+.main_image {
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+.main_image ul {
+  width: 9999px;
+  height: 320px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main_image li {
+  float: left;
+  width: 100%;
+  height: 320px;
+}
+.main_image li span {
+  display: block;
+  width: 100%;
+  height: 320px;
+}
+.main_image li a {
+  display: block;
+  width: 100%;
+  height: 320px;
+}
+.main_image li .img_3 {
+  background: url('../images/b4.jpg') center top no-repeat;
+}
+.main_image li .img_4 {
+  background: url('../images/b5.jpg') center top no-repeat;
+}
+.main_image li .img_1 {
+  background: url('../images/b6.jpg') center top no-repeat;
+}
+/*lunbotu start*/
+/*news start*/
+.news {
+  border: 0!important;
+}
+.news > li {
+  border: 0!important;
+  height: 3rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #ddd!important;
+}
+.news > li > a {
+  font-family: "����";
+  font-size: 20px;
+  height: 1rem;
+  line-height: 1rem;
+  display: inline-block;
+  color: #555;
+  margin-left: 0.4rem;
+}
+.news > li > a:hover {
+  color: #ef2d36;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.todynew {
+  color: #db1011;
+  font-size: 30px;
+  margin-left: 0.4rem;
+  margin-top: 10px;
+}
+.message li a {
+  font-size: 24px;
+  color: #555;
+}
+.message li a:hover {
+  color: #ef2d36;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.message {
+  border: 0!important;
+}
+.message > li {
+  padding-left: 0.4rem;
+  border: 0!important;
+  height: 3rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #ddd!important;
+}
+.message > li span {
+  float: right;
+  margin-right: 0.4rem;
+}
+.other {
+  border: 0!important;
+  margin-top: 30px;
+}
+.other li {
+  border: 0!important;
+}
+.other li a img {
+  max-width: 100%;
+}
+.other li:first-child {
+  text-align: right;
+}
+/*new end*/
+/*footer start*/
+.footer {
+  width: 100%;
+  font-size: 20px;
+  height: 60px;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+}

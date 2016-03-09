@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置IE浏览器的解析模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <!--视窗设置 -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>温度金服</title>
+
+    <!-- Bootstrap -->
+    <!--1、加载Bottstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 加载Bootstrap的样式文件-->
+
+    <!-- 使得IE8也适合HTML5的元素和媒体查询-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 如果是IE9以下的版本，就引入下面两个JS文件-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/TouchSlide.1.1.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.classyloader.js"></script>
+    <script src="js/index.js"></script>
+
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-pagination {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--header-->
+        <div class="row">
+            <div class="col-xs-12 title">温度金服</div>
+        </div>
+        <!--header end-->
+        <!--banner-->
+        <!--<div class="slideBox" id="slideBox">-->
+            <!--<div class="bd">-->
+                <!--<ul>-->
+                    <!--<li>-->
+                        <!--<a class="pic" href="#"><img src="images/banner.jpg" alt=""></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a class="pic" href="#"><img src="images/banner.jpg" alt=""></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a class="pic" href="#"><img src="images/banner.jpg" alt=""></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a class="pic" href="#"><img src="images/banner.jpg" alt=""></a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="hd">-->
+                <!--<ul></ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<script type="text/javascript">-->
+            <!--TouchSlide({-->
+                <!--slideCell:"#slideBox",-->
+                <!--titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层-->
+                <!--mainCell:".bd ul",-->
+                <!--effect:"leftLoop",-->
+                <!--autoPage:true,//自动分页-->
+                <!--autoPlay:true, //自动播放-->
+                <!--interTime:2500-->
+            <!--});-->
+        <!--</script>-->
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a class="pic" href="#"><img src="images/banner.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a class="pic" href="#"><img src="images/banner.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a class="pic" href="#"><img src="images/banner.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a class="pic" href="#"><img src="images/banner.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a class="pic" href="#"><img src="images/banner.jpg" alt=""></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <!--<div class="swiper-button-next"></div>-->
+            <!--<div class="swiper-button-prev"></div>-->
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                paginationClickable: true,
+//                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: 2500,
+                loop:true,
+                autoplayDisableOnInteraction: false
+            });
+        </script>
+
+        <!--banner end-->
+        <!--预告期-->
+        <div class="row column">
+            <div class="hidden-xs col-sm-1"></div>
+            <div class="col-xs-12 col-sm-10 column-title">金服通 35号</div>
+            <div class="column-title-rg">预告期</div>
+            <div class="container">
+                <ul class="row column-content">
+                    <li class="col-xs-4">
+                        <div>15.8<span class="column-lu">%</span></div>
+                        <span>年化收益率</span>
+                    </li>
+                    <li class="col-xs-4">
+                        <div>200<span class="column-lu">天</span></div>
+                        <span>期限</span>
+                    </li>
+                    <li class="col-xs-4">
+                        <canvas></canvas>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden-xs col-sm-1"></div>
+        </div>
+        <!--预告期-->
+        <div class="row column">
+            <div class="hidden-xs col-sm-1"></div>
+            <div class="col-xs-12 col-sm-10 column-title">金服通 35号</div>
+            <div class="column-title-rg">预告期</div>
+            <div class="container">
+                <ul class="row column-content">
+                    <li class="col-xs-4">
+                        <div>15.8<span class="column-lu">%</span></div>
+                        <span>年化收益率</span>
+                    </li>
+                    <li class="col-xs-4">
+                        <div>200<span class="column-lu">天</span></div>
+                        <span>期限</span>
+                    </li>
+                    <li class="col-xs-4">
+                        <canvas></canvas>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden-xs col-sm-1"></div>
+        </div>
+        <!--预告期-->
+        <div class="row column">
+            <div class="hidden-xs col-sm-1"></div>
+            <div class="col-xs-12 col-sm-10 column-title">金服通 35号</div>
+            <div class="column-title-rg">预告期</div>
+            <div class="container">
+                <ul class="row column-content">
+                    <li class="col-xs-4">
+                        <div>15.8<span class="column-lu">%</span></div>
+                        <span>年化收益率</span>
+                    </li>
+                    <li class="col-xs-4">
+                        <div>200<span class="column-lu">天</span></div>
+                        <span>期限</span>
+                    </li>
+                    <li class="col-xs-4 nock1">
+                        <div class="nock">
+                            <canvas></canvas>
+                            <div class="column-clock"><span>明日</span>15:00</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden-xs col-sm-1"></div>
+        </div>
+        <script>
+            $(function(){
+                var canvasArray=document.getElementsByTagName('canvas');
+
+               for(var i=0;i<canvasArray.length;i++){
+                   $(canvasArray[i]).ClassyLoader({
+                       width: 100,
+                       height: 100,
+                       start: 'top',
+                       animate:false,
+                       percentage: 80,//显示比例
+                       showText: false,//是否显示进度比例
+                       fontSize: '20px',
+                       diameter: 40,
+                       fontColor: '#ff9836',
+                       lineColor: '#f7403a',
+                       remainingLineColor: 'rgba(55, 55, 55, 0.1)',
+                       lineWidth: 5,
+                       textStr:'' //显示文字
+                   });
+               }
+//                function move(canvas,num){
+//
+//                    var cobj=canvas.getContext('2d');
+//
+//                    cobj.beginPath();
+//                    cobj.clearRect(0,0,canvas.width,canvas.height);
+//                    cobj.strokeStyle='#d4d4d4';
+//                    cobj.arc(50,55,40,-90*Math.PI/180,360*Math.PI/180);
+//                    cobj.stroke();
+//                    cobj.closePath();
+//
+//                    cobj.beginPath();
+//                    cobj.clearRect(0,0,canvas.width,canvas.height);
+//                    cobj.font='24px 黑体';
+//                    cobj.fillStyle='#ff9836';
+//                    var w=50-cobj.measureText((num/360*100).toFixed(0)+'%').width/2;
+//                    cobj.fillText(num+'%',w,62);
+//                    cobj.lineWidth=5;
+//                    cobj.strokeStyle='#f7403a';
+//                    var a=num*(100/360);
+//                    cobj.arc(50,55,40,-90*Math.PI/180,(num/100*360-90)*Math.PI/180);
+//                    cobj.stroke();
+//                    cobj.closePath();
+//
+//
+//
+//                }
+
+            })
+        </script>
+        <!--footer-->
+        <div class="row navbar-fixed-bottom footer">
+            <div class="col-xs-4 footer-title">
+                <div class="footer-inner">
+                    <a href="http://wdjf.njfae.com.cn/" class="shouye1"><span class="shouye"></span>首页</a>
+                </div>
+            </div>
+            <div class="col-xs-4 footer-title">
+                <div class="footer-inner1">
+                    <a href="javascript:;"><span class="licai"></span>理财</a>
+                </div>
+            </div>
+            <div class="col-xs-4 footer-title">
+                <div class="footer-inner2">
+                    <a href="javascript:;"><span class="zhanghu"></span>账户</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notdata">暂无数据</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+@import url(public.css);
+.page{
+	width:1000px;
+	height:620px;
+	margin:0 auto;
+	position:relative;
+}
+.imgs{
+	position:absolute;
+	width:1000px;
+	height:620px;
+	overflow:hidden;
+}
+.imgs img{
+	position:absolute;
+}
+body{
+	background:black;
+}
+.btn{
+	position:absolute;
+	width:556px;
+	height:203px;
+	margin-left:222px;
+	margin-top:208px;
+}
+.map{
+	float:left;
+	width:75px;
+	height:203px;
+	margin-right:1px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.left{
+	float:left;
+	width:158px;
+	height:203px;
+	margin-right:1px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.left img{
+	margin-left:-76px;
+}
+.middle{
+	float:left;
+	width:158px;
+	height:203px;
+	margin-right:1px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.middle img{
+	margin-left:-235px;
+}
+.right{
+	float:left;
+	width:158px;
+	height:203px;
+	margin-right:1px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.right img{
+	margin-left:-394px;
+}
+.btnl{
+	
+	width:46px;
+	height:60px;
+	text-align:center;
+	line-height:60px;
+	position:absolute;
+	top:288px;
+	left:0;
+	color:white;
+	font-size:38px;
+	opacity:0.5;
+	cursor:pointer;
+}
+.btnl:hover{
+	background:black;
+}
+.btnr{
+	
+	width:46px;
+	height:60px;
+	text-align:center;
+	line-height:60px;
+	position:absolute;
+	top:288px;
+	right:0;
+	color:white;
+	font-size:38px;
+	opacity:0.5;
+	cursor:pointer;
+}
+.btnr:hover{
+	background:black;
+}
+.logo{
+	position:absolute;
+	left:30px;
+	top:30px;
+}
+.bottom{
+	position:relative;
+	width:1000px;
+	height:92px;
+	margin:0 auto;
+	font-size:12px;
+	color:white;
+	margin:0 auto;
+}
+.footer{
+	width:618px;
+	height:14.4px;
+	margin:14px auto;
+	margin-bottom:0;
+}
+.footer1{
+	width:420px;
+	height:14.4px;
+	margin:0 auto;
+}
+.footer2{
+	width:438px;
+	height:14.4px;
+	margin:0 auto;
+}
+.go{
+	position:absolute;
+	bottom: 10px;
+	right: 14px;
+	width: 92px;
+	padding-left:20px;
+	height: 20px;
+	font-size:18px;
+	color: #7F7C7C;
+	line-height: 20px;
+	background:url(../images/go-index.png) no-repeat 0 center;
+}

@@ -1,0 +1,34 @@
+.back img {
+    height: 30px!important;
+}
+.kahao {
+    border-bottom: 1px solid #eaeaea;
+}
+.kahao div {
+    color: #161616;
+}
+.kahao .col-xs-3{
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+}
+.kahao .col-xs-9{
+    text-align: left;
+    padding: 0;
+}
+.kahao input {
+    width: 100%;
+}
+.tixian div {
+    font-size: 14px!important;
+    color:#8c8c8c;
+}
+.dan {
+    padding-top: 10px;
+}
+.dan span{
+    float: left;
+    height: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+}

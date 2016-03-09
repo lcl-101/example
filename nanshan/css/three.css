@@ -1,0 +1,108 @@
+@import url(second.css);
+.formlogin{
+	float: left;
+	width:620px;
+	height:27px;
+	background:#A0A0A0;
+	line-height: 27px;
+	padding-left: 20px;
+}
+.formlogin span{
+	color:white;
+	font-size: 15px;
+}
+.formlogin input{
+	width:148px;
+	height:16px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-right: 10px;
+}
+.checkout{
+	width:57px!important;
+	height:16px;
+}
+.formlogin img{
+	float: right;
+	margin-top: 5px;
+	margin-right:6px;
+}
+.r{
+	float: left;
+	width:115px;
+	height:27px;
+	background:url("../images/nav-item-hover.jpg") no-repeat 0 0;
+	text-align: center;
+	line-height: 27px;
+	margin-bottom: 10px;
+}
+.r a:hover{
+	color:white;
+}
+.f18{
+	width:100px;
+	height:40px;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.mt{
+	width:745px!important;
+	height:80px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.mt strong{
+	display: block;
+	font-size: 18px;
+	width:90px;
+	margin:0 auto;
+	background: url("../images/car.jpg") no-repeat right 0;
+	padding-right:30px;
+}
+.nan-jiesao{
+	width:770px;
+	height:181px;
+	position: relative;
+}
+.nan-jiesao img{
+	float: left;
+}
+.sub{
+	float: left;
+	width:210px;
+	height:108px;
+	margin-left:24px;
+	margin-right:24px;
+}
+.more1{
+	position: absolute;
+	font-size: 14px;
+	top:90px;
+	left:440px;
+	background:url("../images/more-r.jpg") no-repeat left center;
+	width:43px;
+	text-align: right;
+	height:17px;
+	color:#f90;
+	cursor: pointer;
+}
+.mt2{
+	margin-top: 10px;
+	float: left;
+	width:210px;
+	height: 54px;
+}
+.more2{
+	position: absolute;
+	font-size: 14px;
+	top:130px;
+	right:40px;
+	background:url("../images/more-r.jpg") no-repeat left center;
+	width:43px;
+	text-align: right;
+	height:17px;
+	color:#f90;
+	cursor: pointer;
+}

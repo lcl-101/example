@@ -1,0 +1,163 @@
+body,
+p,
+form,
+ul,
+ol,
+dl,
+dd,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #333;
+  font-family: "����";
+}
+html {
+  font-size: 20px;
+}
+/*header start*/
+#head {
+  max-width: 100%;
+  padding: 0.6rem;
+  height: 3rem;
+  color: #fff;
+  background-color: #df3031;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.logo {
+  float: left;
+  width: 19rem;
+  margin-left: 0;
+  height: 3rem;
+  background: url("../images/logo1.png") no-repeat 0 0;
+  background-size: 8em;
+}
+.back {
+  color: white;
+  font-size: 30px!important;
+  float: right;
+}
+.banner {
+  text-align: center;
+  border: 0!important;
+}
+.banner > li {
+  border: 0!important;
+}
+.banner > li > img {
+  max-width: 100%;
+}
+/*header end*/
+.title {
+  border: 0!important;
+  padding-left: 0.4rem;
+  font-size: 36px;
+  color: black;
+}
+.title li {
+  height: 3rem;
+  line-height: 3rem;
+  border: 0!important;
+}
+.title1 {
+  border: 0!important;
+  margin-bottom: 1rem;
+}
+.title1 > li,
+.title1 > li > a {
+  border: 0!important;
+  font-size: 16px!important;
+  text-align: center;
+  color: #909090;
+}
+.title1 > li > a {
+  color: #f54343;
+}
+.inner {
+  max-width: 100%;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  font-size: 22px;
+  color: #343434;
+}
+.inner-img {
+  margin: 10px 0 18px 0;
+  border: 0!important;
+  text-align: center;
+}
+.inner-img > li {
+  border: 0!important;
+}
+.inner-img > li > img {
+  max-width: 100%;
+}
+.titles {
+  border: 0!important;
+  padding-left: 0.4rem;
+  color: black;
+}
+.titles > li {
+  border: 0!important;
+}
+.titles > li > span {
+  font-size: 20px!important;
+  height: 3rem;
+  line-height: 3rem;
+  border: 0!important;
+}
+/*tab start*/
+.tab {
+  border: 0!important;
+  background: #e6e6e6;
+}
+.tab > li {
+  font-family: "����";
+  color: #808080;
+  padding: 10px;
+  font-size: 18px!important;
+  text-align: center;
+  border: 0!important;
+  cursor: pointer;
+}
+.footer {
+  border: 0!important;
+  background: #df3031;
+}
+.footer li {
+  border: 0!important;
+  text-align: center;
+}
+.footer li:first-child {
+  padding-top: 10px;
+}
+.footer li:last-child {
+  padding-bottom: 10px;
+}
+.footer li > a {
+  font-family: "����";
+  font-size: 19px;
+  color: #fff;
+}
+.footer li > span {
+  font-family: "����";
+  font-size: 12px;
+  color: #fff;
+}

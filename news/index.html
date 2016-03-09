@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <meta name ="viewport" content ="width=device-width,">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/listview.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <script src="js/touch.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/second.js"></script>
+</head>
+<body>
+    <!--logo-->
+    <ul class="top" data-role=list list-style=horizontal>
+        <li><a data-icon="home" href="second.html"></a></li>
+        <li class="logo"><div></div></li>
+        <li><a  data-icon="lists" href=""></a></li>
+    </ul>
+    <!--logo end-->
+    <!--title start-->
+    <ul class="title" data-role=list list-style=horizontal>
+        <li>要闻</li>
+        <li>荐新闻</li>
+        <li>山西省</li>
+    </ul>
+    <!--title end-->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".main_image").touchSlider({
+                flexible : true,
+                speed : 200,
+                counter : function (e){
+                    $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+                }
+            });
+        });
+    </script>
+    <div class="main_image">
+        <ul>
+            <li><span class="img_3"></span></li>
+            <li><span class="img_4"></span></li>
+            <li><span class="img_1"></span></li>
+        </ul>
+    </div>
+    <!--title end-->
+    <!--news start-->
+    <ul class="news" data-role=list>
+        <li><a href="">日本女间谍嫌犯在上海被抓 疑原系中国籍</a></li>
+        <li><a href="">全国至少9地已取消出租车有偿使用费</a></li>
+        <li><a href="">安徽5人被冤杀人 申请刑讯伤残赔偿遭拒</a></li>
+        <li><a href="">日本植物园现“猴脸兰花”</a></li>
+        <li><a href="">她从D升到E罩杯觉得是工伤…</a></li>
+        <li><a href="">惊悚漫画：小女孩</a></li>
+        <li><a href="">又一对高楼拍照的俄罗斯小伙</a></li>
+        <li><a href="">"行尸走肉"立体书好带感！</a></li>
+        <li><a href="">3元赢1.3亿，他的心愿竟是…</a></li>
+    </ul>
+    <h2 class="todynew">今日要闻</h2>
+    <ul class="message" data-role=list>
+        <li><a href="">河北5A景区违规建287栋别墅<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">安徽官员忏悔:有两个长期情妇<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">重庆一家报纸头版发催债公告<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">安徽爆炸案：餐馆无营业执照<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">北京自住房合同纳入重点监管<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">学者:中国在世慰安妇仅存20人<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">87年老校开学未等来一名学生<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">落马"大老虎"亲戚都当多大官?<span class="iconfont">&#xe704; 0</span></a></li>
+    </ul>
+    <ul data-role=list list-style=horizontal class="other">
+        <li><a href=""><img src="images/n1.jpg" alt=""/></a></li>
+        <li><a href=""><img src="images/n2.jpg" alt=""/></a></li>
+    </ul>
+    <ul class="message" data-role=list>
+        <li><a href="">游客还在查资料万元石斛已成粉<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">头版登向房地产公司催债公告<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">26年驾龄司机因办证时未满18岁<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">广东阳春多人11人被带离<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">"第一吻嘴对嘴相亲(图)<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">江西3人遇难7人失联<span class="iconfont">&#xe704; 0</span></a></li>
+        <li><a href="">海南彩民弃领207万原因不明<span class="iconfont">&#xe704; 0</span></a></li>
+    </ul>
+    <!--news end-->
+    <!--footer start-->
+    <div class="footer">© 1997-2015 网易公司版权所有</div>
+</body>
+</html>

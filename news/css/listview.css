@@ -1,0 +1,85 @@
+html {
+  font-size: 24px;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+p,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  font-size: 1rem;
+  color: #000000;
+  text-decoration: none;
+}
+*[data-role=button] {
+  width: 100%;
+  height: auto;
+  background: #c4fcff;
+  border: 1px solid #aaaaaa;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  box-shadow: 0 0 10px #ccc;
+}
+*[data-role=button][btn-opt=horizontal] {
+  width: 100%;
+  height: auto;
+  background: #c4fcff;
+  border: 1px solid #aaaaaa;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  display: inline;
+}
+/*�б�*/
+*[data-role=list] {
+  width: 100%;
+  height: auto;
+  border: 1px solid #aaaaaa;
+  border-bottom: 0;
+}
+*[data-role=list]:before,
+*[data-role=list]:after {
+  content: "";
+  display: block;
+}
+*[data-role=list]:after {
+  clear: both;
+}
+*[data-role=list] > li {
+  display: block;
+  border-bottom: 1px solid #aaaaaa;
+  font-size: 1rem;
+}
+*[data-role=list][list-opt=jiantou] > li:after {
+  content: ">";
+  float: right;
+}
+*[data-role=list][list-style=horizontal] > li {
+  float: left;
+  border-right: 1px solid #aaaaaa;
+}
+*[data-role=list][list-style=horizontal] > li:last-child {
+  border-right: 0!important;
+}

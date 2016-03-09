@@ -1,0 +1,16 @@
+.box {
+    padding-bottom: 20px;
+    background: #fff
+}
+.kaitong {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #181818;
+}
+.kaitong-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.kaitong-content img {
+    height: 80px;
+}

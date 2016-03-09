@@ -1,0 +1,10 @@
+.tixian {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.tixian div {
+    padding: 0;
+    padding-left: 15px;
+    text-align: left;
+}

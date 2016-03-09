@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置IE浏览器的解析模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <!--视窗设置 -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>设置交易密码</title>
+
+    <!-- Bootstrap -->
+    <!--1、加载Bottstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 加载Bootstrap的样式文件-->
+
+    <!-- 使得IE8也适合HTML5的元素和媒体查询-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 如果是IE9以下的版本，就引入下面两个JS文件-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/bind.css"/>
+    <link rel="stylesheet" href="css/chongzhi.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<div class="container">
+    <!--title-->
+    <div class="row nav-height">
+        <div class="col-xs-2 back"><img src="images/back.png" alt=""/></div>
+        <div class="col-xs-8 title">设置交易密码</div>
+        <div class="col-xs-2 back"><img src="images/tuichu.png" alt=""/></div>
+    </div>
+    <!--交易密码-->
+    <div style="height: 10px"></div>
+    <form method="post" class="cmxform" id="form" action="">
+        <div class="row kahao">
+            <div class="hidden-xs col-sm-1"></div>
+            <div class="col-xs-3 col-sm-1">交易密码</div>
+            <div class="col-xs-9 col-sm-8"><input type="password" placeholder="请输入6位数字的交易密码"/></div>
+            <div class="hidden-xs col-sm-1"></div>
+        </div>
+        <div class="row kahao">
+            <div class="hidden-xs col-sm-1"></div>
+            <div class="col-xs-3 col-sm-1">再次确认</div>
+            <div class="col-xs-9 col-sm-8"><input type="password" placeholder="请再次确认交易密码"/></div>
+            <div class="hidden-xs col-sm-1"></div>
+        </div>
+        <!--提交按钮-->
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6 login-sign-btn">
+                <input id="signup-btn" class="btn-common btn-normal" name="signUp" type="submit" value="提交" disabled >
+            </div>
+            <div class="col-xs-3"></div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

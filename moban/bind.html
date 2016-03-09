@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置IE浏览器的解析模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <!--视窗设置 -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>绑定银行卡</title>
+
+    <!-- Bootstrap -->
+    <!--1、加载Bottstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 加载Bootstrap的样式文件-->
+
+    <!-- 使得IE8也适合HTML5的元素和媒体查询-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 如果是IE9以下的版本，就引入下面两个JS文件-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/bind.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bind.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--title-->
+        <div class="row nav-height title">
+            <div class="col-xs-2 back"><img src="images/back.png" alt=""/></div>
+            <div class="col-xs-8 title">绑定银行卡</div>
+            <div class="col-xs-2 back"><img src="images/tuichu.png" alt=""/></div>
+        </div>
+        <!--提示-->
+        <div class="row tishi">
+            <div class="col-xs-12">*绑定的银行卡必须为本人身份证办理</div>
+        </div>
+        <!--银行卡选择-->
+        <div class="mask"></div>
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+                <div class="banks"></div>
+                <div class="banks1">
+                    <img src="images/mask.png" alt="" class="mask-bank"/>
+                    <div class="close"><img src="images/close.png" alt=""/></div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行1</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行2</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行3</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行4</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行5</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行6</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行7</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行8</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行9</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="images/bank.png" alt=""/>
+                                    <span>工商银行10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <!--<div class="swiper-pagination"></div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+        <form method="post" class="cmxform" id="form" action="">
+            <div class="row kahao">
+                <div class="col-xs-3 xian">卡号</div>
+                <div class="col-xs-9 xian"><input type="text" placeholder="请输入银行卡号"/></div>
+
+            </div>
+
+            <div class="row kahao">
+                <div class="col-xs-3 xian">开户行</div>
+                <div class="col-xs-7 xian">
+                    <!--<input type="text" placeholder="请选择开户行"/>-->
+                    <div class="selecter kaihu">请选择开户行</div>
+                    <img class="selecter kaihu1"/>
+                    <span class="selecter kaihu1"></span>
+                </div>
+                <div class="col-xs-2 xian"><img src="images/you.png" alt="" class="selecter"/></div>
+            </div>
+
+            <div class="row kahao">
+                <div class="col-xs-3 xian">手机号</div>
+                <div class="col-xs-7 xian"><input type="text" placeholder="请输入银行预留的手机号码"/></div>
+                <div class="col-xs-2 xian"></div>
+            </div>
+
+            <div class="row kahao">
+                <div class="col-xs-3 xian">验证码</div>
+                <div class="col-xs-5 xian"><input type="text" placeholder="请输入短信验证码"/></div>
+                <div class="col-xs-4 xian"><div class="yanzhengma">获取验证码</div></div>
+            </div>
+            <!--限额提醒-->
+            <div class="row tixing">
+                <div class="col-xs-10">
+                    <div class="notice">?</div>
+                    <span>限额提醒</span>
+                </div>
+            </div>
+            <!--提交按钮-->
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-6 login-sign-btn">
+                    <input id="signup-btn" class="btn-common btn-normal" name="signUp" type="submit" value="注册">
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+        </form>
+        <!-- 卡号弹出框 start  -->
+        <!--<div class="error-info" style="display: block">您输入的卡号有误</div>-->
+        <!-- 开好弹出框 end  -->
+        <!-- 绑定提示 start  -->
+        <!--<div class="mask" style="display: block"></div>-->
+        <!--<div class="bing-info">-->
+            <!--<div class="bing-tishi">提示</div>-->
+            <!--<p>绑定的银行卡将作为唯一充值，提现银行卡</p>-->
+            <!--<div class="bind-btn">-->
+                <!--<span class="bind-xian">取消</span>-->
+                <!--<span>确定</span>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!-- 绑定提示 end  -->
+    </div>
+</body>
+</html>

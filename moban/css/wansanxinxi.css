@@ -1,0 +1,179 @@
+.kahao div {
+    padding: 0;
+    padding-left: 15px;
+}
+
+/*城市选择*/
+.banks {
+    position: absolute;
+    margin: 0 auto;
+    top:0;
+    left: -10000px;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.9;
+    z-index: 999;
+    filter: alpha(opacity:90);
+}
+.banks1 {
+    position: absolute;
+    margin: 0 auto;
+    left: -10000px;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    z-index: 1000;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.mask-bank {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+.close {
+    position: absolute;
+    top:10px;
+    right:10px;
+    opacity: 1;
+}
+.close img {
+    height: 16px;
+}
+.swiper-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.swiper-slide {
+    text-align: left!important;
+    font-size: 14px;
+    border-bottom: 1px solid #e4e7ec;
+    width: 100%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide div{
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+.swiper-slide img {
+    float: right;
+    width: 22px;
+    padding-right: 4px;
+}
+.down {
+    width: 100%;
+    height: 100%;
+}
+/*城市选择*/
+/*城市选择*/
+.citys {
+    position: absolute;
+    margin: 0 auto;
+    top:0;
+    left: -10000px;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.9;
+    z-index: 999;
+    filter: alpha(opacity:90);
+}
+.citys1 {
+    position: absolute;
+    margin: 0 auto;
+    left: -10000px;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    z-index: 1000;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.mask-bank {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.close {
+    position: absolute;
+    top:10px;
+    right:10px;
+    opacity: 1;
+}
+.close img {
+    height: 16px;
+}
+.swiper-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.swiper-slide {
+    text-align: left!important;
+    font-size: 14px;
+    border-bottom: 1px solid #e4e7ec;
+    width: 100%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.swiper-slide div{
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+.swiper-slide img {
+    float: right;
+    width: 22px;
+    padding-right: 4px;
+}
+.down {
+    width: 100%;
+    height: 100%;
+}
+.selecter {
+    cursor: pointer;
+}
+.selecter-city {
+    cursor: pointer;
+}

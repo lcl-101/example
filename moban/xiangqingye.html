@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置IE浏览器的解析模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <!--视窗设置 -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>项目详情</title>
+
+    <!-- Bootstrap -->
+    <!--1、加载Bottstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 加载Bootstrap的样式文件-->
+
+    <!-- 使得IE8也适合HTML5的元素和媒体查询-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 如果是IE9以下的版本，就引入下面两个JS文件-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/xiangqing.css">
+    <script src="js/TouchSlide.1.1.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        //返回
+        $(function(){
+            $('.back img').bind('click',function(){
+                history.go(-1);
+            })
+        })
+
+        //项目投资的切换
+
+    </script>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row nav-height" style="margin-bottom: 0">
+            <div class="col-xs-2 back"><img src="images/back.png" alt=""/></div>
+            <div class="col-xs-8 title">项目详情</div>
+            <div class="col-xs-2 back"></div>
+        </div>
+        <!--xiangqing-->
+        <div class="row column">
+            <div class="hidden-xs col-sm-1"></div>
+            <div class="col-xs-12 col-sm-10 column-title">金服通 35号</div>
+            <div class="container">
+                <ul class="row column-content">
+                    <li class="col-xs-6">
+                        <div class="xian">15.8<span class="column-lu">%</span></div>
+                        <span class="qing">年化收益率</span>
+                    </li>
+                    <li class="col-xs-6">
+                        <div>200<span class="column-lu">天</span></div>
+                        <span class="qing">期限</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden-xs col-sm-1"></div>
+        </div>
+        <div class="row bili">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <div class="per">
+                    <div class="progress-bar progress-bar-red"></div>
+                </div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+        <div class="row shuju">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-5">
+                <span>0元</span><i>/32.1万</i>
+                <div>可投余额/项目总额</div>
+            </div>
+            <div class="col-xs-5">
+                <div class="shuju-bili">90<em>%</em></div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+        <div class="row message">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 xian2">
+                <div class="m1">起投金额：<span>1000元</span></div>
+                <div class="m2">项目起息：<span>满标次日开始记息</span></div>
+                <div class="m3">项目结束：<span>2015-08-21</span></div>
+                <div class="m4">还款方式：<span>按天计息，到期本息</span></div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+
+        <div class="row tab">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 tabs">
+                <div class="tab1">项目详情</div>
+                <div class="tab2">投资记录</div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+        <script>
+            $(function(){
+                $('.tabs div').click(function(){
+                    var index=$('.tabs div').index(this);
+                    $('.tabs div').css({background:'#ffffff',color:'#303030'});
+                    $('.tabs div').eq(index).css({background:'#f34334',color:'#ffffff'});
+                    if(index==1){
+                        $('.tab-conten').css({display:'none'});
+                        $('.touzi-box').css({display:'block'});
+                    }else{
+                        $('.tab-conten').css({display:'block'});
+                        $('.touzi-box').css({display:'none'});
+                    }
+                })
+            })
+        </script>
+        <!--项目详情-->
+        <div class="row tab-conten">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                项目融资方为【上海信安商业保理有限公司】，其基于专业的风控流程和成熟的业务模式，在审慎核实本项目对应的基础交
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+        <!--投资记录-->
+        <div class="row touzi-box">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                    <div class="row touzi">
+                        <div class="col-xs-3">投资人</div>
+                        <div class="col-xs-5">投资时间</div>
+                        <div class="col-xs-4">投资金额</div>
+                    </div>
+                    <div class="row touzi-content">
+                        <div class="col-xs-3">d**s</div>
+                        <div class="col-xs-5">2015.09.11 12:10</div>
+                        <div class="col-xs-4">5000000.00</div>
+                    </div>
+                </div>
+            <div class="col-xs-1"></div>
+        </div>
+
+
+        <div class="row huankuang">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">还款中</div>
+            <div class="col-xs-1"></div>
+        </div>
+        <div class="row manbiao">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">满标</div>
+            <div class="col-xs-1"></div>
+        </div>
+        <div class="row rengou">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">立即认购</div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+</body>
+</html>

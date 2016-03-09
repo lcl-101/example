@@ -1,0 +1,57 @@
+.bank-card {
+    height:80px;
+    background: #fff;
+    line-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px!important;
+}
+.bank-card img {
+    width: 30px;
+}
+.bank-img {
+    text-align: right;
+}
+.bank-content {
+    height: 80px;
+    padding: 0;
+}
+.bank-content div {
+    text-align: left;
+    height: 50%;
+}
+.bank-content1 {
+    line-height: 66px;
+    font-size: 16px;
+    color: #161616;
+}
+.bank-content2 {
+    line-height: 24px;
+}
+
+.kahao {
+    border-bottom: 1px solid #eaeaea;
+}
+.kahao div {
+    color: #161616;
+}
+.kahao .col-xs-3{
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+}
+.kahao .col-xs-9{
+    text-align: left;
+    padding: 0;
+}
+.kahao input {
+    width: 100%;
+}
+.dan {
+    padding-top: 10px;
+}
+.dan span{
+    float: left;
+    height: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+}

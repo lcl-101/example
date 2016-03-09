@@ -1,0 +1,262 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0px;
+}
+a{
+    text-decoration:none;
+    color:#8c8c8c;
+}
+body{
+    font:12px/1.5 "Microsoft YaHei";
+    color:#8c8c8c;
+    background: #e7eaf1;
+}
+/*hesder*/
+.title-box{
+    background: #f34334;
+}
+.back{
+    height: 50px;
+    background: #f34334;
+    text-align: center;
+    line-height: 46px;
+
+}
+.back img{
+    height: 30px;
+    cursor: pointer;
+}
+.title {
+    height: 50px;
+    background: #f34334;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+/*Ô¤¸æÆÚ*/
+.column {
+    position: relative;
+    height: 180px;
+    background: #fff;
+    overflow: hidden;
+}
+.column-title {
+    height:50px;
+    border-bottom: 1px dashed #e8e8e8;
+    line-height: 50px;
+    font-size: 16px;
+    color: #131313;
+}
+.column-title-rg {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    width: 150px;
+    height: 30px;
+    padding-left: 20px;
+    border: 1px solid #f85158;
+    border-radius: 40px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #f85158;
+}
+.column-content {
+    height: 100%;
+    margin: 0 auto;
+}
+.column-content li {
+    float: left;
+    text-align: center;
+    padding: 0;
+}
+.column-content li div {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 44px;
+    color: #ff9836;
+}
+.xian {
+    border-right: 1px solid #ebebed;
+}
+.qing {
+    display: block;
+    border-right: 1px solid #ebebed;
+}
+.column-content li span {
+    font-size: 14px;
+    color: #737373;
+}
+.column-lu {
+    font-size: 20px!important;
+    color: #ff9836!important;
+}
+
+.bili{
+    background: #fff;
+}
+.bili .per {
+    position: relative;
+    height: 14px;
+    background: #d8d8d8;
+    margin-top: 20px;
+    border-radius: 14px;
+}
+.progress-bar-red {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90%;
+    height: 14px;
+    background: #f34334;
+    border-radius: 14px;
+}
+.shuju {
+    padding-top: 10px;
+    background: #fff;
+}
+.shuju div span {
+    font-size: 24px;
+    color: #fa9801;
+}
+.shuju div i,em {
+    color: #757575;
+    font-style: normal;
+}
+.shuju-bili {
+    font-size: 24px;
+    text-align: right;
+    color: #f2837a;
+}
+.shuju-bili em {
+    font-size: 14px;
+    color: #f2837a;
+}
+
+.message {
+    background: #fff;
+}
+.message div {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.message div span{
+    color: #7c7c7c;
+}
+.xian2 {
+    border-top: 1px solid #ebebed;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.m1{
+    height: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+    background: url("../images/tubiao.png") no-repeat -3px 1px;
+}
+.m2{
+    height: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+    background: url("../images/tubiao.png") no-repeat -3px -29px;
+}
+.m3{
+    height: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+    background: url("../images/tubiao.png") no-repeat -3px -58px;
+}
+.m4{
+    height: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+    background: url("../images/tubiao.png") no-repeat -3px -87px;
+}
+.tabs {
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #f34334;
+    overflow: hidden;
+    padding: 0;
+    cursor: pointer;
+}
+.tab{
+    margin-top: 20px;
+    background: #fff;
+    padding-top: 30px;
+}
+.tab1{
+    float: left;
+    width: 50%;
+    height: 36px;
+    background: #f34334;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    color: #fff;
+}
+.tab2{
+    float: left;
+    width: 50%;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    color: #303030;
+}
+.tab-conten{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+    font-size: 12px;
+}
+.touzi-box{
+    display: none;
+    background: #fff;
+    padding-top: 10px;
+    font-size: 10px;
+}
+.touzi {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #f0f4fd;
+}
+.touzi-content{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.huankuang {
+    padding: 0;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    background: #f8958f;
+}
+.manbiao {
+    display: none;
+    padding: 0;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    background: #f8958f;
+}
+.rengou {
+    display: none;
+    padding: 0;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    background: #f34334;
+}
