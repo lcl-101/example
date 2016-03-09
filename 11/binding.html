@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>选择辅导员</title>
+    <link rel="stylesheet" href="css/iconfont.css"/> 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/binding.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tz_send.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.faculty_right1').click(function(){
+                $('.menus1').css({display:"block"});
+            })
+            $('.faculty_left_1').focus(function(){        
+                $('.menus1').css({display:"block"});
+            })
+            $('.menus1 li').click(function(){
+                var con=$(this).html()
+                $('.faculty_left_1').val(con);  
+                $(this)[0].addEventListener("click", function () {
+                    $('.menus1').css({display:"none"}); 
+                })
+            })
+
+
+            $('.faculty_right2').click(function(){
+                $('.menus2').css({display:"block"});
+            })
+            $('.faculty_left_2').focus(function(){        
+                $('.menus1').css({display:"block"});
+            })
+            $('.menus2 li').click(function(){
+                var con=$(this).html()
+                $('.faculty_left_2').val(con);  
+                $(this)[0].addEventListener("click", function () {
+                    $('.menus2').css({display:"none"}); 
+                })
+            })
+
+        })
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row top">
+            <header class="col-xs-12 col-sm-12 header">选择辅导员</header>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row"> 
+            <section class="cont">
+                <form action='' method='' class='forms'>
+                    <label class='item1 col-lg-12'>
+                        <div class="names col-xs-12 col-sm-4 col-md-3">学校</div><input type="text" class="excel col-xs-12 col-sm-8 col-md-9"/>
+                    </label>
+                    <label class='item1 col-lg-12'>
+                        <div class="names col-xs-12 col-sm-4 col-md-3">院系</div>
+                        <div class="faculty">
+                            <input class="faculty_left faculty_left_1" value="计算机系">
+                            <div class="faculty_right faculty_right1"><span class="iconfont">&#xe607;</span></div>
+                            <ul class="menus menus1">
+                               <li>计算机系</li>
+                               <li>物理系</li>
+                               <li>化学系</li>
+                               <li>数学系</li>
+                               <li>教育系</li>
+                               <li>艺术系</li>
+                               <li>建筑系</li>
+                               <li>经管系</li>
+                               <li>中文系</li>
+                               <li>生科系</li>
+                            </ul>
+                        </div>
+                    </label>
+                    <!-- <label class='item1 col-lg-12'>
+                        <div class="names col-xs-12 col-sm-4 col-md-3">辅导员</div>
+                        <div class="faculty faculty2">
+                            <input class="faculty_left faculty_left_2" value="刘敏">
+                            <div class="faculty_right faculty_right2"><span class="iconfont">&#xe607;</span></div>
+                            <ul class="menus menus2">
+                               <li>计算机系</li>
+                               <li>物理系</li>
+                               <li>化学系</li>
+                               <li>数学系</li>
+                               <li>教育系</li>
+                               <li>艺术系</li>
+                               <li>建筑系</li>
+                               <li>经管系</li>
+                               <li>中文系</li>
+                               <li>生科系</li>
+                            </ul>
+                        </div>
+                    </label> -->
+                    <!-- <input class="btns_next" value="下一步" type="button" name="next"> -->
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+     
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

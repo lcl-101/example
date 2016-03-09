@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var one=document.querySelector(".bb");
+            var r=10;
+            var ang=0;
+            var ang1=0;
+            var step=1;
+            setInterval(function(){
+                ang+=1;
+                ang1+=2;
+                var x=Math.cos(ang*Math.PI/180)*r;
+                var y=Math.sin(ang1*Math.PI/180)*r;
+                one.style.left=10+x+"px";
+                one.style.top=20+y+"px";
+            },2)
+        }
+    </script>
+    <style>
+        .aa{
+            width: 500px;
+            height: 500px;
+            border:1px solid red;
+            position: relative;
+            margin: 50px auto;
+            background: rgba(59, 57, 59, 0.55);
+        }
+        .out{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            top: 100px;
+            left: 200px;
+
+        }
+        .bb{
+            width: 50px;
+            height: 50px;
+            /*background: red;*/
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">
+        <div class="out">
+            <div class="bb">
+                <img src="../12-2/images/dian.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

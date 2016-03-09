@@ -1,0 +1,10 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p,form,dl,dd,input{
+    margin:0;padding:0;list-style:none;
+}
+img{border:0;}
+a{
+    text-decoration:none;
+}
+body{
+    font-size:12px;
+}
