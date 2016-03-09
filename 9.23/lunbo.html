@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            var imgbox=$(".inner");
+            var imgs=$(".inner li");
+            var imgw=$(imgs).width();
+            $(".inner").css({width:"imgw*imgs.length"});
+            var flag=true;
+            var t=setInterval(move,3000);
+            function move(){
+                $(imgbox).animate({marginLeft:-imgw},function(){
+                    $(".inner li:eq(0)").appendTo(imgbox);
+                    $(imgbox).css({marginLeft:0});
+                    flag=true;
+                });
+            }
+            function move2(){
+                $(".inner li:last").prependTo(imgbox);
+                $(imgbox).css({marginLeft:-imgw});
+                $(imgbox).animate({marginLeft:0},function(){
+                    flag=true;
+                });
+            }
+            $(".lefts,.rights").hover(function(){
+                clearInterval(t);
+            },function(){
+                t=setInterval(move,1000);
+            })
+            $(".lefts").click(function(){
+                if(!flag){
+                    return;
+                }
+                flag=false;
+                move();
+            })
+            $(".rights").click(function(){
+                if(!flag){
+                    return;
+                }
+                flag=false;
+                move2();
+            })
+        })
+
+    </script>
+    <style>
+     body,ul,li{
+         padding:0;margin:0;list-style: none;
+     }
+     .box{
+         width:1000px;height:405px;border:1px solid #333;position:absolute;margin:auto auto;left:0;right:0;top:0;bottom:0;
+     }
+     .content{
+         width: 1000px;height:405px;margin:0 auto;overflow: hidden;
+     }
+    .lefts{
+        width:20px;height:20px;position:absolute;left:0;top:48%;text-align: center;line-height: 20px;cursor: pointer;
+    }
+     .rights{
+         width:20px;height:20px;position:absolute;right:0;top:48%;text-align: center;line-height: 20px;cursor: pointer;
+     }
+     .inner{
+         width:2000px;height:100%;
+     }
+     .inner li{
+         float:left;width:340px;height:405px;font-size: 50px;text-align: center;line-height: 200px;
+     }
+     .inner li div{
+         width:320px;height:405px;background:#eee;
+     }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="lefts">&lt;</div>
+        <div class="content">
+                <ul class="inner">
+                    <li>
+                        <div>1</div>
+                    </li>
+                    <li>
+                        <div>2</div>
+                    </li>
+                    <li>
+                        <div>3</div>
+                    </li>
+                    <li>
+                        <div>4</div>
+                    </li>
+                    <li>
+                        <div>5</div>
+                    </li>
+                    <li>
+                        <div>6</div>
+                    </li>
+                    <li>
+                        <div>7</div>
+                    </li>
+                    <li>
+                        <div>8</div>
+                    </li>
+                    <li>
+                        <div>9</div>
+                    </li>
+                    <li>
+                        <div>10</div>
+                    </li>
+                </ul>
+        </div>
+        <div class="rights">&gt;</div>
+    </div>
+</body>
+</html>

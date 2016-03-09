@@ -1,0 +1,1264 @@
+body,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  border: 0px;
+}
+a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+body {
+  font: 12px/1.5 "Microsoft YaHei";
+  color: #8c8c8c;
+  background: #fff;
+}
+.container {
+  width: 496px;
+  height: auto;
+  margin: 0 auto;
+}
+.container > .row {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container-fulid {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.container-fulid > .row {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*С��*/
+.container > .row > .col-s-1 {
+  float: left;
+  height: 100%;
+  width: 5%;
+}
+.container-fulid > .row > .col-s-1 {
+  float: left;
+  height: 100%;
+  width: 5%;
+}
+.container > .row > .col-s-2 {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+.container-fulid > .row > .col-s-2 {
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+.container > .row > .col-s-3 {
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+.container-fulid > .row > .col-s-3 {
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+.container > .row > .col-s-4 {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+.container-fulid > .row > .col-s-4 {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+.container > .row > .col-s-5 {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+.container-fulid > .row > .col-s-5 {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+.container > .row > .col-s-6 {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.container-fulid > .row > .col-s-6 {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.container > .row > .col-s-7 {
+  float: left;
+  height: 100%;
+  width: 35%;
+}
+.container-fulid > .row > .col-s-7 {
+  float: left;
+  height: 100%;
+  width: 35%;
+}
+.container > .row > .col-s-8 {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+.container-fulid > .row > .col-s-8 {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+.container > .row > .col-s-9 {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+.container-fulid > .row > .col-s-9 {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+.container > .row > .col-s-10 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+.container-fulid > .row > .col-s-10 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+.container > .row > .col-s-11 {
+  float: left;
+  height: 100%;
+  width: 55%;
+}
+.container-fulid > .row > .col-s-11 {
+  float: left;
+  height: 100%;
+  width: 55%;
+}
+.container > .row > .col-s-12 {
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+.container-fulid > .row > .col-s-12 {
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+.container > .row > .col-s-13 {
+  float: left;
+  height: 100%;
+  width: 65%;
+}
+.container-fulid > .row > .col-s-13 {
+  float: left;
+  height: 100%;
+  width: 65%;
+}
+.container > .row > .col-s-14 {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+.container-fulid > .row > .col-s-14 {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+.container > .row > .col-s-15 {
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+.container-fulid > .row > .col-s-15 {
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+.container > .row > .col-s-16 {
+  float: left;
+  height: 100%;
+  width: 80%;
+}
+.container-fulid > .row > .col-s-16 {
+  float: left;
+  height: 100%;
+  width: 80%;
+}
+.container > .row > .col-s-17 {
+  float: left;
+  height: 100%;
+  width: 85%;
+}
+.container-fulid > .row > .col-s-17 {
+  float: left;
+  height: 100%;
+  width: 85%;
+}
+.container > .row > .col-s-18 {
+  float: left;
+  height: 100%;
+  width: 90%;
+}
+.container-fulid > .row > .col-s-18 {
+  float: left;
+  height: 100%;
+  width: 90%;
+}
+.container > .row > .col-s-19 {
+  float: left;
+  height: 100%;
+  width: 95%;
+}
+.container-fulid > .row > .col-s-19 {
+  float: left;
+  height: 100%;
+  width: 95%;
+}
+.container > .row > .col-s-20 {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.container-fulid > .row > .col-s-20 {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+/*����*/
+@media screen and (min-width: 992px) {
+  .container > .row > .col-m-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container-fulid > .row > .col-m-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container > .row > .col-m-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container-fulid > .row > .col-m-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container > .row > .col-m-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container-fulid > .row > .col-m-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container > .row > .col-m-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container-fulid > .row > .col-m-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container > .row > .col-m-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container-fulid > .row > .col-m-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container > .row > .col-m-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container-fulid > .row > .col-m-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container > .row > .col-m-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container-fulid > .row > .col-m-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container > .row > .col-m-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container-fulid > .row > .col-m-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container > .row > .col-m-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container-fulid > .row > .col-m-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container > .row > .col-m-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container-fulid > .row > .col-m-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container > .row > .col-m-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container-fulid > .row > .col-m-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container > .row > .col-m-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container-fulid > .row > .col-m-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container > .row > .col-m-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container-fulid > .row > .col-m-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container > .row > .col-m-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container-fulid > .row > .col-m-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container > .row > .col-m-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container-fulid > .row > .col-m-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container > .row > .col-m-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container-fulid > .row > .col-m-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container > .row > .col-m-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container-fulid > .row > .col-m-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container > .row > .col-m-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container-fulid > .row > .col-m-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container > .row > .col-m-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container-fulid > .row > .col-m-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container > .row > .col-m-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container-fulid > .row > .col-m-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    width: 992px;
+  }
+}
+/*����*/
+@media screen and (min-width: 1240px) {
+  .container > .row > .col-l-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container-fulid > .row > .col-l-1 {
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+  .container > .row > .col-l-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container-fulid > .row > .col-l-2 {
+    float: left;
+    height: 100%;
+    width: 10%;
+  }
+  .container > .row > .col-l-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container-fulid > .row > .col-l-3 {
+    float: left;
+    height: 100%;
+    width: 15%;
+  }
+  .container > .row > .col-l-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container-fulid > .row > .col-l-4 {
+    float: left;
+    height: 100%;
+    width: 20%;
+  }
+  .container > .row > .col-l-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container-fulid > .row > .col-l-5 {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
+  .container > .row > .col-l-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container-fulid > .row > .col-l-6 {
+    float: left;
+    height: 100%;
+    width: 30%;
+  }
+  .container > .row > .col-l-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container-fulid > .row > .col-l-7 {
+    float: left;
+    height: 100%;
+    width: 35%;
+  }
+  .container > .row > .col-l-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container-fulid > .row > .col-l-8 {
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .container > .row > .col-l-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container-fulid > .row > .col-l-9 {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+  .container > .row > .col-l-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container-fulid > .row > .col-l-10 {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  .container > .row > .col-l-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container-fulid > .row > .col-l-11 {
+    float: left;
+    height: 100%;
+    width: 55%;
+  }
+  .container > .row > .col-l-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container-fulid > .row > .col-l-12 {
+    float: left;
+    height: 100%;
+    width: 60%;
+  }
+  .container > .row > .col-l-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container-fulid > .row > .col-l-13 {
+    float: left;
+    height: 100%;
+    width: 65%;
+  }
+  .container > .row > .col-l-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container-fulid > .row > .col-l-14 {
+    float: left;
+    height: 100%;
+    width: 70%;
+  }
+  .container > .row > .col-l-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container-fulid > .row > .col-l-15 {
+    float: left;
+    height: 100%;
+    width: 75%;
+  }
+  .container > .row > .col-l-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container-fulid > .row > .col-l-16 {
+    float: left;
+    height: 100%;
+    width: 80%;
+  }
+  .container > .row > .col-l-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container-fulid > .row > .col-l-17 {
+    float: left;
+    height: 100%;
+    width: 85%;
+  }
+  .container > .row > .col-l-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container-fulid > .row > .col-l-18 {
+    float: left;
+    height: 100%;
+    width: 90%;
+  }
+  .container > .row > .col-l-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container-fulid > .row > .col-l-19 {
+    float: left;
+    height: 100%;
+    width: 95%;
+  }
+  .container > .row > .col-l-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container-fulid > .row > .col-l-20 {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    width: 1240px;
+  }
+}
+/* top start */
+#top-box {
+  width: 100%;
+  height: 40px;
+  background: #333;
+}
+.top {
+  height: 100%;
+}
+.top .top-left {
+  height: 100%;
+  width: auto;
+  float: left;
+  line-height: 37px;
+}
+.top .top-right {
+  height: 100%;
+  width: auto;
+  float: right;
+  line-height: 37px;
+}
+.top i {
+  font-style: normal;
+  margin: 13px;
+  color: #8c8c8c;
+}
+a:hover {
+  color: white;
+}
+/* top end */
+/* logo start */
+#logo-top {
+  /* background:blue; */
+  height: 110px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.logo a {
+  width: 70px;
+  height: 70px;
+  background: url(../images/logo.jpg) no-repeat 0 0;
+  margin-top: 25px;
+  float: left;
+}
+.logo-left {
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+.input {
+  margin-top: 55px;
+  float: right;
+}
+.search {
+  float: right;
+  width: 38px;
+  height: 38px;
+  margin-top: 55px;
+  margin-right: 2px;
+}
+.search a {
+  float: left;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e0e0e0;
+  background: url(../images/search.gif) no-repeat 0 0;
+  background-position: center;
+}
+.search a:hover {
+  width: 38px;
+  height: 38px;
+  background: #ff4a00 url(../images/search2.jpg) no-repeat 0 0;
+  background-position: center;
+  border: 1px solid #ff4a00;
+}
+.input input {
+  border: 1px solid #e0e0e0;
+  border-right: 0px;
+  height: 38px;
+  width: 300px;
+  padding-left: 14px;
+  color: #333;
+  font-size: 14px;
+}
+/* logo end */
+/*banner start*/
+.banner {
+  height: 460px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.tab {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  right: 30px;
+  bottom: 30px;
+}
+.tab li {
+  width: 6px;
+  height: 6px;
+  float: left;
+  margin-right: 10px;
+  background: #757575;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  cursor: pointer;
+}
+.banner-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 234px!important;
+  height: 443px;
+  background: #333;
+  opacity: 0.5;
+  z-index: 1;
+  padding-top: 22px;
+  overflow: hidden;
+}
+.banner-left a {
+  display: block;
+  padding-left: 34px;
+  width: 100%;
+  height: 43px;
+  color: #fff;
+  line-height: 43px;
+}
+.banner-left a:hover {
+  background: #FF6700;
+}
+.banner-left a span {
+  width: 20px;
+  height: 43px;
+  text-align: center;
+  font-size: 18px;
+  float: right;
+  margin-right: 56px;
+}
+.bannerright img {
+  position: absolute;
+  width: 1240px;
+}
+@media screen and (max-width: 1240px) {
+  .bannerright img {
+    width: 984px;
+  }
+  .banner {
+    height: 369px;
+  }
+  .banner-left {
+    height: 347px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .bannerright img {
+    width: 492px;
+  }
+  .banner {
+    height: 185px;
+  }
+  .banner-left {
+    height: 163px;
+  }
+}
+.kf {
+  width: 1240px;
+  height: 171px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.kf-a {
+  width: 240px;
+  height: 100%;
+  float: left;
+}
+.kf-a img {
+  width: 100%;
+  height: 100%;
+}
+.kf-b {
+  width: 1000px;
+  height: 171px;
+  float: right;
+}
+.kf-b img {
+  width: 317px;
+  height: 171px;
+  float: right;
+  margin: 0 0 0 12px;
+}
+@media screen and (max-width: 1240px) {
+  .kf {
+    width: 992px;
+  }
+  .kf-b {
+    width: 752px;
+  }
+  .kf-b img {
+    margin: 0 0 0 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .kf {
+    width: 500px;
+  }
+  .kf-b {
+    width: 260px;
+  }
+  .kf-b img {
+    width: 260px;
+    margin: 0;
+  }
+}
+/*banner end*/
+/*xiaomi mingxing start*/
+.xm {
+  margin: 20px auto 0 auto;
+  width: 1240px;
+  height: 50px;
+  line-height: 50px;
+}
+@media screen and (max-width: 1240px) {
+  .xm {
+    width: 992px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .xm {
+    width: 500px;
+  }
+}
+.xm p {
+  float: left;
+  line-height: 50px;
+  color: #000;
+  font-size: 18px;
+}
+.xm-1 p {
+  line-height: 50px;
+}
+.xm-1 {
+  float: right;
+  box-sizing: border-box;
+  width: 72px;
+  height: 30px;
+}
+.xm-1 span {
+  box-sizing: border-box;
+  display: block;
+  width: 36px;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-family: '����';
+  border: 1px solid #dfdfdf ;
+}
+.box-bd {
+  height: 340px;
+}
+.box-bd > .row > .dan1 {
+  text-align: center;
+}
+.dan {
+  text-align: right;
+}
+/*xiaomi mingxing end*/
+/*xiaomi yingjian start*/
+.box {
+  width: 100%;
+  height: 2900px;
+  background: #F5F5F5;
+  overflow: hidden;
+  margin-top: 40px;
+}
+#li-qa,
+#li-qa1 {
+  height: 614px;
+  margin-top: 5px;
+}
+.xm-1 p {
+  font-size: 16px;
+  color: #424242;
+  cursor: pointer;
+}
+.nr {
+  margin-top: 40px;
+}
+.li-w1 {
+  height: 100%!important;
+}
+.li-q2 .li-zn {
+  width: 97%;
+  height: 302px;
+  background: #fff;
+  overflow: hidden;
+  border: none!important;
+}
+.li-q2 .li-zn img,
+.li-q2 .li-zn1 img {
+  width: 220px;
+  height: 220px;
+  margin: 0 5px;
+  display: block;
+}
+.li-q2 .li-zn1 {
+  width: 97%;
+  height: 304px;
+  background: #fff;
+  border: none!important;
+  margin-top: 8px;
+}
+.li-zna {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+.li-zna a:hover {
+  color: #424242;
+}
+.li-zn:hover,
+.li-zn1:hover {
+  position: relative;
+  top: -1px;
+  box-shadow: 5px 5px 10px #ccc;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.li-znb {
+  color: #FF6700;
+}
+/*xiaomi yingjian end*/
+/*xiaomi dapei end*/
+.peijian {
+  height: 300px;
+  margin-bottom: 20px;
+}
+.peijian > .row > div {
+  position: relative;
+  width: 240px!important;
+  text-align: center;
+  margin-right: 8px;
+  height: 300px;
+  background: white;
+}
+.peitan {
+  position: absolute;
+  width: 240px;
+  height: 76px;
+  background: #ff6700;
+  bottom: -76px;
+}
+.peitan span {
+  color: white;
+  display: block!important;
+  width: 200px!important;
+  margin: 4px auto;
+}
+.peitan i {
+  color: #f7a36b;
+  display: block!important;
+  width: 200px!important;
+  margin: 4px auto;
+  font-style: normal;
+}
+.pei1 {
+  margin-right: 0px!important;
+}
+.pei2 > img {
+  width: 240px;
+}
+.peijian > .row > div:hover {
+  position: relative;
+  top: -1px;
+  box-shadow: 5px 5px 10px #ccc;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.pei3:hover {
+  box-shadow: 0 0 0 0!important;
+  cursor: default!important;
+  top: 0!important;
+}
+.pei3 {
+  background: #F5F5F5!important;
+}
+.pei3 > div {
+  width: 240px;
+  height: 144px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.pei3 > div:hover {
+  position: relative;
+  top: -1px;
+  box-shadow: 5px 5px 10px #ccc;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+/* foot start */
+.foot {
+  height: 536px;
+  background: white;
+}
+.foot a:hover {
+  color: black;
+}
+.foot-top {
+  height: 158px!important;
+  width: 1240px;
+  border-bottom: 1px solid #dfdfdf;
+  margin: 0 auto;
+}
+.f-t1 {
+  float: left;
+  width: 248px;
+  height: 100%;
+  text-align: center;
+}
+.f-t-t {
+  width: 119px;
+  height: 43px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: url(../images/foot1.jpg) no-repeat 0 0;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.f-t2 {
+  font-size: 18px;
+  color: #333;
+}
+.f-t-t:hover {
+  background: url(../images/foot21.jpg) no-repeat 0 0;
+}
+.f-t-t2 {
+  width: 119px;
+  height: 43px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: url(../images/foot3.jpg) no-repeat 0 0;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.f-t-t2:hover {
+  background: url(../images/foot4.jpg) no-repeat 0 0;
+}
+.f-t-t3 {
+  width: 119px;
+  height: 43px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: url(../images/foot5.jpg) no-repeat 0 0;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.f-t-t3:hover {
+  background: url(../images/foot6.jpg) no-repeat 0 0;
+}
+.foot-middle {
+  width: 1240px;
+  height: 199px!important;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dfdfdf;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.f-m1 {
+  float: left;
+  width: 166px;
+  height: 118px;
+  border-right: 1px solid #dfdfdf;
+  /* background:yellow; */
+  margin-top: 40px;
+}
+.f-m1 p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+}
+.f-m1 a {
+  font-size: 14px;
+}
+.f-a {
+  display: inline-block;
+  margin-top: 4px;
+}
+.f-m1 a:hover {
+  color: #ff4a00;
+}
+.f-m2 {
+  float: left;
+  width: 166px;
+  height: 118px;
+  box-sizing: border-box;
+  border-right: 1px solid #dfdfdf;
+  /* background:yellow; */
+  margin-top: 40px;
+  margin-left: 32px;
+}
+.f-m2 p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+}
+.f-m2 a {
+  font-size: 14px;
+}
+.f-a1 {
+  display: inline-block;
+  margin-top: 4px;
+}
+.f-m2 a:hover {
+  color: #ff4a00;
+}
+.foot-middle-right {
+  float: left;
+  width: 280px;
+  height: 100%;
+  /* background:yellow; */
+  text-align: center;
+}
+.foot-middle-right span {
+  display: inline-block;
+  font-size: 26px;
+  color: #333;
+  margin-top: 38px;
+}
+.foot-middle-right p {
+  font-size: 14px;
+}
+.f-m-b {
+  margin: 0 auto;
+  width: 120px;
+  height: 30px;
+  background: #ff4a00;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.f-m-b:hover {
+  background: #ed330a;
+}
+.foot-bottom {
+  height: 56px!important;
+  width: 1240px;
+  margin: 0 auto;
+  /* background:yellow; */
+  line-height: 92px;
+  text-align: center;
+  color: #333;
+}
+.foot-bottom a {
+  color: #333;
+}
+.foot-bottom a:hover {
+  color: #ff4a00;
+}
+.foot-b1 {
+  width: 1240px;
+  height: 22px!important;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+.foot-b1 a {
+  color: #333;
+}
+.foot-b1 a:hover {
+  color: #ff4a00;
+}
+.foot-b2 {
+  height: 50px!important;
+  width: 1240px;
+  margin: 0 auto;
+}
+.foot-b2 img {
+  float: left;
+  margin-left: 530px;
+  margin-top: 12px;
+}
+.foot-b2 select {
+  float: left;
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 20px;
+  color: #8c8c8c;
+}

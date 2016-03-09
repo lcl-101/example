@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+
+            jQuery.fn.extend({
+                mouseWheel:function(upfun,downfun){
+                    this.each(function(index,obj){
+                        if(obj.attachEvent){
+                            obj.attachEvent("onmousewheel",scrollFn); //IE、opera
+                        }else if(obj.addEventListener){
+                            obj.addEventListener("mousewheel",scrollFn,false);
+                            //chrome,safari -webkit
+                            obj.addEventListener("DOMMouseScroll",scrollFn,false);
+                            //firefox -moz-
+                        }
+                        function scrollFn(e){
+                            var ev=e||window.event;
+                            var num=ev.wheelDelta||ev.detail;  //获取滚轮的方向
+                            // alert(navigator.platform);  // 获取浏览器所在的平台
+                            if(navigator.platform=="MacIntel"){//在mac平台下的兼容
+                                if(num==-3||num==1){   //  滚轮防线向上
+                                    upfun.call(obj);
+                                }else if(num==3||num==1){  //  滚轮方向向下
+                                    downfun.call(obj);
+                                }
+                            }else{
+                                if(num==120||num==-3){    //  滚轮防线向上
+                                    upfun.call(obj);
+                                }else if(num==-120||num==3){    //  滚轮方向向下
+                                    downfun.call(obj);
+                                }
+                            }
+                            if (ev.preventDefault){  //解决浏览器默认的事件
+                                ev.preventDefault();
+                            }else{
+                                ev.returnValue=false;
+                            }
+                        }
+                    })
+                }
+            })
+            $(function(){
+//                $("div").mouseWheel(function(){
+//                    alert(1);
+//                },function(){
+//                    alert(2);
+//                })
+                $("<div>").css({width:200,height:200,background:"yellow"}).appendTo("body").mouseWheel(function(){
+                   $(this).css({width:$(this).width()+10});
+                    $(this).css({background:"red"});
+                },function(){
+                    $(this).css({width:$(this).width()-10});
+                    $(this).css({background:"yellow"});
+                })
+            })
+
+    </script>
+    <style>
+        div{
+            float:left;
+            width:200px;
+            height: 200px;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <!--<div></div>-->
+
+</body>
+</html>

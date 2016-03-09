@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script>
+        function aa(selector){
+            if(typeof selector=="function"){
+                this.bb(selector);
+            }
+            if(typeof selector=="string"){
+                if(/^[a-z][1-6a-z]{0,10}$/i.test(selector)){
+                    var objs=document.getElementsByTagName(selector);
+                    for(var i=0;i<objs.length;i++){
+                        this[i]=objs[i];
+                    }
+                    this.length=objs.length;
+                }else if(selector.charAt(0)=="."){
+                    var objs=this._getClass(selector);
+                    for(var i=0;i<objs.length;i++){
+                        this[i]=objs[i];
+                    }
+                    this.length=objs.length;
+                }
+            }
+
+        }
+        aa.prototype={
+            bb:function(selector){
+                this.fun(selector);
+            },
+            _getClass:function(classname,obj){
+                var arr=[];
+                var obj=obj||document;
+                if(document.getElementsByClassname){
+                    return obj.getElementsByClassName(classname);
+                }else{
+                    var all=obj.getElementsByTagName("*");//获取所有的元素
+                    var arr=[];
+                    for(var i=0;i<all.length;i++){
+                        if(_checkClass(all[i].className,classname)){
+                            arr.push(all[i]);
+                        }
+                    }
+                    return arr;
+                }
+            },
+            _checkClass:function(objname,checkname){
+                var arr=objname.split(" ");
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]==checkname){
+                        return true;
+                    }
+                }
+                return false;
+            },
+            fun:function(selector){
+                window.onload=function(){
+                    selector();
+                }
+            },
+            each:function(callback){
+                for(var i=0;i<this.length;i++){
+                    callback(i,this[i]);
+                }
+            },
+            html:function(val){
+                this.each(function(index,obj){
+                    obj.innerHTML=val;
+                });
+                return this;
+            },
+            css:function(attr){
+                this.each(function(index,obj){
+                    for(var i in attr) {
+                        obj.style[i] = attr[i];
+                    }
+                });
+                return this;
+            },
+            click:function(callback){
+                this.each(function(index,obj){
+                    obj.onclick=function(){
+                        callback();
+                    }
+                })
+            },
+            extend:function(obj){
+                for(var i in obj){
+                    aa.prototype= obj[i];
+                }
+            }
+        }
+
+        function $(selector){
+             return new aa(selector);
+        }
+        $(function(){
+//            alert(1);
+//            alert($("div").length);
+            $("div").html("hehe").css({
+                width:"200px",height:"200px",border:'1px solid red'
+            }).click(function(){
+               alert(1);
+            });
+            alert($(".one").length);
+        })
+    </script>
+</head>
+<body>
+    <div class=".one"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
