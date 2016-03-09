@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var widths=document.documentElement.clientWidth;
+            var heights=document.documentElement.clientHeight;
+            var arr=[];
+            for(var i=0;i<100;i++){
+                var div=document.createElement("div");
+                div.style.cssText="-webkit-filter:blur(1px);width:1px;height:10px;background:white;position:absolute;left:"+(100+(widths-200)*Math.random())+"px;top:"+((100-50)*Math.random()-100)+"px;transition:all 1.5s cubic-bezier(.59,.12,.8,.62) "+5*Math.random()+"s;"
+                document.body.appendChild(div);
+                arr.push(div);
+                setTimeout(function(){
+                    for(var i=0;i<arr.length;i++){
+                        arr[i].style.top=heights+'px';
+                        arr[i].addEventListener("webkitTransitionEnd",function(){
+                            this.style.transition="";
+                            this.style.top='-100px';
+                            var that=this;
+                            setTimeout(function(){
+                                that.style.transition='all 1.5s cubic-bezier(.59,.12,.8,.62)';
+                                that.style.top=heights+'px';
+                            },0)
+                        })
+                    }
+                },0)
+
+            }
+
+        }
+    </script>
+    <style>
+        html,body{
+            background: black;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

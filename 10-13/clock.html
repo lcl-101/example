@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var t;
+            var flag=false;
+            window.onblur=function(){
+
+                clearInterval(t);
+            }
+            window.onfocus=function(){
+                flag=true;
+                t=setInterval(move,1000);
+            }
+            var clock=document.getElementsByTagName("div")[0];
+            drawMark(clock);
+            var times=new Date();
+            var hs=times.getHours()*30-(90-(times.getMinutes()*6-90)/12);
+            var ms=times.getMinutes()*6-90;
+            var ss=times.getSeconds()*6-90;
+            var h=drawpointer(clock,hs);
+            var m=drawpointer(clock,ms,60,4);
+            var s=drawpointer(clock,ss,70,2,'red');
+
+            t=setInterval(move,1000);
+            function move(){
+                var times=new Date();
+                var hs=times.getHours()*30-(90-(times.getMinutes()*6-90)/12);
+                var ms=times.getMinutes()*6-90;
+                var ss=times.getSeconds()*6-90;
+                h.style.transform="rotate("+hs+"deg)";
+                m.style.transform="rotate("+ms+"deg)";
+                s.style.transform="rotate("+ss+"deg)";
+                if(ss==-90||flag==true){
+                    s.style.transition="";
+                    flag=false;
+                }else{
+                    s.style.transition="all 0.5s cubic-bezier(.47,.46,0,1.87)";
+                }
+            }
+            //画刻度
+            function drawMark(clock){
+                for(var i=0;i<60;i++){
+                    var widths,heights;
+                    if(i%5==0){
+                        widths=5;
+                        heights=10;
+                    }else{
+                        widths=3;
+                        heights=8;
+                    }
+                    var mark=document.createElement("div");
+                    mark.style.cssText="width:"+widths+"px;height:"+heights+"px;background:#aaa;position:absolute;top:0;left:0;transform:translate(97.5px,0) rotate("+i*6+"deg);transform-origin:center 100px";
+                    clock.appendChild(mark);
+                }
+            }
+            //画指针
+            function drawpointer(clocl,a,w,h,c){
+                var a=a||0;
+                var w=w||40;
+                var h=h||6;
+                var c=c||'black';
+                var pointer=document.createElement("div");
+                pointer.style.cssText="width:"+w+"px;height:"+h+"px;background:"+c+";position:absolute;top:50%;left:50%;transform:rotate("+a+"deg);transform-origin:left center";
+                clock.appendChild(pointer);
+                return pointer;
+            }
+        }
+    </script>
+    <style>
+        .clock{
+            width: 200px;
+            height: 200px;
+            border:5px solid #888;
+            border-radius: 50%;
+            background:radial-gradient(#fff,#ccc);
+            margin:100px auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock"></div>
+</body>
+</html>

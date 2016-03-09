@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="iconfont.css"/>
+    <script src="../jquery.js"></script>
+    <script>
+        $(function(){
+            var t;
+            $(".box").hover(function(){
+                var r=40;
+                var angle=1;
+
+                t=setInterval(move,2);
+                function move(){
+                    angle++;
+                    var x=Math.cos(angle*Math.PI/180)*r;
+                    var y=Math.sin(angle*Math.PI/180)*r;
+                    $('.reach').css({transform:'translateX('+(-25+x)+'px) translateY('+(-25+y)+'px)'});
+                }
+            },function(){
+                clearInterval(t);
+                $(".reach").css({transform:'translateX('+0+'px) translateY('+0+'px)'});
+
+            })
+
+            var angle=360;
+            var d;
+            $('.box1').hover(function(){
+                d=setInterval(function(){
+                    angle+=50;
+                    $('.sezi').css({transform:'rotate('+angle+'deg)',transition:'all 0.8s ease'})
+                },100)
+            },function(){
+                clearInterval(d);
+            })
+
+            var f;
+            $(".box2").hover(function(){
+                var r=40;
+                var angle=1;
+                var speed=30;
+                f=setInterval(move,2);
+                function move(){
+                    angle++;
+                    speed++;
+                    if(speed==90){
+                        speed=30;
+                    }
+                    var x=Math.cos(angle*Math.PI/180)*r;
+                    var y=Math.sin(angle*Math.PI/180)*r;
+                    $('.qianbi').css({transform:'translateX('+(-25+x)+'px) translateY('+(-25+y+speed)+'px)'});
+                }
+            },function(){
+                clearInterval(t);
+                $(".reach").css({transform:'translateX('+0+'px) translateY('+0+'px)'});
+
+            })
+        })
+    </script>
+    <style>
+        .box{
+            width:200px;height: 200px;margin-top: 100px;margin-left: 30px;position: absolute;background: red;
+        }
+        .reach{
+            width:50px;height:50px;background: #dfdfdf;font-size: 30px;text-align: center;line-height: 50px;border-radius: 50%;position: absolute;right:0;bottom:0;
+        }
+        .box1{
+            width:200px;height: 200px;margin-top: 100px;margin-left: 400px;position: absolute;background: red;
+        }
+        .sezi{
+            width:50px;height:50px;background: #dfdfdf;font-size: 30px;text-align: center;line-height: 50px;border-radius: 50%;position: absolute;right:0;bottom:0;
+        }
+        .box2{
+            width:200px;height: 200px;margin-top: 100px;margin-left: 800px;position: absolute;background: red;
+        }
+        .qianbi{
+            width:50px;height:50px;background: #dfdfdf;font-size: 30px;text-align: center;line-height: 50px;border-radius: 50%;position: absolute;right:0;bottom:0;
+        }
+        /*.sezi:hover{*/
+            /*transform:rotate(90deg);transition:all 0.5s ease;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="iconfont reach">&#xe69d;</div>
+    </div>
+    <div class="box1">
+        <div class="iconfont sezi">&#xe787;</div>
+    </div>
+    <div class="box2">
+        <div class="iconfont qianbi">&#xe784;</div>
+    </div>
+</body>
+</html>
