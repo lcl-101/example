@@ -1,0 +1,57 @@
+@font-face {font-family: "iconfont";
+  src: url('../css/iconfont.eot'); /* IE9*/
+  src: url('../css/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../css/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../css/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../css/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+@font0:e600;
+@font1:e601;
+@font2:e602;
+@font3:e603;
+@font4:e607;
+@font5:e609;
+@font6:e60d;
+@font7:e605;
+@font8:e60e;
+@fontname0:baozhang;
+@fontname1:youxian;
+@fontname2:paidui;
+@fontname3:liwu;
+@fontname4:news;
+@fontname5:yuedu;
+@fontname6:shiting;
+@fontname7:faxian;
+@fontname8:wo;
+.font(@i:0) when(@i<9){
+  @num1:"font@{i}";
+  @num2:@@num1;
+  @num3:"fontname@{i}";
+  @num4:@@num3;
+  *[data-icon=@{num4}]:before{
+    font-family: 'iconfont';
+    content: '\@{num2}';
+  }
+  *[data-icon=@{num4}][icon-pos=top]:before{
+    text-align: center;
+    display: block;
+  }
+  *[data-icon=@{num4}][icon-pos=right]:before{
+    content:'';
+  }
+  *[data-icon=@{num4}][icon-pos=right]:after{
+    font-family: 'iconfont';
+    content: '\@{num2}';
+  }
+  *[data-icon=@{num4}][icon-pos=bottom]:before{
+    content:'';
+  }
+  *[data-icon=@{num4}][icon-pos=bottom]:after{
+    font-family: 'iconfont';
+    content: '\@{num2}';
+    display: block;
+    text-align: center;
+  }
+  .font(@i+1)
+}
+.font();

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/huaban.css"/>
+    <script src="jquery.js"></script>
+    <script src="js/huaban.js"></script>
+    <script src="draw.js"></script>
+    <!--<script>-->
+        <!--$(function(){-->
+            <!--var canvas=document.getElementsByTagName("canvas")[0];-->
+<!--//            var cobj=canvas.getContext('2d');-->
+<!--//            var drawObj=new draw(canvas,cobj);-->
+<!--//            drawObj.style.strokeColor='red';-->
+<!--//            drawObj.style.fillColor='yellow';-->
+<!--//            drawObj.type='rect'-->
+<!--//            drawObj.drawfun();-->
+<!--//            drawObj.pencil();-->
+
+        <!--})-->
+    <!--</script>-->
+</head>
+<body>
+    <div class="mycanvas">
+        <div class="menu">
+            <div class="logo"></div>
+            <ul class="option">
+                <li>文件</li>
+                <ul class="son file">
+                    <li>新建</li>
+                    <li>保存</li>
+                </ul>
+            </ul>
+            <ul class="option">
+                <li>画图</li>
+                <ul class="son type">
+                    <li data-role="line">线</li>
+                    <li data-role="rect">矩形</li>
+                    <li data-role="arc">圆</li>
+                </ul>
+            </ul>
+            <ul class="option">
+                <li>方式</li>
+                <ul class="son drawStyle">
+                    <li data-role="stroke">画线</li>
+                    <li data-role="fill">填充</li>
+                </ul>
+            </ul>
+            <ul class="option">
+                <li>线条宽度</li>
+                <ul class="son lineWidth">
+                    <li line-width="1">细线</li>
+                    <li line-width="4">中等</li>
+                    <li line-width="10">粗线</li>
+                </ul>
+            </ul>
+            <ul class="color lin-c">
+                <li style="float: left">线条颜色</li>
+                <input type="color" id="stroke"/>
+            </ul>
+            <ul class="color">
+                <li style="float: left">填充颜色</li>
+                <input type="color" id="fill"/>
+            </ul>
+            <div class="color-piece">
+                <div data-color="black"></div>
+                <div data-color="green"></div>
+                <div data-color="blue"></div>
+                <div data-color="red"></div>
+                <div data-color="yellow"></div>
+                <div data-color="#eea236"></div>
+            </div>
+        </div>
+        <div class="lists">
+            <div data-role="pencil" class="pencil">
+                <img src="img/pencil.png" alt=""/>
+            </div>
+            <div data-role="line">
+                <img src="img/line.png" alt=""/>
+            </div>
+            <div data-role="rect">
+                <img src="img/square.png" alt=""/>
+            </div>
+            <div data-role="arc">
+                <img src="img/circle.png" alt=""/>
+            </div>
+            <div id="save">
+                <img src="img/save.png" alt=""/>
+            </div>
+            <div id="rubber" data-role="pencil">
+                <img src="img/rubber.png" alt=""/>
+            </div>
+            <div id="clear">
+                <img src="img/xx.png" alt=""/>
+            </div>
+            <p id="cancel">
+                <img src="img/cancel.png" alt=""/>
+            </p>
+            <div class="lines-w">
+                <img src="img/line_size_1%20(1).png" alt=""/>
+                <ul class="line-weight">
+                    <li line-width="1"><img src="img/line_size_1.png" alt=""/></li>
+                    <li line-width="4"><img src="img/line_size_3.png" alt=""/></li>
+                    <li line-width="10"><img src="img/line_size_5.png" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+        <div class="canvas">
+            <canvas></canvas>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <style>
+        .box{
+            width:800px;height: auto;
+            margin:0 auto;
+            font-size:90px;
+            text-align: center;
+        }
+        .box:before,.box:after{
+            content: "";
+            display: block;
+        }
+        .box:after{
+            clear:both;
+        }
+        .inner{
+            width:33.33333%;height:auto;float: left;position: relative;
+
+        }
+        .son{
+            position: absolute;bottom: 0;right:45%;font-size: 40px;color:red;
+           text-align: center;line-height: 30px;
+        }
+        .inner:last-of-type .son{
+            width:30px;height:30px;
+            font-family: iconfont;text-align: center;
+        }
+        .inner:first-of-type:hover .son{
+            -webkit-animation:yuanzhou 2s linear infinite;
+        }
+        .inner:nth-of-type(2):hover .son{
+            -webkit-animation:move 2s;
+        }
+
+        .inner:last-of-type:hover .son{
+            -webkit-animation:rotate 2s linear infinite;
+        }
+        @-webkit-keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box" >
+    <div class="inner" data-icon="doc">
+        <div class="son" data-icon="search"></div>
+    </div>
+    <div class="inner" data-icon="book">
+        <div class="son" data-icon="pen"></div>
+    </div>
+    <div class="inner" data-icon="go">
+        <div class="son">&#xe603;</div>
+    </div>
+</div>
+</body>
+</html>

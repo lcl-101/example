@@ -1,0 +1,44 @@
+@-webkit-keyframes yun1 {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100%,0);
+    }
+}
+
+@-webkit-keyframes yun2 {
+    0%{
+        transform: translate(100%,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@-webkit-keyframes flight {
+    0%{
+        transform: translate(0,-10px);
+    }
+    100%{
+        transform: translate(0,10px);
+    }
+}
+@-webkit-keyframes down {
+    0%{
+        transform: translate(0,-5px) rotate(90deg);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translate(0,5px) rotate(90deg);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes img {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+}

@@ -1,0 +1,77 @@
+$(function(){
+    $(".options").click(function(){
+        $(".son").toggle(200);
+    })
+    //滑动
+    $(".btns>div").eq(0).css({background:'blue'});
+    var heights=$(window).height();
+    var num=0;
+    var flag=true;
+    touch.on(document.body,"swipeup",function(){
+        if(!flag||num==$(".box>div").length-1){
+            return;
+        }
+        flag=false;
+        num++;
+        $(".ship").css("transform","translate(0,0)");
+        $(".box").css("marginTop",num*-heights);
+        $(".btns>div").css({background:'none'});
+        $(".btns>div").eq(num).css({background:'blue'});
+        animatecome(num);
+        $(".box")[0].addEventListener("webkitTransitionEnd",function(){
+            flag=true;
+        },false);
+    });
+    touch.on(document.body,"swipedown",function(){
+        if(!flag||num==0){
+            return
+        }
+        flag=false;
+        num--;
+        if(num==0){
+            $(".ship").css("transform","translate(100px,0)");
+        }else{
+            $(".ship").css("transform","translate(0,0)");
+        }
+        $(".box").css("marginTop",num*-heights);
+        $(".btns>div").css({background:'none'});
+        $(".btns>div").eq(num).css({background:'blue'});
+        animatecome(num);
+    })
+    //down下拉
+    $('.down').click(function(){
+        if(!flag||num==$(".box>div").length-1){
+            return;
+        }
+        flag=false;
+        num++;
+        $(".box").css("marginTop",num*-heights);
+        $(".btns>div").css({background:'none'});
+        $(".btns>div").eq(num).css({background:'blue'});
+        animatecome(num);
+        $(".box")[0].addEventListener("webkitTransitionEnd",function(){
+            flag=true;
+        },false);
+    })
+    //左右动画
+    function animatecome(num){
+        $('.lefta').each(function(index){
+            if(num==index+1){
+                $(this).css({transform:'translate(0px,0px)',opacity:1})
+            }else{
+                $(this).css({transform:'translate(-30px,0px)',opacity:0})
+            }
+        })
+        $('.righta').each(function(index){
+            if(num==index+1){
+                $(this).css({transform:'translate(0px,0px)',opacity:1})
+            }else{
+                $(this).css({transform:'translate(30px,0px)',opacity:0})
+            }
+        })
+    }
+    $(window).resize(function(){
+        heights=$(window).height();
+        $('.box').css({marginTop:num*-heights});
+    })
+})

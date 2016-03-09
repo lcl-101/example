@@ -1,0 +1,27 @@
+/*圆周运动*/
+@r:10px;
+@r1:5px;
+@r2:10px;
+@num:30;
+.yuan(@i:0)when(@i<=@num){
+  @selector:100/@num*@i*1%;
+  @angle:360/@num*@i*pi()/180;
+  @{selector}{
+    transform: translate(cos(@angle)*@r*1px,sin(@angle)*@r*1px);
+  }
+  .yuan(@i+1);
+}
+@-webkit-keyframes yuanzhou {
+  .yuan();
+}
+.move(@i:0)when(@i<=@num){
+  @selector:100/@num*@i*1%;
+  @angle:360/@num*@i*pi()/180;
+  @{selector}{
+    transform: translate(@i*@r*0.2px,sin(@angle)*@r2*1px);
+  }
+  .move(@i+1);
+}
+@-webkit-keyframes move {
+  .move();
+}
