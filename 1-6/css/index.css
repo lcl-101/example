@@ -1,0 +1,457 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body{
+    font:1px/1.5 "Microsoft YaHei";
+}
+i,em {
+    font-style: normal;
+}
+.container{
+    padding: 0;
+    background: #ffea8d;
+}
+.row{
+    margin: 0;
+}
+/*banner-box*/
+.banner-box div {
+    padding: 0;
+}
+.banner-box img {
+    width: 100%;
+}
+/*part1*/
+.part1-box {
+    width: 90%;
+    background: #ffb401;
+    margin: 0 auto;
+    position: relative;
+}
+.part1-address {
+    display: none;
+    width: 32%;
+    position: absolute;
+    top:0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    background: #ffd776;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.part1-address img{
+    width: 14px;
+}
+.part1-address a{
+    color: #ff0000;
+}
+.part1-address a:hover{
+    color: #ff0000;
+}
+.part1-title {
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+.part1-title img{
+    width: 100%;
+}
+.part1-content {
+    width: 98%;
+    background: #fdedc6;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 5%;
+    overflow-y: scroll;
+    padding-bottom: 2%;
+}
+@media screen and (min-width: 375px){
+    .part1-content {
+        height: 280px;
+    }
+}
+@media screen and (min-width:414px) {
+    .part1-content {
+        height: 290px;
+    }
+}
+.part1-content li {
+    float: left;
+    width: 28%;
+    margin-left: 4%;
+    margin-top: 4%;
+    border: 1px solid #fe9935;
+    overflow: hidden;
+}
+.part1-content li img{
+    width: 100%;
+}
+.part1-juan-title {
+    width: 100%;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+.part1-btn {
+    width: 58%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    background: url("../images/partbtn2.png") no-repeat 0 center;
+    background-size: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    resize: none;
+    margin-top: 5%;
+}
+.part1-btn a{
+    float: left;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.part1-bottom {
+    width: 90%;
+    margin: 0 auto;
+}
+.part1-bottom div {
+    padding: 0;
+}
+.part1-bottom img {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+
+
+.ju {
+    background: #fe9935!important;
+}
+.hui {
+    color: #9d9d9d!important;
+}
+/*part2-box*/
+.part2-box {
+    background: #535763;
+}
+.part2-box div{
+    padding: 0;
+}
+/*移动端*/
+.part2-box .col-xs-12{
+    padding-top: 10%;
+    padding-bottom: 30%;
+}
+.part2-title {
+    width: 100%;
+}
+.part2-limit {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    position: relative;
+}
+.part2-limit img {
+    width: 50%;
+}
+.part2-limit-title {
+    position: absolute;
+    width: 50%;
+    top:12%;
+    left: 25%;
+    height: 20px;
+}
+.part2-limit-title span {
+    position: absolute;
+    width: 66%;
+    text-align: center;
+    font-size: 8px;
+    color: #4d1b02;
+    right: -44%;
+    z-index: 1;
+    margin-top: 5%;
+}
+@media screen and (max-width: 375px) {
+    .part2-limit-title span {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 414px) {
+    .part2-limit-title span {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .part2-limit-title span {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .part2-limit-title span {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 700px) {
+    .part2-limit-title span {
+        font-size: 26px;
+        float: left;
+        margin-top: 5%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .part2-limit-title span {
+        font-size: 30px;
+        float: left;
+        margin-top: 8%;
+    }
+}
+.part2-limit-title img {
+    position: absolute;
+    width: 66%;
+    right: -44%;
+}
+.part2-juan {
+    display: none;
+    position: absolute;
+    width: 66%;
+    left: 16%;
+    top:28%;
+    font-size: 20px;
+    text-align: center;
+    color: #ff0000;
+}
+.part2-juan span {
+    font-size: 14px;
+}
+.part2-juan div {
+    margin-top: -3%;
+    font-size: 12px;
+}
+.part2-btn {
+    display: block;
+    width: 58%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    background: url("../images/partbtn2.png") no-repeat 0 center;
+    background-size: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    resize: none;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+@media  screen and (min-width: 414px){
+    .part2-btn {
+        line-height: 40px;
+    }
+}
+
+.run {
+    display: none;
+    margin: 0 auto;
+}
+.runout {
+    display: none;
+    margin: 0 auto;
+}
+.runstop {
+    width: 300px;
+}
+/*活动规则*/
+.rule-box {
+    float: left;
+    width:100%;
+    line-height: 18px;
+    background: #3f424c;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.rule-content span {
+    float: left;
+    width: 5%;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+}
+.rule-title {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background:url("../images/rule.png") no-repeat 0 center;
+    background-size: 100%;
+    margin-bottom: 8%;
+}
+.rule-content {
+    width: 80%;
+    margin: 0 auto;
+}
+.rule-content p {
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+.rule-content div {
+    width: 95%;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    text-align: justify;
+}
+@media screen and (min-width: 750px) {
+    .rule-title {
+        font-size: 30px;
+    }
+    .rule-content p {
+        font-size: 24px;
+    }
+    .rule-content div {
+        font-size: 18px;
+    }
+    .rule-box {
+        padding-bottom: 80px;
+    }
+}
+/*收货地址*/
+.mark {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: #000000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    z-index: 100;
+}
+.address-box div{
+    padding: 0;
+}
+/*移动端*/
+.address {
+    display: none;
+    position: fixed;
+    top:20%;
+    left: 10%;
+    width: 80%;
+    background: #ff8d27;
+    background-size: 100%;
+    z-index: 101;
+    border-radius: 15px;
+}
+.address-close {
+    position: absolute;
+    top:-50px;
+    right: -20px;
+    width: 40px;
+    cursor: pointer;
+}
+.address-title {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-style: italic;
+    margin-top: 10px;
+}
+.address-name {
+    width: 100%;
+    margin-top: 6%;
+}
+
+.address-name input {
+    margin-left: 10%;
+    border: 0;
+    outline: none;
+    resize: none;
+    background: #fff3d9;
+    width: 80%;
+    color: #b5b5b6;
+    font-size: 16px;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.address-commit {
+    display: block;
+    width: 60%;
+    padding-bottom: 4%;
+    margin: 0 auto;
+    color: #ff0000;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    resize: none;
+    background: url("../images/adressbtn.png") no-repeat 0 0;
+    background-size: 100%;
+    line-height: 30px;
+    margin-top: 10%;
+}
+@media screen and (min-width: 375px) {
+    .address-commit {
+        line-height: 40px;
+    }
+}
+@media screen and (min-width: 414px) {
+    .address-commit {
+        line-height: 45px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .address-commit {
+        line-height: 60px;
+    }
+}
+.address-point {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #fff;
+}
+
+.tishi {
+    display: none;
+    width: 100%;
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.tishi span{
+    margin-left: 60px;
+}
+
+

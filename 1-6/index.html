@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旺财谷红包限时抢</title>
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        .login-box {
+            display: none;
+            position: fixed;
+            top:20%;
+            width: 80%;
+            max-width: 1000px;
+            margin: auto auto;
+            left: 0;
+            right: 0;
+            background: #ff8d27;
+            background-size: 100%;
+            z-index: 101;
+            border-radius: 15px;
+        }
+        .login-close{
+            position: absolute;
+            top:-50px;
+            right: -20px;
+            width: 40px;
+            cursor: pointer;
+        }
+        .login-title {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #fff;
+            text-align: left;
+            margin-top: 6%;
+            margin-bottom: 4%;
+        }
+        .login-point {
+            display: none;
+            width: 90%;
+            margin: 0 auto;
+            font-size: 12px;
+            color: #ff0000;
+            text-align: right;
+            margin-bottom: 4%;
+        }
+        .login-username {
+            display: block;
+            border: 0;
+            outline: none;
+            resize: none;
+            background: #fff3d9;
+            width: 90%;
+            margin: 0 auto;
+            color: #b5b5b6;
+            font-size: 16px;
+            padding-left: 5%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            margin-bottom: 10%;
+        }
+        .user-password {
+            display: block;
+            border: 0;
+            outline: none;
+            resize: none;
+            background: #fff3d9;
+            width: 90%;
+            margin: 0 auto;
+            color: #b5b5b6;
+            font-size: 16px;
+            padding-left: 5%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+        .free-register {
+            width: 90%;
+            margin: 0 auto;
+            text-align: right;
+            margin-top: 4%;
+        }
+        .free-register a{
+            color: #fcff00;
+            font-size: 14px;
+        }
+        .free-register a:hover{
+            color: #fcff00;
+        }
+        .login-commit {
+            display: block;
+            width: 60%;
+            padding-bottom: 4%;
+            margin: 0 auto;
+            color: #ff0000;
+            font-size: 16px;
+            text-align: center;
+            border: 0;
+            outline: none;
+            resize: none;
+            background: url("images/adressbtn.png") no-repeat 0 0;
+            background-size: 100%;
+            line-height: 26px;
+            margin-top: 5%;
+            margin-bottom: 6%;
+        }
+        @media screen and (min-width: 375px) {
+            .login-commit {
+                line-height: 33px;
+            }
+        }
+        @media screen and (min-width: 414px) {
+            .login-commit {
+                line-height: 35px;
+            }
+        }
+        @media screen and (min-width: 500px) {
+            .login-commit {
+                line-height: 50px;
+            }
+        }
+        @media screen and (min-width: 700px) {
+            .login-commit {
+                font-size: 26px;
+                line-height: 66px;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            .login-commit {
+                font-size: 40px;
+                line-height: 110px;
+            }
+        }
+        .login-commit:hover {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <input type="hidden" id="islogin" value="<?php echo $islogin ?> ">
+    <div class="container">
+
+        <!--banner-box-->
+        <div class="row banner-box">
+            <div class="col-xs-12"><img src="images/b1.png" alt=""></div>
+        </div>
+        <div class="row banner-box">
+            <div class="col-xs-12"><img src="images/b2.png" alt=""></div>
+        </div>
+        <div class="row banner-box">
+            <div class="col-xs-12"><img src="images/b3.png" alt=""></div>
+        </div>
+        <div class="row banner-box">
+            <div class="col-xs-12"><img src="images/b4.png" alt=""></div>
+        </div>
+        <div class="row banner-box">
+            <div class="col-xs-12"><img src="images/b5.png" alt=""></div>
+        </div>
+        <div class="row banner-box">
+            <div class="col-xs-12"><img src="images/b6.png" alt=""></div>
+        </div>
+        <!--part1-box-->
+        <div class="row part1-box">
+            <div class="col-xs-12">
+                <div class="part1-address"><a href="javascript:;"><img src="images/adress1.png" alt=""> 领奖人<br/>更改收货地址</a></div>
+                <div class="part1-title"><img src="images/part1.png" alt=""></div>
+                <ul class="part1-content" id="part1-content">
+                    <!--<li>-->
+                        <!--<img src="images/1wr.jpg" alt="">-->
+                        <!--<div class="part1-juan-title ju">投资:500万</div>-->
+                    <!--</li>-->
+                </ul>
+
+                <div class="part1-btn"><a href="javascript:;">立即参与</a></div>
+            </div>
+        </div>
+        <div class="row part1-bottom">
+            <div class="col-xs-12">
+                <img src="images/adressbottpm.png" alt="">
+            </div>
+        </div>
+        <!--part2-->
+        <div class="row part2-box">
+            <!--移动端-->
+            <div class="col-xs-12">
+                <img class="part2-title" src="images/part2.png" alt="">
+                <div class="part2-limit">
+                    <img class="runstop1" src="" alt="">
+<!--                    <img class="run" src="images/run.gif" alt="">-->
+<!--                    <img class="runout" src="images/runout.png" alt="">-->
+                    <div class="part2-juan"></div>
+                    <div class="part2-limit-title">
+<!--                        1小时限时抢购-->
+                        <span></span>
+                        <img src="images/limit.png" alt="">
+                    </div>
+                </div>
+                <input type="button" class="part2-btn">
+            </div>
+        </div>
+        <!--活动规则-->
+        <div class="row rule-box">
+            <div class="col-sm-3 hidden-xs"></div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="rule-title">活动规则</div>
+                <div class="rule-content">
+                    <p>活动1</p>
+                    <span>1.</span><div>活动期间，谷东当月累计投资额达到相应的额度，即可获得相应额度的奖品+该额度之前所有的奖品；</div>
+                    <span>2.</span><div>实物奖品会在活动结束后一周内寄出。（春节期间因特殊状况奖品将延期至工作日发放）；</div>
+                    <span>3.</span><div>图片奖品仅供参考，一切以实物为准</div>
+                    <span>*</span><div>注：生利宝和债权转让不参加此活动</div>
+                    <p>活动2</p>
+                    <span>1.</span><div>当月每周五上午10点开始；</div>
+                    <span>2.</span><div>每人每场限抢一张代金券，7天内使用有效；</div>
+                    <span>3.</span><div>代金券会实时的发放到用户的账户中心；</div>
+                    <p></p>
+                    <span>*</span><div>活动时间：2016/1/1--2016/1/31</div>
+                    <span>*</span><div>此活动与苹果公司无关</div>
+                    <span>*</span><div>图片奖品仅供参考，一切以实物为准</div>
+                    <span>*</span><div>本活动最终解释权归旺财谷所有</div>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs"></div>
+        </div>
+        <!--收货地址-->
+        <div class="mark"></div>
+        <div class="row address-box">
+            <!--移动端-->
+            <div class="col-xs-12">
+                <div class="address">
+                    <img class="address-close" src="images/close.png" alt="">
+                    <form action="" method="post">
+                        <div class="address-title">恭喜您~获得了实物大奖！</div>
+                        <div class="address-name shouhuo_name" id="txt_username1"><input placeholder="姓名" type="text" name="shouhuo_name"></div>
+                        <div class="address-name mobile" id="txt_mobile1"><input placeholder="电话" type="tel" name="mobile"></div>
+                        <div class="address-name shouhuo_address" id="txt_address1"><input placeholder="地址" type="text" name="shouhuo_address"></div>
+                        <div class="tishi"><span>不能为空</span></div>
+                        <input type="button" class="address-commit" value="确定">
+                    </form>
+                    <div class="address-point" style="padding-top: 5%">*所有实物奖品统一在活动结束后一周内寄出</div>
+                    <div class="address-point" style="padding-bottom: 5%">请填写正确地址</div>
+                </div>
+            </div>
+        </div>
+        <!--登陆窗口-->
+        <div class="row login-box">
+            <div class="col-xs-12">
+                <img class="login-close" src="images/close.png" alt="">
+                <div class="login-title">登录</div>
+                <div class="login-point">账号或密码错误</div>
+                <input class="login-username" type="text" placeholder="用户名/手机号/邮箱" name="username">
+                <input class="user-password" type="password" placeholder="密码" name="password">
+                <div class="free-register"><a href=""><img src="images/adress.png" alt="">免费注册</a></div>
+                <!--<a href="javascript:;" class="login-commit">立即登录</a>-->
+                <input class="login-commit" type="button" value="立即登录">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
