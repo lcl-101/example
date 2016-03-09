@@ -1,0 +1,83 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+}
+i,em {
+    font-style: normal;
+}
+.container{
+    padding: 0;
+    background: #fff;
+}
+.row{
+    margin: 0;
+}
+/*top-box*/
+#top-box .col-xs-12 {
+    padding: 0;
+    margin: 0;
+}
+.top-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #595757;
+    margin-top: 30%;
+}
+.top-title img {
+    width: 20px;
+    margin-top: -4px;
+}
+.top-content {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #b5b5b6;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+/*middle-box*/
+#middle-box .col-xs-12 {
+    padding: 0;
+    margin: 0;
+}
+.middle-box {
+    width: 100%;
+    font-size: 1.6rem;
+    color: #595757;
+    text-align: center;
+}
+.middle-box span {
+    color: #ff1600;
+}
+/*touzi-box*/
+#touzi-box .col-xs-12 {
+    padding: 0;
+    margin: 0;
+}
+.touzi-box {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.touzi-box img {
+    width: 50%;
+}
+.touzi-box a {
+    display: block;
+}

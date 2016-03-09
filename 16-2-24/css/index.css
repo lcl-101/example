@@ -1,0 +1,273 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+}
+i,em {
+    font-style: normal;
+}
+.container{
+    padding: 0;
+    background: #fdc123;
+}
+.row{
+    margin: 0;
+}
+/*banner-box*/
+#banner-box div {
+    padding: 0;
+}
+#banner-box img{
+    width: 100%;
+}
+/*experienceStandard*/
+.experienceStandard div{
+    padding: 0;
+}
+.experienceStandard-box {
+    width: 80%;
+    background: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-radius: 4px 4px 0 0;
+}
+#experienceStandard-box {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.experienceStandard-title {
+    width: 100%;
+    font-size: 1.8rem;
+    color: #ff7f34;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ffccad;
+    font-weight: bold;
+}
+.experienceStandard-title span {
+    font-size: 1.6rem;
+}
+.experienceStandard-content {
+    width: 100%;
+    margin-top: 10px;
+}
+.experienceStandard-contentOne {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.experienceStandard-contentOne div {
+    width: 100%;
+    color: #ff7f34;
+}
+.experienceStandard-contentOne div i {
+    font-size: 3rem;
+}
+.experienceStandard-contentOne div span {
+    font-size: 1.1rem;
+}
+.experienceStandard-contentOne p {
+    width: 100%;
+    color: #ff7f34;
+    font-size: 1.2rem;
+}
+.projectIntroduction {
+    width: 100%;
+    border: 1px dashed #fbcdac;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.projectIntroduction p {
+    width: 90%;
+    margin: 0 auto;
+    color: #fd8234;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.projectIntroduction div {
+    width: 90%;
+    margin: 0 auto;
+    color: #fe8944;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.experienceGrants {
+    width: 80%;
+    background: #fe7f32;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-radius:0 0 4px 4px;
+}
+#experienceGrants {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+#experienceGrants i {
+    width: 25%;
+    float: left;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.experienceGrants-jindu {
+    float: left;
+    width: 60%;
+    height: 10px;
+    background: #823e17;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.experienceGrants-jindu1 {
+    width: 0;
+    background: #fdde45;
+    border-radius: 10px;
+    height: 10px;
+}
+#experienceGrants span {
+    float: left;
+    display: block;
+    width: 15%;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.experienceGrants-balance {
+    width: 100%;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+.experienceGrants-content {
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.experienceGrants-content img {
+    float: left;
+    width: 70px;
+}
+.experienceGrants-new {
+    width: 60%;
+    float: left;
+    font-size: 1.4rem;
+    color: #fcdd44;
+    text-align: center;
+    margin-top: 11px;
+}
+.experienceGrants-juan {
+    width: 60%;
+    float: left;
+    font-size: 2rem;
+    color: #fcdd44;
+    text-align: center;
+    margin-top: 9px;
+    font-weight: bold;
+}
+.experienceGrants-juan em {
+    font-size: 1.4rem;
+}
+.experienceGrants-profit {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size:1.4rem;
+    color: #fff;
+}
+.experienceGrants-btn {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.experienceGrants-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+}
+.experienceGrants-btn a:hover {
+    color: #ff0b0b;
+}
+/*灰色*/
+.hui {
+    background: #b5b5b5;
+    color: #fff;
+}
+/*橘色*/
+.orange {
+    background: #fdde46;
+    color: #ff0b0b;
+}
+/*显示*/
+.show {
+    display: block;
+}
+/*影藏*/
+.hide {
+    display: none;
+}
+/*explain*/
+.explain {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px!important;
+    padding-bottom: 40px!important;
+}
+.explain-title {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #575757;
+}
+.explain-how {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #595856;
+    margin-top: 10px;
+}
+.explain-content {
+    width: 100%;
+    font-size: 1.4rem;
+    color: #585659;
+    text-align: justify;
+}
+.explain-content p {
+    width: 17px;
+    float: left;
+}
+.explain-content div {
+    width: 93%;
+    float: left;
+}
+.explain-notes {
+    width: 100%;
+    font-size: 1.4rem;
+    color: #585659;
+    text-align: justify;
+}

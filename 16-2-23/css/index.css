@@ -1,0 +1,200 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+    background: #f4f4f7;
+}
+i{
+    font-style: normal;
+}
+/*体验金*/
+.experienceGrants-mask {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.6;
+    filter:Alpha(opacity=60);
+    z-index: 10001;
+}
+.experienceGrants-box {
+    position: fixed;
+    top:45%;
+    left: 50%;
+    width: 480px;
+    height: 560px;
+    margin-top: -280px;
+    margin-left: -220px;
+    text-align: center;
+    background: url("../images/tiyanjin.png") no-repeat center center;
+    z-index: 10001;
+}
+.experience-btn {
+    position: absolute;
+    display: block;
+    width: 139px;
+    height: 79px;
+    left: 190px;
+    bottom: 80px;
+    z-index: 10;
+}
+@keyframes round-small
+{
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes round-small
+{
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes round-small
+{
+    0%   {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);}
+}
+@-o-keyframes round-small
+{
+    0%   {-o-transform: rotate(0deg);}
+    100% {-o-transform: rotate(360deg);}
+}
+.round-small img {
+    animation: round-small 5s linear 0s infinite normal;
+    -webkit-animation: round-small 5s linear 0s infinite normal;
+    -moz-animation: round-small 5s linear 0s infinite normal;
+    -o-animation: round-small 5s linear 0s infinite normal;
+}
+.round-small {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 452px;
+    height: 444px;
+    margin-top: -158px;
+    margin-left: -236px;
+    text-align: center;
+    z-index: 2;
+}
+.round-big {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 452px;
+    height: 444px;
+    margin-top: -158px;
+    margin-left: -236px;
+    text-align: center;
+    z-index: 1;
+}
+@keyframes round-big
+{
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+@-webkit-keyframes round-big
+{
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(-360deg);}
+}
+@-moz-keyframes round-big
+{
+    0%   {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(-360deg);}
+}
+@-o-keyframes round-big
+{
+    0%   {-o-transform: rotate(0deg);}
+    100% {-o-transform: rotate(-360deg);}
+}
+.round-big img {
+    animation: round-big 5s linear 0s infinite normal;
+    -webkit-animation: round-big 5s linear 0s infinite normal;
+    -moz-animation: round-big 5s linear 0s infinite normal;
+    -o-animation: round-big 5s linear 0s infinite normal;
+}
+.experience-close {
+    position: absolute;
+    right:84px;
+    top:174px;
+    width: 37px;
+    height: 37px;
+    z-index: 6;
+    cursor: pointer;
+}
+.experience-fly {
+    position: absolute;
+    width: 118px;
+    height: 87px;
+    top:60%;
+    left: 6%;
+    z-index: 6;
+}
+@keyframes experience-fly {
+    0% {
+        transform: translate(0, -5px);
+    }
+    100% {
+        transform: translate(0, 6px);
+    }
+}
+@-webkit-keyframes experience-fly {
+    0% {
+        -webkit-transform: translate(0, -5px);
+    }
+    100% {
+        -webkit-transform: translate(0, 6px);
+    }
+}
+@-moz-keyframes experience-fly {
+    0% {
+        -moz-transform: translate(0, -5px);
+    }
+    100% {
+        -moz-transform: translate(0, 6px);
+    }
+}
+@-o-keyframes experience-fly {
+    0% {
+        -o-transform: translate(0, -5px);
+    }
+    100% {
+        -o-transform: translate(0, 6px);
+    }
+}
+@-ms-keyframes experience-fly {
+    0% {
+        -ms-transform: translate(0, -5px);
+    }
+    100% {
+        -ms-transform: translate(0, 6px);
+    }
+}
+.experience-fly img {
+    animation: experience-fly 1s ease 0s infinite alternate;
+    -webkit-animation: experience-fly 1s ease 0s infinite alternate;
+    -moz-animation: experience-fly 1s ease 0s infinite alternate;
+    -o-animation: experience-fly 1s ease 0s infinite alternate;
+}
+
+/*左侧广告*/
+.login-not {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    margin-top: -122px;
+    z-index: 1000;
+}

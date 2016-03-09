@@ -1,0 +1,10 @@
+$(function(){
+    $('.experience-close').on('click',function(){
+        $('.experienceGrants-box').hide();
+        $('.experienceGrants-mask').hide();
+    })
+    $('.experienceGrants-mask').on('click',function(){
+        $('.experienceGrants-box').hide();
+        $('.experienceGrants-mask').hide();
+    })
+})

@@ -1,0 +1,157 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body{
+    font:12px/1.5 "Microsoft YaHei";
+    background: url("../images/ground.png");
+}
+i,em {
+    font-style: normal;
+}
+.container{
+    padding: 0;
+    height: 100%;
+
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    -moz-box-orient:vertical;
+    -webkit-box-orient:vertical;
+    box-orient:vertical;
+
+    display: -webkit-flex;
+    display: flex;
+
+
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+}
+.row{
+    margin: 0;
+}
+
+.tltle-box {
+    /*margin-top: 16%;*/
+    -webkit-flex: 10;
+    -moz-flex: 10;
+    -ms-flex: 10;
+    -o-flex: 10;
+    flex: 10;
+
+    -webkit-box-flex:10;
+    -moz-box-flex:10;
+    box-flex:10;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: left;
+}
+.tltle-box img{
+    width: 100%;
+}
+
+.jiang {
+    position: relative;
+    -webkit-flex: 28;
+    -moz-flex: 28;
+    -ms-flex: 28;
+    -o-flex: 28;
+    flex: 28;
+    -moz-box-flex:28;
+    -webkit-box-flex:28;
+    box-flex:28;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.jiang img{
+   width: 100%;
+}
+.jiangping {
+    position: absolute;
+    left: 14%;
+    top:11%;
+    width: 72%;
+    height: 74%;
+    background: #fff;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.btn-box {
+    -webkit-flex: 10;
+    -moz-flex: 10;
+    -ms-flex: 10;
+    -o-flex: 10;
+    flex: 10;
+
+    -webkit-box-flex:10;
+    -moz-box-flex:10;
+    box-flex:10;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: left;
+}
+.btn-box a{
+    display: block;
+    width: 100%;
+    background: #fe0000;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.btn-box a:hover{
+    color: #fff;
+}
