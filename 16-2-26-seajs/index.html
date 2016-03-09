@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/sea/sea.js"></script>
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            font-size: 50px;
+            color: #00CCFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">aaa</div>
+    <script>
+        seajs.config({
+            base:'./js',
+            alias:{
+                'jquery':'jquery/jquery.js'
+            }
+        });
+        seajs.use('./js/index');
+    </script>
+</body>
+</html>

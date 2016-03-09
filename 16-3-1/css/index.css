@@ -1,0 +1,122 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body{
+    font-family: 'Microsoft YaHei';
+    font-size: 62.5%;
+}
+i,em {
+    font-style: normal;
+}
+.container{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+/*banner-box*/
+#banner-box .col-xs-12{
+    padding: 0;
+}
+#banner-box .col-xs-12 img {
+    width: 100%;
+}
+/*haoli-box*/
+#haoli-box {
+    background: url("../images/background-ju.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#haoli-box .col-xs-12 {
+    padding: 0;
+}
+.active-time {
+    width: 90%;
+    margin: 0 auto;
+    color: #010000;
+    font-size: 1.2rem;
+}
+.active-user {
+    width: 90%;
+    margin: 0 auto;
+    color: #010000;
+    font-size: 1.2rem;
+    margin-top: 6px;
+}
+.active-user span {
+    color: #b51c22;
+}
+.active-title {
+    width: 90%;
+    margin: 0 auto;
+    color: #010000;
+    font-size: 1.4rem;
+    margin-top: 6px;
+}
+.active-titleOne {
+    width: 88%;
+    padding-left: 2%;
+    margin: 0 auto;
+    color: #010000;
+    font-size: 1.4rem;
+    margin-top: 6px;
+}
+.active-content {
+    width: 87%;
+    padding-left: 3%;
+    margin: 0 auto;
+    color: #010000;
+    font-size: 1.2rem;
+    margin-top: 6px;
+}
+.active-contentReward {
+    width: 85%;
+    padding-left: 5%;
+    margin: 0 auto;
+    color: #010000;
+    font-size: 1.2rem;
+    margin-top: 6px;
+}
+.active-contentReward span {
+    color: #b51c22;
+}
+.active-rule {
+    width: 90%;
+    margin: 0 auto;
+    color: #010000;
+    font-size: 1.2rem;
+    margin-top: 6px;
+}
+.active-rule p {
+    float: left;
+    width: 4%;
+    text-align: center;
+    margin-top: 4px;
+}
+.active-rule div {
+    float: left;
+    width: 96%;
+    margin-top: 4px;
+}
+.active-img {
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+}
+.active-img img {
+    width: 130px;
+    margin-top: -30px;
+    margin-right: -5px;
+}

@@ -1,0 +1,346 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+}
+i,em {
+    font-style: normal;
+}
+.container{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+/*bag-banner*/
+#bag-banner .col-xs-12{
+    padding: 0;
+}
+#bag-banner .col-xs-12 img {
+    width: 100%;
+}
+/*bag-resign*/
+#bag-resign {
+    background: url("../images/bagBack.png") 0 0;
+    background-size: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#bag-resign .col-xs-12{
+    padding: 0;
+}
+.bag-resign {
+    width: 75%;
+    margin: 0 auto;
+}
+#resign-bag {
+    width: 100%;
+}
+.error-phone {
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #fff7ae;
+    margin-bottom: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+.phone-box {
+    width: 100%;
+    height:46px;
+    background: #fff;
+    border-radius: 8px;
+}
+.phone-img {
+    float: left;
+    height: 40px;
+    width: 46px;
+    border-right: 1px solid #dcdcdc;
+    margin-top: 3px;
+    text-align: center;
+    line-height: 40px;
+}
+.phone-img img {
+    width: 20px;
+}
+#phone {
+    float: left;
+    width: 70%;
+    padding-left: 4%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 3px;
+    outline: none;
+    border: 0;
+    font-size: 1.6rem;
+}
+
+.error-verification {
+    /*display: none;*/
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #fff7ae;
+    margin-bottom: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+.verification-box {
+    /*display: none;*/
+    width: 100%;
+    height:46px;
+    background: #fff;
+    border-radius: 8px;
+}
+.verification-img {
+    float: left;
+    height: 40px;
+    width: 46px;
+    border-right: 1px solid #dcdcdc;
+    margin-top: 3px;
+    text-align: center;
+    line-height: 40px;
+}
+.verification-img img {
+    width: 24px;
+}
+#verification {
+    float: left;
+    width: 43%;
+    padding-left: 4%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 3px;
+    outline: none;
+    border: 0;
+    font-size: 1.6rem;
+}
+.verification-code {
+    float: right;
+    width: 88px;
+    height: 100%;
+    background: #bebdbb;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 46px;
+    border-radius: 8px;
+    text-align: center;
+}
+.verification-code img{
+    width: 100%;
+    height: 100%;
+}
+
+.error-code {
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #fff7ae;
+    margin-bottom: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+.code-box {
+    width: 100%;
+    height:46px;
+    background: #fff;
+    border-radius: 8px;
+}
+.code-img {
+    float: left;
+    height: 40px;
+    width: 46px;
+    border-right: 1px solid #dcdcdc;
+    margin-top: 3px;
+    text-align: center;
+    line-height: 40px;
+}
+.code-img img {
+    width: 24px;
+}
+#code {
+    float: left;
+    width: 43%;
+    padding-left: 4%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 3px;
+    outline: none;
+    border: 0;
+    font-size: 1.6rem;
+}
+.codes {
+    float: right;
+    width: 88px;
+    height: 100%;
+    background: #eaa427;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 46px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.error-agreement {
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #fff7ae;
+    margin-bottom: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+.resign-btn {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    background: url("../images/resignBtn.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fe4c44;
+    font-size: 2rem;
+}
+.resign-btns {
+    display: none;
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    background: url("../images/resignBtn.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fe4c44;
+    font-size: 2rem;
+}
+.agreement-box {
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5%;
+}
+#isagree {
+    width: 16px;
+    margin-top: -2px;
+}
+.agreement-box span {
+    font-size: 1.2rem;
+    color: #fff;
+}
+.agreement-box i {
+    font-size: 1.2rem;
+    color: #ffe75e;
+}
+.ju {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff7ae;
+    margin-top: 4%;
+}
+
+.resign {
+    display: none;
+    width: 100%;
+}
+.error-user {
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #fff7ae;
+    margin-bottom: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+.user-box {
+    width: 100%;
+    height:46px;
+    background: #fff;
+    border-radius: 8px;
+}
+.user-img {
+    float: left;
+    height: 40px;
+    width: 46px;
+    border-right: 1px solid #dcdcdc;
+    margin-top: 3px;
+    text-align: center;
+    line-height: 40px;
+}
+.user-img img {
+    width: 20px;
+}
+#user {
+    float: left;
+    width: 70%;
+    padding-left: 4%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 3px;
+    outline: none;
+    border: 0;
+    font-size: 1.6rem;
+}
+
+.error-password {
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #fff7ae;
+    margin-bottom: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+.password-box {
+    width: 100%;
+    height:46px;
+    background: #fff;
+    border-radius: 8px;
+}
+.password-img {
+    float: left;
+    height: 40px;
+    width: 46px;
+    border-right: 1px solid #dcdcdc;
+    margin-top: 3px;
+    text-align: center;
+    line-height: 40px;
+}
+.password-img img {
+    width: 24px;
+}
+#password {
+    float: left;
+    width: 70%;
+    padding-left: 4%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 3px;
+    outline: none;
+    border: 0;
+    font-size: 1.6rem;
+}
+
+
+/*footer-box*/
+.footer-box .col-xs-12 {
+    padding: 0;
+}
+.footer-box .col-xs-12 img{
+    width: 100%;
+}
