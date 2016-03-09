@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height:600px;
+            margin:0 auto;
+        }
+        .head{
+            width:200px;
+            height:200px;
+            border:2px solid black;
+            border-radius: 50%;
+            background: -webkit-linear-gradient(-110deg,#54d2f0, #074c5f);
+            margin:0 auto;
+            box-shadow:-5px 5px 10px #767676;
+            position: relative;
+        }
+        .face{
+            position: absolute;
+            margin:auto auto;
+            top: 60px;
+            left: 0;
+            right: 0;
+            width: 150px;
+            height:130px;
+            border:2px solid black;
+            border-radius: 50%;
+            background: -webkit-linear-gradient(-120deg,#ffffff 70%, #d4d4d4);
+        }
+        .eyes1{
+            position: absolute;
+            width:50px;
+            height:60px;
+            border:2px solid black;
+            background: #fefefe;
+            border-radius: 46%;
+            left:46px;
+            top:20px;
+            z-index: 5;
+        }
+        .dou1{
+            position: absolute;
+            right:10px;
+            top:28px;
+            width: 10px;
+            height: 10px;
+            background: #333333;
+            border-radius: 50%;
+        }
+        .dou2{
+            position: absolute;
+            left:10px;
+            top:28px;
+            width: 10px;
+            height: 10px;
+            background: #333333;
+            border-radius: 50%;
+        }
+        .eyes2{
+            position: absolute;
+            width:50px;
+            height:60px;
+            border:2px solid black;
+            background: #fefefe;
+            border-radius: 46%;
+            right:47px;
+            top:20px;
+            z-index: 5;
+        }
+        .nose{
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            border:2px solid black;
+            border-radius: 50%;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:75px;
+            background: #c83d00;
+            z-index: 2;
+        }
+        .mouse{
+            position: absolute;
+            width: 110px;
+            height:90px;
+            border:2px solid black;
+            border-radius: 50%;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:68px;
+        }
+        .mouse1{
+            position: absolute;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:100px;
+            width: 2px;
+            height: 60px;
+            background: black;
+            z-index: 4;
+        }
+        .dang{
+            position: absolute;
+            width:128px;
+            height:40px;
+            background: white;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:94px;
+            background:white;
+            z-index: 1;
+        }
+        .dang1{
+            position: absolute;
+            width:106px;
+            height:24px;
+            background: white;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:81px;
+            background:white;
+            z-index: 1;
+        }
+        .huzi1{
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            top:110px;
+            left:40px;
+            background: black;
+            z-index: 10;
+        }
+        .huzi2{
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            top:103px;
+            left:40px;
+            background: black;
+            transform-origin:right center;
+            transform: rotate(15deg);
+            z-index: 10;
+        }
+        .huzi3{
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            top:118px;
+            left:40px;
+            background: black;
+            transform-origin:right center;
+            transform: rotate(-15deg);
+            z-index: 10;
+        }
+
+        .huzi11{
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            top:110px;
+            right:40px;
+            background: black;
+            z-index: 10;
+        }
+        .huzi22{
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            top:103px;
+            right:40px;
+            background: black;
+            transform-origin:left center;
+            transform: rotate(-15deg);
+            z-index: 10;
+        }
+        .huzi33{
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            top:118px;
+            right:40px;
+            background: black;
+            transform-origin:left center;
+            transform: rotate(15deg);
+            z-index: 10;
+        }
+        .shengzi{
+            position: absolute;
+            z-index: 10;
+            width: 140px;
+            height:14px;
+            border:2px solid black;
+            border-radius: 7px;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:176px;
+            background: -webkit-linear-gradient(-120deg,#c03900 70%, #700f00);
+            box-shadow:-5px 0 10px #767676;
+        }
+        .lingdang{
+            position: absolute;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:8px;
+            width:26px;
+            height:26px;
+            border:2px solid black;
+            border-radius:50%;
+            background: -webkit-linear-gradient(-120deg,#f4ec26 70%, #c8c00c);
+        }
+        .bai{
+            position: absolute;
+            right:2px;
+            top:3px;
+            width:8px;
+            height: 8px;
+            border-radius: 50%;
+            background: -webkit-radial-gradient(#FFFFFF,transparent);
+            z-index: 10;
+        }
+        .lin1{
+            position: absolute;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:6px;
+            border:2px solid black;
+            background: -webkit-linear-gradient(-120deg,#b2ad2d, #a19c2d);
+            width: 22px;
+            height: 2px;
+        }
+        .dian{
+            position: absolute;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:13px;
+            width:6px;
+            height: 6px;
+            border-radius: 50%;
+            background: black;
+        }
+        .xian{
+            width: 2px;
+            height:11px;
+            position: absolute;
+            background: black;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:15px;
+        }
+
+        .shengti{
+            position:absolute;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:190px;
+            width: 136px;
+            height:120px;
+            background: -webkit-linear-gradient(-160deg,#07bde9 20%, #0083a6);
+        }
+        .lefts{
+            position: absolute;
+            width: 60px;
+            height:30px;
+            left: -50px;
+            border: 2px solid black;
+            background: -webkit-linear-gradient(#0294b9, #0294b9);
+            transform-origin:right center;
+            transform: rotate(-25deg);
+            top:6px;
+            z-index: -1;
+            box-shadow:-5px 5px 10px #767676;
+        }
+        .hand1{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: -20px;
+            top:-7px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background: -webkit-linear-gradient(-176deg,#d9d9d9 3%, #fefefe 50%,#d9d9d9 98%);
+            box-shadow:-5px 5px 10px #767676;
+        }
+        .rights{
+            position: absolute;
+            width: 60px;
+            height:30px;
+            right: -50px;
+            border: 2px solid black;
+            background: -webkit-linear-gradient(#07bde9, #07bde9);
+            transform-origin:left center;
+            transform: rotate(25deg);
+            top:6px;
+            z-index: -1;
+            box-shadow:-5px 5px 10px #767676;
+        }
+        .hand2{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            right: -20px;
+            top:-7px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background: -webkit-linear-gradient(-176deg,#fefefe 50%,#d9d9d9 98%);
+            box-shadow:0px 5px 10px #767676;
+        }
+        .shengti1{
+            position: absolute;
+            width: 132px;
+            height: 80px;
+            border: 2px solid black;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:230px;
+            border-top: 0;
+            box-shadow:-5px 5px 10px #767676;
+            /*background: -webkit-linear-gradient(-150deg,#06b5e4 10%, #0087ab);*/
+        }
+        .dudu{
+            position:absolute;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            width:100px;
+            height:100px;
+            border: 2px solid black;
+            background: -webkit-linear-gradient(-130deg,#ffffff 50%,#d2d2d2);
+            border-radius: 50%;
+        }
+        .daidai{
+            position:absolute;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:14px;
+            width: 70px;
+            height: 70px;
+            border-radius:50%;
+            border: 2px solid black;
+        }
+        .daidai1{
+            position:absolute;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            top:16px;
+            width: 74px;
+            height: 33px;
+            background: -webkit-linear-gradient(-130deg,#ffffff 50%,#f1f1f1);
+            z-index: 1;
+            border-bottom: 2px solid black;
+        }
+        .yuan{
+            position:absolute;
+            width: 14px;
+            height: 14px;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            border-radius:50%;
+            border: 2px solid black;
+            bottom: -9px;
+            background: -webkit-linear-gradient(-140deg,#aaaaaa 20%,#ffffff);
+        }
+        .danyuan{
+            position:absolute;
+            width: 18px;
+            height: 14px;
+            margin: auto auto;
+            right:0;
+            left: 0;
+            background: white;
+            bottom: -16px;
+        }
+        .jiao1{
+            width:70px;
+            height: 20px;
+            border: 2px solid black;
+            border-radius:12px 12px 12px 8px;
+            position: absolute;
+            bottom:-24px;
+            left: -9px;
+            background: -webkit-linear-gradient(-160deg,#ffffff 70%,#b2b2b2);
+            box-shadow:-5px 5px 10px #767676;
+        }
+        .jiao2{
+            width:70px;
+            height: 20px;
+            border: 2px solid black;
+            border-radius:12px 12px 8px 12px;
+            position: absolute;
+            bottom:-24px;
+            right: -9px;
+            background: -webkit-linear-gradient(-160deg,#ffffff 70%,#b2b2b2);
+            box-shadow:-5px 5px 8px #767676;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">
+            <div class="face"></div>
+            <div class="eyes1">
+                <div class="dou1"></div>
+            </div>
+            <div class="eyes2">
+                <div class="dou2"></div>
+            </div>
+            <div class="mouse1"></div>
+            <div class="dang1"></div>
+            <div class="dang"></div>
+            <div class="mouse"></div>
+            <div class="nose"></div>
+            <!--左边的胡子-->
+            <div class="huzi1"></div>
+            <div class="huzi2"></div>
+            <div class="huzi3"></div>
+            <!--//右边的胡子-->
+            <div class="huzi11"></div>
+            <div class="huzi22"></div>
+            <div class="huzi33"></div>
+            <div class="shengzi">
+                <div class="lingdang">
+                    <div class="bai"></div>
+                    <div class="lin1"></div>
+                    <div class="dian"></div>
+                    <div class="xian"></div>
+                </div>
+            </div>
+        </div>
+        <div class="shengti">
+            <div class="lefts">
+                <div class="hand1"></div>
+            </div>
+            <div class="rights">
+                <div class="hand2"></div>
+            </div>
+            <div class="dudu">
+                <div class="daidai1"></div>
+                <div class="daidai"></div>
+            </div>
+        </div>
+        <div class="shengti1">
+            <div class="yuan"></div>
+            <div class="danyuan"></div>
+            <div class="jiao1"></div>
+            <div class="jiao2"></div>
+        </div>
+    </div>
+</body>
+</html>
