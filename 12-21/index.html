@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.pagination.js"></script>
+    <script src="js/jquery.qrcode.min.js"></script>
+    <script src="js/index.js"></script>
+    <style type="text/css">
+        /*div.overlay{position:fixed;top:0;left:0;z-index:100000;background:url(__TPL__Public/images/zhuanti/15/overlaybg.png) repeat;width:100%;height:100%;}*/
+        /*#zhuantilogin a{color:#292825; text-decoration: none;}*/
+        /*#zhuantilogin a:hover{text-decoration:underline;}*/
+    </style>
+</head>
+<body>
+    <input type="hidden" id="islogin" value="<?php echo($viewModel->isLogin); ?>"  />
+    <!--top-box-->
+    <div class="top-box">
+        <img src="images/touzi-top.png" alt="">
+    </div>
+    <!--middle-box-->
+    <div class="middle-box">
+        <div class="middle-box-top">
+            <div class="middle-top-left"><img src="images/touzi1.png" alt=""></div>
+            <div class="middle-top-right">
+                <div>Step 1</div>
+                <h4>投资项目</h4>
+                <p>登录旺财谷账号，投资理财项目（不包括债权）</p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="jiatou">
+            <img src="images/jiantou1.png" alt="">
+        </div>
+        <div class="middle-box-middle">
+            <div class="middle-middle-right"><img src="images/touzi2.png" alt=""></div>
+            <div class="middle-middle-left">
+                <div>Step 2</div>
+                <h4>微信分享</h4>
+                <p>投资成功后，用微信扫码分享到朋友圈，领取红包</p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div  class="jiatou2">
+            <img src="images/jiantou2.png" alt="">
+        </div>
+        <div class="middle-box-bottom">
+            <div class="middle-bottom-left"><img src="images/touzi3.png" alt=""></div>
+            <div class="middle-bottom-right">
+                <div>Step 1</div>
+                <h4>投资项目</h4>
+                <p>登录旺财谷账号，投资理财项目（不包括债权）</p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <!--bottom-box-->
+    <div id="bottom-box">
+        <div class="bottom-box">
+            <div class="bottom-top">
+                <div class="bottom-top-left">分享红包详情</div>
+                <div class="bottom-top-right">活动规则</div>
+            </div>
+            <div style="clear: both"></div>
+            <div class="bottom-bottom">
+                <!--跳转投资-->
+                <div class="bottom-bottom-content1">
+                    <p>你还没有投资过呢，快去投资领取红包吧！</p>
+                    <a href="" class="bottom-bottom-btn">去投资吧</a>
+                </div>
+                <!--登陆-->
+                <div class="bottom-bottom-login">
+                    <p>需要登录后才可以查看哦~</p>
+                    <div class="bottom-login-btn">登  录</div>
+                </div>
+                <!--红包详情-->
+                <div class="bottom-hongbao">
+                    <div class="bottom-hongbao-box">
+                        <div class="bottom-hongbao-title">
+                            <div class="bottom-xiangmu"><span>项目名称</span></div>
+                            <div class="bottom-time"><span>投资时间</span></div>
+                            <div class="bottom-qing">红包情况</div>
+                        </div>
+                        <div class="bottom-hongbao-content" id="projectListInfo">
+                            <!--<div class="bottom-hongbao-content1">-->
+                                <!--<div class="bottom-hongbao-xiangmu">-->
+                                    <!--<img src="images/lingquqian.png" alt="">-->
+                                    <!--&lt;!&ndash;<img src="images/lingquhou.png" alt="">&ndash;&gt;-->
+                                    <!--<span>【金账通】205 号：中信保承保的应收账款项目</span>-->
+                                <!--</div>-->
+                                <!--<div class="bottom-hongbao-time">2015/12/21  10:23</div>-->
+                                <!--<div class="bottom-hongbao-qing">已领取</div>-->
+                            <!--</div>-->
+                            <!--<div class="bottom-hongbao-content1 hui">-->
+                                <!--<div class="bottom-hongbao-xiangmu">-->
+                                    <!--&lt;!&ndash;<img src="images/lingquqian.png" alt="">&ndash;&gt;-->
+                                    <!--<img src="images/lingquhou.png" alt="">-->
+                                    <!--<span>【金账通】205 号：中信保承保的应收账款项目</span>-->
+                                <!--</div>-->
+                                <!--<div class="bottom-hongbao-time">2015/12/21  10:23</div>-->
+                                <!--<div class="bottom-hongbao-qing lan">点击领取</div>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="btn clearfx" id="prjlistPage">
+                            <div id="projectListPagination" class="pagination">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--活动规则-->
+                <div class="rule-box">
+                    <p>活动时间：</p>
+                    <p>参与用户：活动期间内，所有投资用户。</p>
+                    <p>活动内容：</p>
+                    <p>1、活动期间，所有用户投资成功后，都将获得6-12个分享红包。</p>
+                    <p>2、将红包分享到微信朋友圈或者微信好友后，即可点开链接，参与抢红包活动。</p>
+                    <p>3、点开分享红包，输入手机号，即可领取到相应金额的代金券。</p>
+                    <p style="padding-left: 24px">已注册用户：代金券直接发送到手机号对应的旺财谷账户中。</p>
+                    <p style="padding-left: 24px">未注册用户：在领取到红包的七天内，用领取时输入的手机号注册旺财谷账号，注册成功时，代金券将自动发放到账户中。</p>
+                    <p>4、代金券使用规则详情见领取页。</p>
+                    <p>5、分享、领取红包仅支持在微信中进行。</p>
+                    <p>6、红包领取情况可在本专题页面中查看。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--code-->
+    <div class="mask"></div>
+    <div class="code-box">
+        <div class="code-ma"></div>
+        <div class="shao">微信扫一扫 分享</div>
+        <div class="fengxiang">分享得红包</div>
+        <img class="code-close" src="images/close.png" alt="">
+    </div>
+
+    <div id="zhuantilogin" class="overlay" style="display: none;">
+        <div style="position: relative;left:50%;width:420px;margin-left:-210px;top:50%;margin-top:-110px;z-index:200000;background:#f8f8f8;box-shadow: 2px 2px 10px #909090;overflow: hidden;">
+            <div style="border-bottom: 1px solid #c9c9c9;height: 42px;line-height: 42px;padding-left: 18px;">
+                <span style="font-weight: bold;">登录</span>
+                <p id="loginclose" style="float: right;height:42px;width:43px;cursor: pointer;border-left: 1px solid #ecebeb;background:url(__TPL__Public/images/zhuanti/15/checkclose2.png) center no-repeat;margin:0;"></p>
+            </div>
+            <div style="width:330px;margin:30px auto;background:#ff2400;overflow: hidden;background:#f8f8f8;font-size: 14px;color: #292825;">
+                <div style="margin:10px 0">
+                    <span style="width:60px;float:left;line-height:30px">用户名：</span>
+                    <input style="width:170px; border:1px solid #cbcbcb;height: 22px;padding:5px 0px 5px 8px" id="loginname" type="text">
+                    <a href="/user/registershow" style="margin-left: 10px;">免费注册？</a>
+                </div>
+                <div style="margin:10px 0">
+                    <span style="width:60px;float:left;line-height: 30px;">密码：</span>
+                    <input style="width:170px; border:1px solid #cbcbcb;height:22px;padding:5px 0 5px 8px" id="loginpwd" type="password">
+                    <a href="/forget/index_1.html" style="margin-left: 10px;">忘记密码？</a>
+                </div>
+                <div id="loginerror" style="color:red"></div>
+                <div style="width:330px; margin-top:20px;">
+                    <div id="login-btn" style="height:30px;background:#2ea4d2;color:#FFFFFF;text-align: center;line-height: 30px;cursor: pointer; border-radius: 5px;">
+                        确 定
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

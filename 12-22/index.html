@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <style>
+        body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+    .box {
+        width: 200px;
+        height: 90px;
+        margin:0 auto;
+        margin-top: 50px;
+        border: 1px solid red;
+        }
+        #target {
+            width: 100%;
+            height: 330px;
+            text-align: center;
+            cursor: pointer;
+            background: #dfdfdf;
+        }
+        #target div {
+            position: relative;
+            height: 30px;
+            line-height: 30px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="touch.js"></script>
+    <script>
+        $(function(){
+            touch.on('#target', 'touchstart', function(ev){
+                ev.preventDefault();
+            });
+
+            var target = document.getElementById("target");
+            var dx, dy;
+
+            touch.on('#target', 'drag', function(ev){
+                dx = dx || 0;
+                dy = dy || 0;
+                var offx = dx + ev.x + "px";
+                var offy = dy + ev.y + "px";
+                this.style.webkitTransform = "translate3d(0," + offy + ",0)";
+            });
+
+//            touch.on('#target', 'dragend', function(ev){
+//                dx += ev.x;
+//                dy += ev.y;
+//            });
+        })
+
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div id="target">
+            <div>001</div>
+            <div>002</div>
+            <div>003</div>
+            <div>004</div>
+            <div>005</div>
+            <div>006</div>
+            <div>007</div>
+            <div>008</div>
+            <div>009</div>
+            <div>010</div>
+            <div>011</div>
+        </div>
+    </div>
+</body>
+</html>

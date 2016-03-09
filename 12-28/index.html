@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <style type="text/css">
+        div.overlay{position:fixed;top:0;left:0;z-index:100000;background:url(__TPL__Public/images/zhuanti/15/overlaybg.png) repeat;width:100%;height:100%;}
+        #zhuantilogin a{color:#292825; text-decoration: none;}
+        #zhuantilogin a:hover{text-decoration:underline;}
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--banner-->
+        <div class="row banner-box">
+            <div class="col-sm-12 hidden-xs"><img src="images/banner-left.png" alt=""></div>
+            <div class="col-xs-12 hidden-sm hidden-lg hidden-md"><img src="images/banner.png" alt=""></div>
+        </div>
+        <!--part1-->
+        <div class="row part1-box">
+            <!--pc端-->
+            <div class="col-sm-12 hidden-xs">
+                <div class="container-fluid">
+                    <div class="col-sm-12">
+                        <div class="part1big-content">
+                            <div class="part1big-content-title">本月累计投资</div>
+                            <div class="part1big-money"></div>
+                            <div class="part1big-address"><a href="javascript:;"><img src="images/adress.png" alt="">更改收获地址</a></div>
+                            <div class="part1big-award">
+                                <img src="images/adressbox.png" alt="">
+                            </div>
+                            <div class="part1big-btn">
+                                <img src="images/btn.gif" alt="">
+                                <span>我的奖品</span>
+                            </div>
+                            <div class="part1big-award-box">
+                                <div id="part1big-award-box">
+                                    <!--<div class="part1big-award-content">-->
+                                        <!--<p>投资额度：5K</p>-->
+                                        <!--<img src="images/1w.jpg" alt="">-->
+                                        <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="part1big-award-content">-->
+                                        <!--<p>投资额度：5K</p>-->
+                                        <!--<img src="images/1w.jpg" alt="">-->
+                                        <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="part1big-award-content">-->
+                                        <!--<p>投资额度：5K</p>-->
+                                        <!--<img src="images/1w.jpg" alt="">-->
+                                        <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="part1big-award-content">-->
+                                        <!--<p class="ju">投资额度：5K</p>-->
+                                        <!--<img src="images/1wr.jpg" alt="">-->
+                                        <!--<div class="hui">未获得</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="part1big-award-content">-->
+                                        <!--<p>投资额度：5K</p>-->
+                                        <!--<img src="images/1w.jpg" alt="">-->
+                                        <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="part1big-award-content">-->
+                                        <!--<p>投资额度：5K</p>-->
+                                        <!--<img src="images/1w.jpg" alt="">-->
+                                        <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                            <div class="part1big-bottom">
+                                <img src="images/adressbottpm.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--移动端-->
+            <div class="col-xs-12 hidden-sm hidden-lg hidden-md">
+                <div class="part1-content">
+                    <div class="part1-content-title">本月累计投资</div>
+                    <div class="part1-money">321，312，312<span>元</span></div>
+                    <div class="part1-address"><a href="javascript:;"><img src="images/adress.png" alt="">更改收获地址</a></div>
+                    <div class="part1-award">
+                        <img src="images/adressbox.png" alt="">
+                    </div>
+                    <div class="part1-btn">
+                        <img src="images/btn.gif" alt="">
+                        <span>我的奖品</span>
+                    </div>
+                    <div class="part1-award-box">
+                        <div id="part1-award-box">
+                            <!--<div class="part1-award-content">-->
+                                <!--<p>投资额度：5K</p>-->
+                                <!--<img src="images/1w.jpg" alt="">-->
+                                <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                            <!--</div>-->
+                            <!--<div class="part1-award-content">-->
+                                <!--<p>投资额度：5K</p>-->
+                                <!--<img src="images/10w.jpg" alt="">-->
+                                <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                            <!--</div>-->
+                            <!--<div class="part1-award-content">-->
+                                <!--<p class="ju">投资额度：5K</p>-->
+                                <!--<img src="images/1wr.jpg" alt="">-->
+                                <!--<div class="hui">w未获得</div>-->
+                            <!--</div>-->
+                            <!--<div class="part1-award-content">-->
+                                <!--<p>投资额度：5K</p>-->
+                                <!--<img src="images/10wr.jpg" alt="">-->
+                                <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                            <!--</div>-->
+                            <!--<div class="part1-award-content">-->
+                                <!--<p>投资额度：5K</p>-->
+                                <!--<img src="images/3w.jpg" alt="">-->
+                                <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                            <!--</div>-->
+                            <!--<div class="part1-award-content">-->
+                                <!--<p>投资额度：5K</p>-->
+                                <!--<img src="images/3wr.jpg" alt="">-->
+                                <!--<div><img src="images/star.png" alt="">已获得</div>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div class="part1-bottom">
+                        <img src="images/adressbottpm.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--part2-->
+        <div class="row part2-box">
+            <!--移动端-->
+            <div class="col-xs-12 hidden-sm hidden-lg hidden-md">
+                <img class="part2-title" src="images/part2.png" alt="">
+                <div class="part2-limit">
+                    <img class="runstop1" src="" alt="">
+                    <!--<img class="run" src="images/run.gif" alt="">-->
+                    <!--<img class="runout" src="images/runout.png" alt="">-->
+                    <!--<img class="active-end" src="images/active-end.png" alt="">-->
+                    <div class="part2-juan"></div>
+                    <div class="part2-limit-title">
+                        <span></span>
+                        <img src="images/limit.png" alt="">
+                    </div>
+                </div>
+                <input type="button" class="part2-btn">
+            </div>
+            <!--pc端-->
+            <div class="col-sm-12 hidden-xs partbig2-box">
+                <img class="partbig2-title" src="images/partbig2.png" alt="">
+                <div id="partbig2-box">
+                    <img class="runstop" src="images/runstop.png" alt="">
+                    <img class="run" src="images/run.gif" alt="">
+                    <img class="runout" src="images/runout.png" alt="">
+                    <div class="partbig2-juan"></div>
+                    <div class="partbig2-limit-title">
+                        <span></span>
+                        <img src="images/limit.png" alt="">
+                    </div>
+                </div>
+                <input type="button" class="partbig2-btn">
+            </div>
+        </div>
+        <!--活动规则-->
+        <div class="row rule-box">
+            <div class="col-sm-3 hidden-xs"></div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="rule-title">活动规则</div>
+                <div class="rule-content">
+                    <p>活动1</p>
+                    <div>1.活动期间，谷东当月累计投资额达到相应的额度，即可获得相应额度的奖品+该额度之前所有的奖品</div>
+                    <div>2.图片奖品仅供参考，一切以实物为准</div>
+                    <div>3.实物奖品会在活动结束后一周内寄出。（由于接近春节，不排除有特殊情况导致的奖品延期寄出状况，延期奖品会在物流恢复工作之日尽快寄出）</div>
+                    <p>活动2</p>
+                    <div>当月每周五10点</div>
+                    <div>每人每场限抢一张代金券，限当月使用有效</div>
+                    <div>本活动最终解释权归旺财谷所有</div>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs"></div>
+        </div>
+        <!--收货地址-->
+        <div class="mark"></div>
+        <div class="row address-box">
+            <!--移动端-->
+            <div class="col-xs-12 hidden-sm hidden-lg hidden-md">
+                <div class="address">
+                    <form action="" method="post">
+                        <div class="address-title">恭喜您~获得了实物大奖！</div>
+                        <div class="address-name shouhuo_name" id="txt_username1"><span>姓名：</span><input type="text" name="shouhuo_name"></div>
+                        <div class="address-name mobile" id="txt_mobile1"><span>电话：</span><input type="tel" name="mobile"></div>
+                        <div class="address-name shouhuo_address" id="txt_address1"><span>地址：</span><input type="text" name="shouhuo_address"></div>
+                        <div class="tishi"><span>不能为空</span></div>
+                        <input type="button" class="address-commit" value="确 定">
+                    </form>
+                    <div class="address-point">* 所有奖品统一在活动结束后一周内寄出，请填写正确地址</div>
+                </div>
+            </div>
+            <!--手机端-->
+            <div class="col-sm-12 hidden-xs">
+                <div class="address-pc">
+                    <div class="address-pc-title">恭喜您~获得了实物大奖！</div>
+                    <form action="" method="post">
+                        <div class="address-pc-name shouhuo_name" id="txt_username"><span>姓名：</span><input type="text" name="shouhuo_name"></div>
+                        <div class="address-pc-name mobile" id="txt_mobile"><span>电话：</span><input type="tel" name="mobile"></div>
+                        <div class="address-pc-name shouhuo_address" id="txt_address"><span>地址：</span><input type="text" name="shouhuo_address"></div>
+                        <div class="tishi"><span>不能为空</span></div>
+                        <input type="button" class="address-pc-commit" value="确 定">
+                    </form>
+                    <div class="address-point">* 所有奖品统一在活动结束后一周内寄出，请填写正确地址</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="zhuantilogin" class="overlay" style="display: none;">
+        <div style="position: relative;left:50%;width:420px;margin-left:-210px;top:50%;margin-top:-110px;z-index:200000;background:#f8f8f8;box-shadow: 2px 2px 10px #909090;overflow: hidden;">
+            <div style="border-bottom: 1px solid #c9c9c9;height: 42px;line-height: 42px;padding-left: 18px;">
+                <span style="font-weight: bold;">登录</span>
+                <p id="loginclose" style="float: right;height:42px;width:43px;cursor: pointer;border-left: 1px solid #ecebeb;background:url(__TPL__Public/images/zhuanti/15/checkclose2.png) center no-repeat;margin:0;"></p>
+            </div>
+            <div style="width:330px;margin:30px auto;background:#ff2400;overflow: hidden;background:#f8f8f8;font-size: 14px;color: #292825;">
+                <div style="margin:10px 0">
+                    <span style="width:60px;float:left;line-height:30px">用户名：</span>
+                    <input style="width:170px; border:1px solid #cbcbcb;height: 22px;padding:5px 0px 5px 8px" id="loginname" type="text">
+                    <a href="/user/registershow" style="margin-left: 10px;">免费注册？</a>
+                </div>
+                <div style="margin:10px 0">
+                    <span style="width:60px;float:left;line-height: 30px;">密码：</span>
+                    <input style="width:170px; border:1px solid #cbcbcb;height:22px;padding:5px 0 5px 8px" id="loginpwd" type="password">
+                    <a href="/forget/index_1.html" style="margin-left: 10px;">忘记密码？</a>
+                </div>
+                <div id="loginerror" style="color:red"></div>
+                <div style="width:330px; margin-top:20px;">
+                    <div id="login-btn" style="height:30px;background:#2ea4d2;color:#FFFFFF;text-align: center;line-height: 30px;cursor: pointer; border-radius: 5px;">
+                        确 定
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
