@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="login-box">
+        <div class="star">
+            <img src="images/star.gif" alt="">
+            <div>0%</div>
+        </div>
+    </div>
+    ·<script>
+        $(function(){
+            var num=0;
+            var t=setInterval(function(){
+                var speed=Math.floor(20*Math.random());
+                if(num>80){
+                    speed=1;
+                }
+                num+=speed;
+                $('.star div').html(num+'%');
+                if(num>=100){
+                    clearInterval(t);
+                    setTimeout(function(){
+                        location.href='second.html';
+                    },500)
+                }
+            },300*Math.random());
+        })
+    </script>
+</body>
+</html>

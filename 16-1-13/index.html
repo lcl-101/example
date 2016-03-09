@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="js/jquery.js"></script>
+    <script src="js/Lottery-old.js"></script>
+    <style type="text/css">
+        body{
+            height:1000px;
+        }
+        #lotteryContainer {
+            position:relative;
+            width: 300px;
+            height: 100px;
+        }
+        #drawPercent {
+            color:#F60;
+        }
+    </style>
+</head>
+<body style="height: 6000px">
+<button id="freshBtn">刷新彩票</button><label>已刮开 <span id="drawPercent">0%</span> 区域。</label>
+<div id="lotteryContainer"></div>
+<script>
+    window.onload = function () {
+        var lottery = new Lottery('lotteryContainer', 'images/ss.jpg', 'image', 500, 100, drawPercent);
+        lottery.init('images/qq.jpg', 'image');
+        document.getElementById('freshBtn').onclick = function() {
+            drawPercentNode.innerHTML = '0%';
+            lottery.init('images/qq.jpg', 'image');
+//            lottery.init(getRandomStr(10), 'text');
+        }
+        var drawPercentNode = document.getElementById('drawPercent');
+        function drawPercent(percent) {
+            drawPercentNode.innerHTML = percent + '%';
+            if(percent>=50){
+                alert(1);
+            }
+        }
+    }
+    function getRandomStr(len) {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for( var i=0; i < len; i++ )
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+    }
+</script>
+</body>
+</html>

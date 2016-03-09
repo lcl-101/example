@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        li{
+            width: 50px;
+            height: 20px;
+            border: 1px solid red;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        var flag = true;
+        $(function(){
+            $('.top-right li').on('click',function() {
+                var index = $('.top-right li').index(this);
+
+                    if (flag) {
+                        $('.top-right li').eq(index).children('input')[0].checked = 'checked';
+                        flag=false;
+                    } else {
+                        $('.top-right li').eq(index).children('input').attr('checked', false);
+                        flag=true;
+                    }
+
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <ul class="top-right">
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+    </ul>
+</body>
+</html>

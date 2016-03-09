@@ -1,0 +1,461 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+    background: #fff;
+}
+i{
+    font-style: normal;
+}
+/*banner-box*/
+.banner-box{
+    width: 100%;
+    min-width: 1057px;
+}
+.banner-box img {
+    width: 100%;
+    float: left;
+}
+/*road-box*/
+.road-box {
+    width: 100%;
+    min-width: 1057px;
+    height: 280px;
+    background: #fff;
+}
+#road-box {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.road-title {
+    font-size: 40px;
+    color: #333333;
+    margin-top: 40px;
+}
+.road-title span {
+    font-size: 24px;
+    color: #898989;
+}
+.road-content {
+    width: 100%;
+}
+.road-round1,.road-round2,.road-round3 {
+    float: left;
+    width: 300px;
+    height: 120px;
+    margin-top: 20px;
+}
+.road-round4 {
+    float: left;
+    width: 100px;
+    height: 120px;
+    margin-top: 20px;
+}
+.road-content p {
+    float: left;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.road-content i{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: -56px;
+}
+/*红色*/
+.red {
+    color: #e83828;
+}
+/*黑色*/
+.black {
+    color: #231815;
+}
+/*红圆*/
+.round-red {
+    float: left;
+    width: 70px;
+    height: 70px;
+    background: url("../images/red.jpg") no-repeat 0 center;
+    background-size: 100%;
+}
+/*红线*/
+.round-redline {
+    float: left;
+    width: 230px;
+    height: 70px;
+    background: url("../images/line-red.jpg") no-repeat 0 center;
+    background-size: 100%;
+}
+/*红对勾*/
+.round-red-finish {
+    float: left;
+    width: 70px;
+    height: 72px;
+    background: url("../images/red-finish.jpg") no-repeat 0 center;
+    background-size: 100%;
+}
+/*灰线*/
+.round-grayline {
+    float: left;
+    width: 230px;
+    height: 72px;
+    background: url("../images/line-gray.jpg") no-repeat 0 center;
+    background-size: 100%;
+}
+/*灰色的环*/
+.round-gray {
+    float: left;
+    width: 70px;
+    height: 72px;
+    background: url("../images/gray.jpg") no-repeat 0 center;
+    background-size: 100%;
+}
+
+/*注册*/
+.register-box {
+    width: 100%;
+    min-width: 1057px;
+    background: #d8ffef;
+    height: 300px;
+}
+#register-box {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+.register-box-left {
+    float: left;
+    width: 330px;
+    margin-top: 10px;
+}
+.register-box-left img {
+    width: 100%;
+    margin-left: 40px;
+}
+.register-box-right {
+    display: none;
+    float: right;
+    width: 340px;
+    height: 100%;
+}
+.register-box-right div{
+    font-size: 50px;
+    width: 100px;
+    margin: 0 auto;
+    color: #3e3a39;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.register-box-right a {
+    display: block;
+    width: 240px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background: #f85956;
+}
+.register-box-right p {
+    width: 210px;
+    margin: 0 auto;
+    color: #f8b62d;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-right-finish {
+    display: none;
+    float: right;
+    width: 600px;
+    height: 100%;
+}
+.register-right-finish div{
+    font-size: 50px;
+    width: 600px;
+    margin: 0 auto;
+    color: #3e3a39;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.register-right-finish p {
+    width: 600px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    color: #f8b62d;
+    font-size: 18px;
+    text-align: center;
+}
+/*开通第三方资金托管*/
+.pay-box {
+    width: 100%;
+    height: 300px;
+    min-width: 1057px;
+    background: #fff;
+}
+#pay-box {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+.pay-left {
+    display: none;
+    float: left;
+    width: 460px;
+    height: 100%;
+}
+.pay-left div{
+    font-size: 50px;
+    width: 460px;
+    margin: 0 auto;
+    color: #3e3a39;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.pay-left a {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background: #f85956;
+}
+.pay-left p {
+    width: 440px;
+    margin: 0 auto;
+    color: #f8b62d;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+.pay-right {
+    float: right;
+    width: 330px;
+    height: 290px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.pay-right img {
+    width: 100%;
+}
+.pay-left-finish {
+    display: none;
+    float: left;
+    width: 600px;
+    height: 100%;
+}
+.pay-left-finish div{
+    font-size: 50px;
+    width: 600px;
+    margin: 0 auto;
+    color: #3e3a39;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.pay-left-finish p {
+    width: 600px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    color: #f8b62d;
+    font-size: 18px;
+    text-align: center;
+}
+/*充值*/
+.recharge-box {
+    width: 100%;
+    min-width: 1057px;
+    height: 300px;
+    background: #fff3c4;
+}
+#recharge-box {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+.recharge-left {
+    float: left;
+    width: 350px;
+    margin-top: 10px;
+}
+.recharge-left img{
+    width: 100%;
+    margin-left: 40px;
+}
+.recharge-right {
+    display: none;
+    float: right;
+    width: 340px;
+    height: 100%;
+}
+.recharge-right div{
+    font-size: 50px;
+    width: 100px;
+    margin: 0 auto;
+    color: #3e3a39;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.recharge-right a {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background: #9fa0a0;
+}
+.recharge-right p {
+    width: 210px;
+    margin: 0 auto;
+    color: #f8b62d;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+.recharge-right-finish {
+    display: none;
+    float: right;
+    width: 600px;
+    height: 100%;
+}
+.recharge-right-finish div{
+    font-size: 50px;
+    width: 600px;
+    margin: 0 auto;
+    color: #3e3a39;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.recharge-right-finish p {
+    width: 600px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    color: #f8b62d;
+    font-size: 18px;
+    text-align: center;
+}
+/*第一桶金*/
+.gold-box {
+    width: 100%;
+    height: 300px;
+    min-width: 1057px;
+    background:#fff;
+}
+#gold-box {
+    width: 1000px;
+    margin: 0 auto;
+    height:100%;
+}
+.gold-box-left {
+    display: none;
+    float: left;
+    width: 460px;
+    height: 100%;
+}
+.gold-box-left div{
+    font-size: 50px;
+    width: 460px;
+    margin: 0 auto;
+    color: #3e3a39;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.gold-box-left a {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background: #9fa0a0;
+}
+.gold-box-left p {
+    width: 440px;
+    margin: 0 auto;
+    color: #f8b62d;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+.gold-box-right {
+    float: right;
+    width: 330px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.gold-box-right img {
+    width: 100%;
+}
+.gold-left-finish {
+    display: none;
+    float: left;
+    width: 660px;
+    height: 100%;
+}
+.gold-left-finish div{
+    font-size: 50px;
+    width: 660px;
+    margin: 0 auto;
+    color: #3e3a39;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.gold-left-finish p {
+    width: 660px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    color: #f8b62d;
+    font-size: 18px;
+    text-align: center;
+}
+.show{
+    display: block;
+}
+.hide {
+    display: none;
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/second.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide1">
+                <div class="first-box">
+                    <img src="images/first.png" alt="">
+                </div>
+                <div class="first-bottom-box">
+                    <img src="images/fenmian.gif" alt="">
+                </div>
+                <div class="first-go">
+                    <a href="javascript:;"><img src="images/go.png" alt=""></a>
+                </div>
+                <div class="web-adress">www.wangcaigu.com</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            direction: 'vertical',
+            mousewheelControl : true,
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            },
+            onTransitionEnd: function(swiper){
+                swiperAnimate(swiper);
+            }
+        });
+    </script>
+    <script>
+        $(function(){
+            var wcg_one_year=$.cookie('wcg_one_year');
+            if(wcg_one_year){
+                $('.first-go a')[0].href='three.html';
+            }else {
+                $('.first-go a')[0].href='four.html';
+            }
+        })
+    </script>
+</body>
+</html>

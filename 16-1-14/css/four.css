@@ -1,0 +1,103 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+.login-box {
+    width: 100%;
+    height: 100%;
+}
+#login-box {
+    max-width: 628px;
+    height: 100%;
+    margin: 0 auto;
+}
+.phone-box {
+    width: 100%;
+    border-top: 1px solid #b5b5b5;
+    border-bottom: 1px solid #b5b5b5;
+    margin-top: 20px;
+}
+.phone-box div {
+    position: relative;
+    width: 95%;
+    margin-left: 5%;
+}
+input {
+    display: block;
+    width: 93%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 0;
+    outline: none;
+    resize: none;
+    padding-left: 2%;
+    font-size: 1rem;
+}
+.tel {
+    border-bottom: 1px solid #dcdcdc;
+}
+.ma {
+    position: absolute;
+    top:12%;
+    right: 10%;
+    width: 26%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: #ffd200;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.daojishi {
+    display: none;
+    position: absolute;
+    top:12%;
+    right: 10%;
+    width: 26%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: #bababa;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.tishi {
+    display: none;
+    width: 93%;
+    color: #ff0000;
+    font-size: 1rem;
+    padding-left: 7%;
+    margin-top: 2%;
+}
+.next {
+    display: block;
+    width: 88%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1rem;
+    background: #ffd200;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 4%;
+}
+.next:hover{
+    text-decoration: none;
+}
