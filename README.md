@@ -1,4 +1,4 @@
-# example
+# list
 11-11 moban 温都金服 https://m.wenjf.com/
 zhuanti 旺财谷旺金宝即将上线 https://www.wangcaigu.com/zhuanti/show_new/id-31
 11-30 旺财谷岁末双重惊喜，参与活动多赚几千元：https://www.wangcaigu.com/zhuanti/show_new/id-32
