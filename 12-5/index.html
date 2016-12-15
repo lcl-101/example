@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery.js"></script>
+    <title>Document</title>
+    <style>
+        body,html,ul,li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 100%;
+        }
+        ul li{
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+        .loading {
+            display: none;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="loading">loading....</div>
+    <script>
+//        $(window).scroll(function () {
+//            //当内容滚动到底部时加载新的内容
+//            if ($(this).scrollTop() + $(window).height() + 20 >= $(document).height() && $(this).scrollTop() > 20) {
+//                //当前要加载的页码
+//                getPageList();
+//            }
+//            function getPageList(){
+//                $('.loading').show();
+//                setTimeout(function () {
+//                    for (var i = 0; i < 20; i++) {
+//                        $('ul').append('<li>'+i+'</li>');
+//                    };
+//                    $('.loading').hide();
+//                },1000)
+//            }
+//        });
+
+
+        var flag=true,start,end,slideNum,winH,bodyH,_h,_hStart,UA =navigator.userAgent,isUC=UA.indexOf("UCBrowser")!=-1||UA.indexOf("Baidu")!=-1;
+        slideNum=isUC?8:90;
+
+        document.addEventListener("touchstart",touchStartHandle,false);
+        document.addEventListener("touchend",touchEndHandle,false);
+        function touchStartHandle(evt){
+            clearTimeout(_hStart);
+            _hStart=setTimeout(function(){
+                start=evt.touches[0].pageY;
+            },100);
+        }
+        document.addEventListener("touchmove",function(evt){
+            clearTimeout(_h);
+            _h=setTimeout(function(){
+                touchEndHandle(evt)
+            },100);
+
+        },false);
+        function touchEndHandle(evt){
+            end=evt.changedTouches[0].pageY;
+            if(start-end>slideNum){  //判断时候是下滑
+                if($(document).scrollTop()-($(document).height()-$(window).height())<=50){  //判断是否到达页面底部 范围50px
+                    if(!flag){  //防止页面在到达底部后导致事件的多次调用
+                        return;
+                    }
+                    flag=false;
+                    $('.loading').show();
+                    callback();
+                }
+            }
+            console.log($(document).scrollTop(),$(document).height()-$(window).height());
+            function callback() {
+                setTimeout(function () {
+                    for (var i = 0; i < 20; i++) {
+                        $('ul').append('<li>'+i+'</li>');
+                    };
+                    $('.loading').hide();
+                    flag=true;
+                },1000)
+            }
+        }
+    </script>
+</body>
+</html>
