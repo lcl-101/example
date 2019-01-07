@@ -1,0 +1,204 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input,table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 0;
+    border: 0;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+    background: #fff url('../images/bg.png') repeat 0 0;
+     min-width: 1000px;
+}
+i,em{
+    font-style: normal;
+}
+.clearfix:before,.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+/*banner*/
+.banner-box {
+    width: 100%;
+    min-width: 900px;
+}
+.banner-box img {
+    width: 100%;
+    float: left;
+}
+/*content-box*/
+.content-box {
+    width: 1000px;
+    margin: 0 auto;
+}
+.content-box .content-inner {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+.content-box .content-inner img {
+    width: 100%;
+    float: left;
+}
+.content-box .content-inner .content-title {
+    font-size: 56px;
+    color: #2d1b0c;
+}
+.content-box .content-inner .content-title-copy {
+    margin-top: 10px;
+    font-size: 25px;
+    color: #000;
+    background: url('../images/line.png') no-repeat -96px 8px;
+    background-size: 1000px 16px;
+}
+.content-intro {
+    width: 100%;
+    margin-top: 10px;
+}
+.content-intro .content-intro-left {
+    float: left;
+    width: 350px;
+}
+.content-intro .content-intro-left img {
+    width: 100%;
+}
+.content-intro .content-intro-right {
+    float: right;
+    width: 350px;
+    padding-top: 20px;
+}
+.content-intro .content-intro-right ul li {
+    list-style-type:disc;
+    color:#b58e2c;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 5px;
+ }
+.content-intro .content-intro-right ul li i {
+    float: left;
+    width: 86px;
+    color: #353333;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.content-intro .content-intro-right ul li span {
+    float: left;
+    color: #4f4f4f;
+    font-size: 16px;
+}
+.content-text {
+    font-size: 25px;
+    color: #000;
+    text-align: left;
+    margin-top: 40px;
+}
+.content-middle {
+    position: relative;
+    width: 100%;
+    min-width: 900px;
+}
+.content-middle img {
+    float: left;
+    width: 100%;
+}
+.content-middle a {
+    position: absolute;
+    display: block;
+    width: 220px;
+    top: 18%;
+    right: 14%;
+    height: 58px;
+}
+.logo {
+    width: 100%;
+}
+/*quanwei-inner*/
+.quanwei-inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+.quanwei-inner .quanwei-title img{
+    width: 100%;
+    float: left;
+}
+.quanwei-inner ul li{
+    float: left;
+    width: 480px;
+    height: 660px;
+}
+.quanwei-aurhor {
+    font-size: 32px;
+    margin: 20px 0;
+}
+.quanwei-aurhor i {
+    float: left;
+    height: 100px;
+    margin-right: 20px;
+}
+.quanwei-aurhor span {
+    color: #a19160;
+}
+.quanwei-text {
+    font-size: 18px;
+    text-align: left;
+}
+.quanwei-inner ul li img {
+    width: 100%;
+    float: left;
+}
+/*.zhuangzhen-img*/
+.zhuangzhen-img {
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.zhuangzhen-img span {
+    display: inline-block;
+    width: 394px;
+    margin-bottom: 4px;
+}
+.zhuangzhen-img span img {
+    width: 100%;
+}
+/*jianzhi*/
+.jianzhi {
+    width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 40px;
+}
+.jianzhi span {
+    display: inline-block;
+    width: 430px;
+}
+.jianzhi span img {
+    float: left;
+    width: 100%;
+}
+/*bottom-box*/
+.bottom-box {
+    width: 800px;
+    margin:  0 auto;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}

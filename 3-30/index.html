@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class=""></div>
+  <script>
+    // 计算系统当前是星期几
+    // 1
+    var str = '星期'
+    var  week = new Date().getDay();
+    switch (week) {
+      case 0:
+        str += "日";
+        break;
+      case 1:
+        str += "一";
+        break
+      case 2:
+        str += "二";
+        break
+      case 3:
+        str += "三";
+        break
+      case 4:
+        str += "四";
+        break
+      case 5:
+        str += "五";
+        break
+      case 6:
+        str += "六";
+        break
+      default:
+    }
+    console.log(str);
+    //2
+
+    var a = ["日","一","二","三","四","五","六"];
+    var  i = new Date().getDay();
+    console.log('星期'+a[i]);
+
+    //3
+    var s = "星期"+"日一二三四五六".charAt(new Date().getDay());
+    console.log(s);
+  </script>
+</body>
+</html>
