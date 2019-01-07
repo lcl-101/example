@@ -91,24 +91,24 @@
       waterFall("masonry","item");
     }
     // 页面尺寸改变时实时触发
-    // window.onresize = function() {
-    //   //重新定义瀑布流
-    //   waterFall("masonry","item");
-    // };
+    window.onresize = function() {
+      //重新定义瀑布流
+      waterFall("masonry","item");
+    };
     /**
      * [waterFall description]
      * @param  {[type]} f [父元素]
      * @param  {[type]} c [子元素]
      * @return {[type]}   [description]
      */
-    function waterFall(f,c){
+    function waterFall(f,c,r){
       var parent = document.getElementById(f);      //获取父级div
       var allArr = getAllChirld(parent,c);          //获取所有父级div下的标签
       var wW = document.documentElement.clientWidth;  //获取屏幕宽度
       var wchirldWidth = parent.getElementsByTagName("*");//获取所有的标签
       var num = Math.floor(wW/wchirldWidth[0].offsetWidth);//这是一个Math算法, 目的是将小数转变为整数
-      console.log(num);
       parent.style.cssText = 'width:'+wchirldWidth[0].offsetWidth*num+'px;margin:0 auto';//固定每行摆放个数 和上下左右边距
+      initallArrStyle(allArr);
       //获得每行的最小高度
       getMinHeightOfCols(allArr, num);
     }
@@ -120,8 +120,12 @@
           chirldArr.push(wchild[i]);
         }
       }
-      console.log(chirldArr);
       return chirldArr;
+    }
+    function initallArrStyle(allArr){
+      for(var i=0;i<allArr.length;i++){
+        allArr[i].style = '';
+      }
     }
     /**
      * [getMinHeightOfCols description]
