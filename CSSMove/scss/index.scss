@@ -1,0 +1,31 @@
+$count: 500;
+
+.g-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.position {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@for $i from 0 through $count {
+
+  $x: $i % 10;
+  $y: ($i - $x) / 10;
+
+  .position:nth-child(#{$i + 1}) {
+      top: #{$y * 10}vh;
+      left: #{$x * 10}vw;
+  }
+
+  .position:nth-child(#{$i + 1}):hover {
+      background: rgba(255, 155, 10, .5)
+  }
+
+}
