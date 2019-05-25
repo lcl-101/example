@@ -42,4 +42,9 @@
 1. 淘宝首页图片与外框大小一致,没有缩放
 
 ![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/taobao1.png)
-![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/taobao1.png)
+![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/taobao2.png)
+
+2. 京东图片与外框大小一致,没有缩放
+
+![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/jd1.png)
+![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/jd2.png)
