@@ -1,5 +1,7 @@
 ## 关于将图片缩放至140大小,图片失帧率最优方案
 
+!!注意,查看实验效果,需要心在index.html查看,下面展示图片仅做参考
+
 #### 测试环境 1080p 显示器
 > 材料孔网首页好书推荐封面图
 
@@ -19,3 +21,25 @@
 
 #### macbook retina 显示器
 > 材料孔网首页好书推荐封面图
+
+1. 将480缩放至140后,发现清晰度有所提高
+
+![img_1](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/1.png)
+
+2. 测试在将不同分辨的图片,缩小至140后,清晰度最高的图片,实验图片分辨率为,480,240,200,140
+
+![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/2.png)
+
+从结果中可以看出,清晰度逐渐递减
+
+3. 480与280 对比
+
+![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/3.png)
+
+
+#### 其他家图片选取方法
+
+1. 淘宝首页图片与外框大小一致,没有缩放
+
+![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/taobao1.png)
+![img_2](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/taobao1.png)
