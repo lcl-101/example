@@ -2,7 +2,7 @@
 
 !!注意,查看实验效果,需要心在index.html查看,下面展示图片仅做参考
 
-#### 测试环境 1080p 显示器
+#### 一, 测试环境 1080p 显示器
 > 材料孔网首页好书推荐封面图
 
 1. 左边是480的原图,右边是通过样式将480缩小到140的图,可以看出图片很明面变模糊了
@@ -19,7 +19,7 @@
 
 ![img_3](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/3.png)
 
-#### macbook retina 显示器
+#### 二, macbook retina 显示器
 > 材料孔网首页好书推荐封面图
 
 1. 将480缩放至140后,发现清晰度有所提高
@@ -37,7 +37,7 @@
 ![img_6](https://raw.githubusercontent.com/lcl-101/example/master/imgTest/3.png)
 
 
-#### 其他家图片选取方法
+#### 三, 其他家图片选取方法
 
 1. 淘宝首页图片与外框大小一致,没有缩放
 
