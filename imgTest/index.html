@@ -6,16 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-    .img_cn img{ float:left;}
-    .img_cn img:nth-child(2) {
-      width: 140px;
+    .img_cn img{
+      margin-left: 10px;
     }
-
+    p {
+      text-align: center;
+    }
     .img_box {
+      position: relative;
       float: left;
       width: 140px;
       height: 140px;
       line-height: 140px;
+      text-align: center;
+      margin-left: 10px;
+    }
+    .img_box p {
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
       text-align: center;
     }
     .img_box img {
@@ -26,33 +38,41 @@
 </head>
 <body>
   <div class="img_cn">
-    <img src="./480.jpg" alt="">
-    <img src="./480.jpg" alt="">
+    <div style="float:left;"><img src="./480.jpg" alt=""> <p>480*600</p></div>
+    <div style="float:left;"><img src="./480.jpg" alt="" style="width: 140px;"> <p style="margin-left: 10px;">将 480 缩小到 140</p></div>
   </div>
 
-  <div style="clear:both;"></div>
+  <div style="clear:both;margin-top:40px;"></div>
   <div class="img_box">
     <img src="./480.jpg" alt="">
+    <p>480*600</p>
   </div>
   <div class="img_box">
     <img src="./300.jpg" alt="">
+    <p>300*375</p>
   </div>
   <div class="img_box">
     <img src="./280.jpg" alt="">
+    <p>280*350</p>
   </div>
   <div class="img_box">
     <img src="./200.jpg" alt="">
+    <p>200*250</p>
   </div>
   <div class="img_box">
     <img src="./140.jpg" alt="">
+    <p>140*175</p>
   </div>
   <div style="clear:both;"></div>
-  <div style="margin-top:20px;">
+  <div style="margin-top:60px;margin-left: 20px;">最清晰对比</div>
+  <div>
     <div class="img_box">
       <img src="./480.jpg" alt="">
+      <p>480*600</p>
     </div>
     <div class="img_box">
       <img src="./200.jpg" alt="">
+      <p>200*250</p>
     </div>
   </div>
 </body>
