@@ -113,7 +113,6 @@
         var width = $(this).find("img").width();
         var bi = itemWidth/width; //获取缩小的比值
         var boxheight = parseInt(height*bi); //图片的高度*比值 = item的高度
-
         if (i < columns) {
             // 2- 确定第一行
             $(this).css({
@@ -145,6 +144,8 @@
             arr[index] = arr[index] + boxheight;
         }
     });
+
+    console.log(arr)
   }
 
 
