@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>webSocket</title>
+</head>
+<body>
+
+<!--[if lte IE 9]>
+<script type="text/javascript" src="../webSocket/swfobject.js"></script>
+<script type="text/javascript" src="../webSocket/web_socket.js"></script>
+<script>
+  WEB_SOCKET_SWF_LOCATION = "../webSocket/WebSocketMain.swf";
+  WEB_SOCKET_DEBUG = true;
+</script>
+<![endif]-->
+
+<script src="./jquery.js"></script>
+<!-- <script type="text/javascript" src="./reconnecting-websocket.min.js"></script> -->
+<script>
+  var t = '';
+  function WebSocketTest(url){
+    if ("WebSocket" in window){
+     // 打开一个 web socket
+     var ws = new WebSocket(url);
+     ws.onopen = function(){
+        console.log('onopen');
+        setTimeout(function(){
+         ws.close();
+         clearTimeout(t);
+        },10000)
+
+        // Web Socket 已连接上，使用 send() 方法发送数据
+        ws.send("i");
+        t = setInterval(sendMsg,5000); //每隔5秒发条消息
+     };
+
+     ws.onmessage = function (evt){
+      console.log('onmessage');
+      var received_msg = evt.data;
+     };
+
+     ws.onclose = function(){
+      console.log('onclose');
+      reconnect(url);
+     };
+
+     function sendMsg(){
+       ws.send("i");
+     }
+
+    }else{
+       // 浏览器不支持 WebSocket
+    }
+  }
+
+  //断开重新链接
+  function reconnect (url){
+    rews = new WebSocket(url);
+    rews.onopen = function(){
+      console.log('onopen');
+       rews.send("i");
+       setInterval(function(){
+         rews.send("i");
+       },5000); //每隔5秒发条消息
+    };
+    rews.onmessage = function(evt){
+      console.log('onmessage');
+      var received_msg = evt.data;
+    };
+    rews.onclose = function(){
+        //dosomthing
+    };
+}
+
+  var urlClient = 'http://ims.kongfz.com/im-connect-service/v1/getUuid';
+  $.ajax({
+   type: "GET",
+   dataType: 'jsonp',
+   url: urlClient,
+   data: "",
+   success: function(res){
+     try {
+       if(res){
+          var url = 'http://ims.kongfz.com/'.replace('http://','ws://')+'ws?uuid=' + res;
+          WebSocketTest(url);
+       }
+     } catch (e) {
+
+     }
+   }
+  });
+</script>
+</body>
+</html>
