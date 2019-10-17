@@ -1,0 +1,83 @@
+#!/usr/bin/env node
+
+var fse = require('fs-extra'),
+    download = require('download-git-repo'),
+    program = require('commander'),
+    exists = require('fs').existsSync,
+    chalk = require('chalk'),
+    ora = require('ora'),
+    rm = require('rimraf').sync,
+    path = require('path');
+
+var repositoryPath = 'gitlab:gitlab.kongfz.com:widget/kfz-project-init',
+    LocalPath = process.cwd()  + '/pio-project-init',
+    projectList = [
+      'nodejs',
+      'vuejs'
+    ];
+
+
+/**
+ * Usage.
+ */
+
+program.usage('<type>');
+
+/**
+ * Help.
+ */
+
+program.on('--help', function () {
+  console.log('  Examples:');
+  console.log(chalk.gray('    #创建新的项目,并且初始化项目类型'));
+  console.log('    $ zi init <type>');
+  console.log('    # type:nodejs,vuejs');
+});
+
+/**
+ * type.
+ */
+program.on('--type', function () {
+  console.log('  Examples:');
+  console.log(chalk.gray('    #type类型包括'));
+  console.log('    # type:nodejs,vuejs');
+});
+
+/**
+ * Help.
+ */
+function help () {
+  program.parse(process.argv);
+  if (program.args.length < 1){
+    return program.help();
+  }else{
+    if(projectList.indexOf(program.args[0]) != -1){
+      run(program.args[0]);
+    }else {
+      console.log(chalk.red('#type类型输入错误'));
+      console.log(chalk.gray('请输入正确的type类型:', projectList));
+    }
+  }
+}
+help();
+
+/**
+ * run
+ * @param type
+ */
+function run(type){
+  console.log(type);
+  var spinner = ora('downloading ');
+  spinner.start();
+  if (exists(LocalPath)) rm(LocalPath);
+  var url = repositoryPath+type + '/';
+  console.log(repositoryPath);
+  download(repositoryPath, LocalPath, { clone: true }, function(err){
+    spinner.stop();
+    if (err) {
+      console.log(err);
+    }else{
+
+    }
+  });
+}
