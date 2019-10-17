@@ -4,18 +4,38 @@ var fse = require('fs-extra'),
     download = require('download-git-repo'),
     program = require('commander'),
     exists = require('fs').existsSync,
+    inquirer = require('inquirer'),
     chalk = require('chalk'),
     ora = require('ora'),
     rm = require('rimraf').sync,
-    path = require('path');
+    path = require('path'),
+    logger = require('../lib/logger');
 
-var repositoryPath = 'gitlab:gitlab.kongfz.com:widget/kfz-project-init',
+//框架地址+框架类型
+var repositoryPath = 'gitlab:gitlab.kongfz.com:widget/pio-project-init',
     LocalPath = process.cwd()  + '/pio-project-init',
     projectList = [
       'nodejs',
       'vuejs'
     ];
-
+//项目初始化交互的问题
+const promptList = [
+  {
+    type: 'input',
+    message: '请输入项目名称:',
+    name: 'name',
+    default: "pio_project_init" // 默认值
+  },
+  {
+    type: 'list',
+    message: '请选择项目类型:',
+    name: 'type',
+    choices: [
+      'nodejs',
+      'vuejs'
+    ]
+  }
+];
 
 /**
  * Usage.
@@ -30,8 +50,7 @@ program.usage('<type>');
 program.on('--help', function () {
   console.log('  Examples:');
   console.log(chalk.gray('    #创建新的项目,并且初始化项目类型'));
-  console.log('    $ zi init <type>');
-  console.log('    # type:nodejs,vuejs');
+  console.log('    $ zi init');
 });
 
 /**
@@ -48,36 +67,45 @@ program.on('--type', function () {
  */
 function help () {
   program.parse(process.argv);
-  if (program.args.length < 1){
-    return program.help();
-  }else{
-    if(projectList.indexOf(program.args[0]) != -1){
-      run(program.args[0]);
-    }else {
-      console.log(chalk.red('#type类型输入错误'));
-      console.log(chalk.gray('请输入正确的type类型:', projectList));
-    }
-  }
+  inquirer.prompt(promptList).then(answers => {
+      console.log(answers); // 返回的结果
+      run(answers);
+  });
+  return false;
 }
 help();
+
+/**
+ * [filterFunc description]
+ * @param  {[type]} src  [description]
+ * @param  {[type]} dest [description]
+ * @return {[type]}      [description]
+ */
+const filterFunc = (src, dest) => {
+  var regExp =/(node_modules(.*?)|\.git)$/;
+  return !src.match(regExp);
+};
 
 /**
  * run
  * @param type
  */
-function run(type){
-  console.log(type);
+function run(answers){
   var spinner = ora('downloading ');
   spinner.start();
   if (exists(LocalPath)) rm(LocalPath);
-  var url = repositoryPath+type + '/';
+  var url = repositoryPath+answers.type + '/';
   console.log(repositoryPath);
   download(repositoryPath, LocalPath, { clone: true }, function(err){
     spinner.stop();
     if (err) {
-      console.log(err);
+      logger.fatal('Failed to download kfz-project-init: ' + err.message.trim());
     }else{
-
+      fse.copy(LocalPath,process.cwd(),{ filter: filterFunc }, err => {
+        if (err) return logger.fatal('Generated project error: ' + err.message.trim());
+        fse.removeSync(LocalPath);
+        logger.success('Generated project success!');
+      });
     }
   });
 }
