@@ -122,6 +122,9 @@ function downProject(answers){
         console.log(chalk.green('*                                                                     *'));
         console.log(chalk.green('*                      Welcome Use zi-cli                             *'));
         console.log(chalk.green('*                                                                     *'));
+        console.log(chalk.green('*                      #安装node模块命令                              *'));
+        console.log(chalk.green('*                      npm install                                    *'));
+        console.log(chalk.green('*                                                                     *'));
         console.log(chalk.green('*                      #运行项目命令                                  *'));
         console.log(chalk.green('*                      npm run start                                  *'));
         console.log(chalk.green('*                                                                     *'));
