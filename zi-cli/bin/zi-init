@@ -12,7 +12,7 @@ var fse = require('fs-extra'),
     logger = require('../lib/logger');
 
 //框架地址+框架类型
-var repositoryPath = 'gitlab:gitlab.kongfz.com:widget/pio-project-init',
+var repositoryPath = 'gitlab:github.com:lcl-101/zi-project-init',
     LocalPath = process.cwd()  + '/pio-project-init',
     projectList = [
       'nodejs',
