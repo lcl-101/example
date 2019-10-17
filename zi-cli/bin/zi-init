@@ -49,31 +49,45 @@ program.usage('<type>');
 
 program.on('--help', function () {
   console.log('  Examples:');
-  console.log(chalk.gray('    #创建新的项目,并且初始化项目类型'));
-  console.log('    $ zi init');
-});
-
-/**
- * type.
- */
-program.on('--type', function () {
-  console.log('  Examples:');
-  console.log(chalk.gray('    #type类型包括'));
-  console.log('    # type:nodejs,vuejs');
+  console.log(chalk.gray('    #创建新的项目命令'));
+  console.log('    $ zi init project');
 });
 
 /**
  * Help.
  */
 function help () {
-  program.parse(process.argv);
-  inquirer.prompt(promptList).then(answers => {
-      console.log(answers); // 返回的结果
-      run(answers);
-  });
-  return false;
+ program.parse(process.argv);
+ if (program.args.length < 1){
+   return program.help();
+ }else{
+   run(program.args[0]);
+ }
 }
 help();
+
+/**
+ * run
+ * @param type
+ */
+function run( type ){
+  switch ( type ){
+    case 'project':
+      project();
+      break;
+    default:
+      console.log(' type error! ');
+      break;
+  }
+}
+/**
+ * project
+ */
+function project () {
+  inquirer.prompt(promptList).then(answers => {
+      downProject(answers);
+  });
+}
 
 /**
  * [filterFunc description]
@@ -87,10 +101,10 @@ const filterFunc = (src, dest) => {
 };
 
 /**
- * run
- * @param type
+ * downProject
+ * @param answers
  */
-function run(answers){
+function downProject(answers){
   var spinner = ora('downloading ');
   spinner.start();
   if (exists(LocalPath)) rm(LocalPath);
@@ -101,10 +115,26 @@ function run(answers){
     if (err) {
       logger.fatal('Failed to download kfz-project-init: ' + err.message.trim());
     }else{
-      fse.copy(LocalPath,process.cwd(),{ filter: filterFunc }, err => {
-        if (err) return logger.fatal('Generated project error: ' + err.message.trim());
+      fse.copy(LocalPath,process.cwd(),{ filter: filterFunc }).then(function(){
         fse.removeSync(LocalPath);
         logger.success('Generated project success!');
+        console.log(chalk.green('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'));
+        console.log(chalk.green('*                                                                     *'));
+        console.log(chalk.green('*                      Welcome Use zi-cli                             *'));
+        console.log(chalk.green('*                                                                     *'));
+        console.log(chalk.green('*                      #运行项目命令                                  *'));
+        console.log(chalk.green('*                      npm run start                                  *'));
+        console.log(chalk.green('*                                                                     *'));
+        console.log(chalk.green('*                      #构建开发环境命令                              *'));
+        console.log(chalk.green('*                      npm run dev                                    *'));
+        console.log(chalk.green('*                                                                     *'));
+        console.log(chalk.green('*                      #构建生产环境命令                              *'));
+        console.log(chalk.green('*                      npm run dev                                    *'));
+        console.log(chalk.green('*                                                                     *'));
+        console.log(chalk.green('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *'));
+        process.exit(1);
+      }).catch(function(err){
+        logger.fatal('Generated project error: ' + err.message.trim());
       });
     }
   });
