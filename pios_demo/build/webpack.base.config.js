@@ -5,7 +5,7 @@ var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-//各文件夹的路径
+//各文件夹的路径 12212121212
 var ROOT_PATH = path.resolve(__dirname);
 var DIST_PATH = path.resolve(ROOT_PATH, '../dist/'); //生产环境目录打包目录
 var NODE_MODULES = path.resolve(ROOT_PATH, 'node_modules'); //npm包目录

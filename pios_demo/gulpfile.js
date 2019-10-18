@@ -8,7 +8,7 @@ var revCollector = require('gulp-rev-collector');
 var gulpSequence = require('gulp-sequence');
 var replace =require('gulp-replace');           //字符串替换插件
 
-// move common assets
+// move common assets 121221
 gulp.task('move:assets', function () {
     return gulp.src('./static/assets/**')
         .pipe(gulp.dest('./dist/assets/'));

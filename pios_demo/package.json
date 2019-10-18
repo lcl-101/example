@@ -1,6 +1,6 @@
 {
   "name": "pios-vue-jq",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type":"vue-jq",
   "description": "pios-vue-jq",
   "main": "./app/app.js",
