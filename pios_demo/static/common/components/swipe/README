@@ -1,0 +1,31 @@
+# Usage
+
+`template`
+<swipe>
+    <swipe-item class="slide1">Slide1</swipe-item>
+    <swipe-item class="slide2">Slide2</swipe-item>
+    <swipe-item class="slide3">Slide3</swipe-item>
+</swipe>
+
+`JaveScript`
+import Swipe from "some/path/swipe.vue"
+import SwipeItem from "some/path/swipe-item.vue"
+
+## 参数
+
+### swipe组件
+    defaultIndex： Number => 默认页数
+
+### swipe-item组件
+    handleClick: Function => 当前显示的滑动组件上点击时需要触发的动作
+
+## 样式
+
+### 可以在相应组件上添加定制化样式
+
+## 回调函数
+### onSlideNextStart
+### onSlideNextEnd
+### onSlidePreStart
+### onSlidePreEnd
+### onSwipeEnd

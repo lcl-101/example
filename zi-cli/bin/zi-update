@@ -1,1 +1,32 @@
 #!/usr/bin/env node
+
+var fse = require('fs-extra'),
+    download = require('download-git-repo'),
+    program = require('commander'),
+    exists = require('fs').existsSync,
+    inquirer = require('inquirer'),
+    chalk = require('chalk'),
+    ora = require('ora'),
+    rm = require('rimraf').sync,
+    path = require('path'),
+    logger = require('../lib/logger'),
+    isEqual = require('../lib/object-comparison');
+
+//框架地址+框架类型
+var repositoryPath = 'gitlab:github.com:lcl-101/zi-project-init',
+    projectPath = process.cwd(),
+    LocalPath = process.cwd()  + '/pio-project-init',
+    projectPackage = require(projectPath + '/package.json');
+
+var spinner = ora('Updating ');
+spinner.start();
+
+if (exists(LocalPath)) rm(LocalPath);
+download(repositoryPath, LocalPath, { clone: true }, function(err){
+  spinner.stop();
+  if (err) {
+    logger.fatal('Failed to download kfz-project-init: ' + err.message.trim());
+  }else{
+    
+  }
+});

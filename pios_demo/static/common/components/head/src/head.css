@@ -1,0 +1,130 @@
+.dian{
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    margin-right: 2px;
+    border: 3px solid black;
+}
+.personal-chouti-word{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.chouti{
+    background: white;
+    width: 190px;
+    position: fixed;
+    right: 0;
+    z-index: 200;
+    transition: 0.2s;
+}
+.mask-for-chouti{
+    opacity:0.4;
+    background:#3d3f45;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+}
+.showChouti{
+    top: 0;
+    right: 0;
+    display: block;
+}
+.showBoldLine{
+    border-bottom: 1px solid #aaaaaa!important;
+}
+.hideChouti{
+    right: -190px;
+    top: 0;
+    /*display: none;*/
+    /*top: -144px;*/
+}
+.wrap-list-for-chouti{
+    padding-left: 15px;
+}
+.list-for-chouti{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+}
+.personal-chouti{
+    background-image: url("../../../../common/img/个人中心@2x.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.seller-chouti{
+    background-image: url("../../../../common/img/卖家中心@2x.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.personal-chouti-word-jingpai{
+    font-size: 15px;
+    margin-left: 33px;
+}
+.chouti-first{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 45px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #eeeeee;
+}
+.head-search{
+    background-image: url("../../../../common/img/search@2x.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.chouti-guanbi{
+    background-image: url("../../../../common/img/关闭@2x.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.main-kong{
+    background-image: url("../../../../common/img/首页@2x.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.more{
+    display: flex;
+}
+.wrap-head-seller{
+    position: static;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+}
+.order-huishou{
+    font-size: 17px;
+    font-family: PingFangSC-Middle;
+    margin-left: 0.9rem;
+    color:black;
+    /*display: flex;*/
+    /*height: 46px;*/
+    /*align-items: center;*/
+}
+.right-top{
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+    color: #228ef1;
+}
+.fanhui{
+    width: 13px;
+    vertical-align: middle;
+    /*height: 15px;*/
+}
+a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

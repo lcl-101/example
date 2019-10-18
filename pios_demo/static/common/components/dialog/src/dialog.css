@@ -1,0 +1,102 @@
+.kfz-dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 6.3rem;
+    height:3.6rem;
+    border-radius: 0.05rem;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    background-color: #fff;
+    opacity: 1;
+}
+.kfz-dialog-by {
+    width: 6.3rem;
+    height:2.38rem;
+    font-size:0.34rem;
+    text-align:center;
+    overflow: hidden;
+}
+.dialog-t {
+    line-height:2.38rem;
+    font-size: 0.32rem;
+    color: #333;
+}
+.dialog-con {
+    font-size: 0.28rem;
+    color: #666666;
+}
+.dialog-btn-w{
+    height: 1.22rem;
+    border-top: 1px solid #dbdbdb;
+    display: -webkit-box;
+}
+.dialog-btn-w span {
+    display: block;
+    width: 50%;
+    border-right: 1px solid #dbdbdb;
+    line-height: 1.22rem;
+    text-align: center;
+}
+.dialog-btn-w span:last-child{
+    border-right: none;
+}
+.dialog-btn-w span:active{
+    background-color: #eee;
+}
+.dilog_btn_confirm {
+
+}
+.dilog_btn_cancel {
+
+}
+.dilog_btn_ok{
+    color: #365899;
+}
+.kfz-dialog-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    /*transition: .2s ease-out;*/
+    background-color: rgba(0, 0, 0, .6);
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+}
+
+.dialog-enter-active{
+    transition: opacity .4s ease-out;
+}
+.dialog-leave-active {
+    transition: opacity .2s ease-out;
+}
+.layer-enter-active{
+    transition: all .2s ease-out;
+}
+.layer-leave-active {
+    transition: all .4s ease-out;
+}
+
+.layer-enter,
+.layer-leave-active {
+    opacity: 0;
+}
+
+.dialog-enter,
+.dialog-leave-active {
+    opacity: 0;
+}
+
+/*update*/
+.update .dialog-t{
+    line-height: 0.32rem;
+    margin: 0.3rem 0;
+}
+.update .dialog-con{
+    margin-top: 0.4rem;
+    line-height: 0.4rem;
+}
+.update .dialog-btn-w span{
+    width: 100%;
+}

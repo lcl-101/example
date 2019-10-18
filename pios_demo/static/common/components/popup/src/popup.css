@@ -1,0 +1,57 @@
+.zheui-popup {
+    position: fixed;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    /*bottom: -50%;*/
+    backface-visibility: hidden;
+    /*transition: all .3s ease-out;*/
+    z-index: 1000;
+}
+
+.zheui-popup-bottom {
+    width: 100%;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+
+.zheui-popup-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    /*transition: .2s ease-out;*/
+    background-color: rgba(0, 0, 0, .6);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+.popup-enter-active{
+    transition: all .4s ease-out;
+}
+.popup-leave-active {
+    transition: all .2s ease-out;
+}
+
+.popup-enter,
+.popup-leave-active {
+    transform: translate3d(-50%, 100%, 0);
+    /*bottom: -50%;*/
+}
+
+.layer-enter-active{
+    transition: all .2s ease-out;
+}
+.layer-leave-active {
+    transition: all .4s ease-out;
+}
+
+.layer-enter,
+.layer-leave-active {
+    opacity: 0;
+}

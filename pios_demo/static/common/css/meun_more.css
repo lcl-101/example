@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+.nav_header {
+    display: none;
+    width: 3.8rem;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+}
+.nav_header .nav_top {
+    background: #f8f8f8;
+    border-bottom: 1px solid #eee;
+    height: 0.9rem;
+    line-height: 0.9rem;
+}
+.nav_header .nav_top a.group {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    width: 33.3%;
+    text-align: center;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.nav_header .nav_top a.group .i-shouye {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    text-align: center;
+    line-height: 0.3rem;
+    background: url('../img/home.png') no-repeat center;
+    background-size: 100%;
+    vertical-align: middle;
+}
+.nav_header .nav_top a.group .i-sousuo {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    text-align: center;
+    line-height: 0.3rem;
+    background: url('../img/search.png') no-repeat center;
+    background-size: 100%;
+    vertical-align: middle;
+
+}
+.nav_header .nav_top a.group .i-guanbi1 {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    text-align: center;
+    line-height: 0.3rem;
+    background: url('../img/close.png') no-repeat center;
+    background-size: 100%;
+    vertical-align: middle;
+
+}
+.nav_header .nav_content {
+    overflow-y: hidden;
+}
+.nav_header .nav_content .item {
+    margin-left: 0.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-bottom: 1px solid #eee;
+    display: block;
+    text-align: left;
+    padding: 0;
+    position: relative;
+}
+.nav_header .nav_content .item .msg-link_num,
+.car-link_num {
+    width: auto;
+    top: 0.24rem;
+    right: 0.3rem;
+    padding: 0 0.07rem;
+    line-height: 0.28rem;
+    height: 0.28rem;
+    text-align: center;
+    font-size: 0.2rem;
+    display: block;
+    position: absolute;
+    background: #d00000;
+    color: #fff;
+    border-radius: 0.14rem;
+}
+.nav_header .nav_content .item .item_text {
+    color: #333333;
+    font-size: 0.3rem;
+    display: inline-block;
+}
+.nav_header .nav_content .item .text {
+    color: #333333;
+    font-size: 0.3rem;
+    display: inline-block;
+    padding-left: 0.58rem;
+}
+.nav_header .nav_content .item .i-xiaoxi3 {
+    display: inline-block;
+    width: 0.35rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+    margin-top: -0.1rem;
+    background: url('../img/msg.png') no-repeat center;
+    background-size: 100%;
+}
+.nav_header .nav_content .item .i-gouwuche1 {
+    display: inline-block;
+    width: 0.35rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+    margin-top: -0.1rem;
+    background: url('../img/cart.png') no-repeat center;
+    background-size: 100%;
+}
+.nav_header .nav_content .item .i-gerenzhongxin {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+    margin-top: -0.1rem;
+    background: url('../img/person.png') no-repeat center;
+    background-size: 100%;
+}
+.nav_header .nav_content .item .i-maijia {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+    margin-top: -0.1rem;
+    background: url('../img/sell.png') no-repeat center;
+    background-size: 100%;
+}
+.nav_header .nav_content .line_gray {
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 0.07rem;
+}
+/*从右向左动画*/
+.slide-right {
+    animation-timing-function: ease-in;
+    -webkit-animation: slide-right;
+    -moz-animation: slide-right;
+    -o-animation: slide-right;
+    animation: slide-right;
+    z-index: 20;
+    animation-duration: 300ms;
+}
+@-webkit-keyframes slide-right {
+    from {
+        -webkit-transform: translateX(9.5rem);
+    }
+
+    to {
+        -webkit-transform: translateX(0px);
+    }
+}
+.kfz-overlay {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    overflow: hidden;
+}

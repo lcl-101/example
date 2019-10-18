@@ -1,0 +1,113 @@
+@charset "utf-8";
+/*全局*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td{margin:0;padding:0;}
+body, html, input{font-size:12px;line-height:150%;font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Noto Sans CJK SC,Lantinghei SC,Microsoft YaHei,WenQuanYi Micro Hei,Arial,sans-serif;color:#333;}
+table{border-collapse:collapse;border-spacing:0;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+img{border:0;vertical-align:middle;}
+input,textarea{outline:none;font-family:Arial, Helvetica, sans-serif; border:none; background:none;vertical-align: middle;}
+input[type="text"],input[type="password"] {
+	-webkit-appearance: none;
+}
+input[type="checkbox"]:checked {
+	border-color: #e6e6e6;
+	background-color: #fff;
+}
+input[type="checkbox"] {
+	position: relative;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #fff;
+	vertical-align: middle;
+}
+pre{white-space:pre-wrap;/* css-3 */white-space:-moz-pre-wrap;/* Mozilla, since 1999 */white-space:-pre-wrap;/* Opera 4-6 */white-space:-o-pre-wrap;/* Opera 7 */word-wrap:break-word;/* Internet Explorer 5.5+ */}
+address, cite, dfn, em, var{font-style:normal;}
+ul, ol, li{list-style:none;}
+p{word-wrap:break-word;}
+a{text-decoration:none;color:#365899;cursor: pointer;}
+a:hover{color:#8c222c;text-decoration:none;}
+.fb, strong{font-weight:bold;}
+.white, .white a, a.white{color:#fff!important;}
+.blue, .blue a, a.blue{color:#365899!important;}
+.blue_gray{ color:#99a7b4!important;}
+.red, .red a, a.red{color:#d13333!important;}
+.red2, .red2 a, a.red2{color:#8c222c!important;}
+
+.orange, .orange a, a.orange{color:#bf7f5f!important;}
+.gray9, .gray9 a, a.gray9{color:#999!important;}
+.light_gray, .light_gray a, a.light_gray{color:#ccc;}
+.gray6, .gray6 a, a.gray6{color:#666!important;}
+.gray3, .gray3 a, a.gray3{color:#333!important;}
+.green, .green a, a.green{color:#79ae00!important;}
+a.inline,.inline{display:inline-block!important;*display:inline!important;*zoom:1!important;}
+/*绝对清除浮动*/
+.clearfix, .content{*zoom:1;}
+.clearfix:before, .clearfix:after, .content:after{content:".";display:block;height:0;line-height:0;clear:both;visibility:hidden;}
+.clearfix:after{clear:both;}
+.clear{clear:both;}
+.f_left{float:left;*display:inline;}
+.f_right{float:right;*display:inline;}
+
+.hidden{display:none;}
+.line{border-top:1px solid #ccc;}
+.line_xu{border-top:1px dotted #dcdcdc;margin:10px;}
+.line_xu1{border-top:1px dotted #dcdcdc;}
+.line_th{text-decoration:line-through;}
+.border{border:1px solid #dcdcdc;padding:10px;overflow:hidden;zoom:1;}
+.border_ec{border:1px solid #ececec;padding:10px;overflow:hidden;zoom:1;}
+.border_nop{border:1px solid #dcdcdc;overflow:hidden;zoom:1;}
+.txt_left{text-align:left;}
+/*右对齐*/
+.txt_right{text-align:right;}
+/*居中对齐*/
+.txt_center{text-align:center;}
+.text_box{ display:block; overflow:hidden; zoom:1;}
+.bg_color{background:#fafafa;}
+.head,.nav, .content, .foot, .wrap{width:1000px;margin:0 auto;}
+.sgbox_g{letter-spacing:-0.31em;/* webkit:collapse white-space between units */*letter-spacing:normal;/* reset IE < 8 */word-spacing:-0.43em;/* IE < 8 && gecko:collapse white-space between units */}
+.sgbox1, .sgbox2{display:inline-block;zoom:1;*display:inline;/* IE < 8:fake inline-block */letter-spacing:normal;word-spacing:normal;vertical-align:top;}
+
+/*输入框颜色*/
+.text_foc{border:1px solid #99ccff!important;}
+.text_err{border:1px solid #cc0000!important;background:#ffefef!important;}
+/**/
+.show{display:block;}
+.show_line{display:inline;}
+.hide{display:none;}
+i,em{font-style:normal;}
+@media screen and (min-width: 1200px){
+	.nav, .content, .wrap{width:1200px;margin:0 auto;}
+	.foot {width:980px!important;margin:0 auto;}
+}
+.footer_big_box {background: #f7f7f6!important;}
+.head {width: 980px;}
+/*提交按钮置灰*/
+.graya{
+	background: #aeaeae!important;
+	cursor: not-allowed!important;
+}
+#kfz_topbar.top_bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.top_bgs {
+	margin-top: 33px;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset;
+	box-shadow: 0 0 0 1000px white inset;
+}
+
+/*css去掉iPhone、iPad默认按钮样式*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+	-webkit-appearance: none;
+
+}
+textarea {  -webkit-appearance: none;}
+.button{ border-radius: 3px; }

@@ -1,0 +1,116 @@
+.focus-pic {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#bigimg_main {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box; 
+    z-index: 4000
+}
+
+#bg_layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+}
+
+#dt_big_image {
+    width: 100%;
+    /*height: 100%;*/
+    overflow: hidden;
+    margin: 0 auto;
+    & .img-item {
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:100%;
+        transform:translate(-50%,-50%);
+        text-align: center;
+    }
+}
+.bigimg-desc-area{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+    background: rgba(0,0,0,.6);
+    z-index: 4001;
+    color: #ffffff;
+    padding: 10px;
+    & .bigimg-desc-header{
+        width: 100%;
+        font-size: 12px;
+        padding-bottom: 0;
+        & .bigimg-desc-title{
+            width: 50%;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        & .own-indicators{
+            width: 19%;
+            display: inline-block;
+            text-align: right;
+            float: right;
+            margin-right: 20px;
+        }
+
+    }& .bigimg-desc-sku{
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+    & .bigimg-desc-body{
+        font-size: 14px;
+        // margin-top: 15px;
+        margin-bottom: 20px;
+        height: 50px;
+        overflow: scroll;
+    }
+}
+
+.imageview-enter-active{
+    animation: image-open .3s ease-in-out
+}
+.imageview-leave-active{
+    animation: image-close .3s ease-in-out
+}
+
+@keyframes image-open {
+    0% {
+        transform: scale(0)
+    }
+    /*50% {
+        transform: scale(0.5)
+    }*/
+    100% {
+        transform: scale(1)
+    }
+}
+@keyframes image-close {
+    0% {
+        transform: scale(1)
+    }
+    /*50% {
+        transform: scale(0.5)
+    }*/
+    100% {
+        transform: scale(0)
+    }
+}

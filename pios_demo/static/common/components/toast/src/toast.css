@@ -1,0 +1,41 @@
+.kfz-toast {
+    position: fixed;
+    display: flex;
+    width: 3.8rem;
+    height: 1.4rem;
+    align-items: center;
+    justify-content:center;
+    padding:0 0.2rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    opacity: 1;
+    z-index: 9999;
+}
+.toast-in-middle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toast-in-top{
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.toast-in-bottom{
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.toast-fade-enter-active,.toast-fade-leave-active{
+    -webkit-transition: opacity .4s linear;
+    transition: opacity .4s linear;
+}
+.toast-fade-enter,.toast-fade-leave-active{
+    opacity: 0;
+}

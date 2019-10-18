@@ -1,0 +1,108 @@
+.loader_box{
+    width: 1rem;
+    height: 1rem;
+    position: fixed;
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*top: 0;*/
+    /*right:0;*/
+    background: rgba(111,111,111,0.2);
+    border-radius: 4px;
+    margin: 1rem auto;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-loading{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader_box .loader{
+    border-color: #fff transparent #fff transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.4rem;
+    display: block;
+    height: 0.5rem;
+    width: 0.5rem;
+    -webkit-animation: loading 1.5s linear infinite;
+    animation: loading 1.5s linear infinite;
+}
+@-webkit-keyframes loading {
+    0% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(0deg) translateZ(0) ;
+    }
+    50% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(180deg) translateZ(0);
+    }
+    100%{
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(360deg) translateZ(0) ;
+    }
+}
+@keyframes loading {
+    0% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(0deg) translateZ(0) ;
+    }
+    50% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(180deg) translateZ(0);
+    }
+    100%{
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(360deg) translateZ(0) ;
+    }
+}
+
+@-moz-keyframes loading {
+    0% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(0deg) translateZ(0) ;
+    }
+    50% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(180deg) translateZ(0);
+    }
+    100%{
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(360deg) translateZ(0) ;
+    }
+}
+@-o-keyframes loading {
+    0% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(0deg) translateZ(0) ;
+    }
+    50% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(180deg) translateZ(0);
+    }
+    100%{
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(360deg) translateZ(0) ;
+    }
+}
+@keyframes loading {
+    0% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(0deg) translateZ(0) ;
+    }
+    50% {
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(180deg) translateZ(0);
+    }
+    100%{
+        border-color: #fff transparent #fff transparent;
+        -webkit-transform: rotate(360deg) translateZ(0) ;
+    }
+}

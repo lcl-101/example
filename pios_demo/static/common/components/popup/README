@@ -1,0 +1,40 @@
+# Usage
+
+```
+import myPopup from 'your/path/common/components/popup'
+
+//注册组件，定义组件参数
+export default {
+    ...
+    data() {
+        return {
+            canShow: false
+        }
+    },
+    components: {
+        myPopup
+    },
+    methods: {
+        clickHandle() {
+            this.canShow = true;
+        },
+        closePopUp() {
+            this.canShow = false;
+        }
+    }
+    ...
+}
+
+//组件调用
+<my-popup 
+    :visible="canShow"
+    @maskClickHandle="closePopUp"
+>
+    ...
+</my-popup>
+```
+### props
+    visible -> 显示/隐藏 true or false
+    position -> 'bettom'弹出框的弹出位置，目前默认是底部，也只支持底部...
+### handleClick
+    maskClickHandle -> 当组件内部检测到遮罩层被点击

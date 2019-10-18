@@ -1,0 +1,27 @@
+# 全局Toast组件
+
+## Usage
+
+```javascript
+//引入
+import Toast from 'your/path/common/components/toast/';
+
+// 基本调用
+Toast('your text') //toast 'your text'
+
+//定制化调用 在制定位置展示内容并设置展示时间
+Toast('this is a toast', {
+    delay: 5000,
+    position: 'bottom'
+});
+
+```
+## API
+
+| params         | type         | desc             | required    |
+| :------------- |:-------------|:-----------------| 
+| text           | String       | 你要展示的内容     |  true       |
+| delay          | Number       | 延迟时间，默认3000 | false       |
+| position       | String       | 展示位置，[top,middle(默认),bottom] | false       |
+
+

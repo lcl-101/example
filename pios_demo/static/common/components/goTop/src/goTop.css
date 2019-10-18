@@ -1,0 +1,19 @@
+.go-btn{
+    position: fixed;
+    bottom: 1.6rem;
+    right: 0.24rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    line-height:0.75rem;
+    /*border: 1px solid #95989A;*/
+    /*border-radius: 0.75rem;*/
+    /*background-color:#231916;*/
+    /*background-color: rgba(255,255,255,0.9);*/
+    text-align: center;
+    background-image: url("../../../img/gotop.png");
+    background-size: cover;
+}
+.go-btn i{
+    font-size: 0.24rem;
+    color: #95989a;
+}

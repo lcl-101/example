@@ -1,0 +1,33 @@
+# 通用列表加载组件
+
+可以实现上拉刷新和下拉加载
+
+## Usage
+
+### 参数
+
+- damping: 拖动阻尼，接受数字和函数，为函数的话实际滑动距离为 damping(手指滑动距离) 默认1.6
+- showDecText: 状态文案显示开关，默认false， 手动开启后可显示如'topPullText'等文案
+
+- topMethod： 上拉刷新要执行的操作
+- topPullText ：上拉未到临界点时显示的文案  , 默认 -> '下拉刷新'
+- topDropText ：上拉到达临界点后显示的文案 , 默认 -> '释放更新'
+- topLoadingText ：上拉释放刷新中显示的文案 , 默认 -> '加载中'
+- topDistance ： 上拉临界点 , 默认 -> 100
+
+- bottomMethod: 下拉加载要执行的操作
+- bottomPullText ：下拉未到临界点时显示的文案 , 默认 -> '上拉刷新'
+- bottomDropText ：下拉到达临界点后显示的文案 , 默认 -> '释放更新'
+- bottomLoadingText ：下拉释放刷新中显示的文案 , 默认 -> '加载中'
+- bottomDistance ： 下拉临界点 , 默认 -> 100
+
+### 示例
+具体使用参考：/src/components-test/components/LoadMore.vue
+
+项目本地启动后可以直接访问：
+[loadmore demo](http://dev.m.zhe800.com:8080/dist/views/components-test/components-test.html#loadmore)
+
+### 注意
+
+- topMethod 和 bottomMethod 是实现上拉和下拉的必要属性，如想实现上拉或下拉的功能必须传入相应的方法
+- 状态文案默认是不展示的，需要的时候手动开启

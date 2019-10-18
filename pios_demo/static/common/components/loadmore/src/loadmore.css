@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+.z-loadmore{
+    overflow: hidden;
+    /*overflow: scroll;*/
+    margin-top: -1px;
+    /*-webkit-overflow-scrolling:touch;*/
+}
+.z-loadmore-content{
+    /*transform: translate3d(0px, 0px, 0px);*/
+    /*transition: transform 5s ease-in-out;*/
+    
+    
+}
+.z-loadmore-top,.z-loadmore-bottom{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-bottom: 1px solid #eee;            
+    /*background: #ccc;*/
+    & .arr{
+        display: inline-block;
+        transition: all .3s ease-in-out;
+        &.up{
+            transform: rotate(-180deg)
+        }
+    }
+}
+.z-loadmore-top{
+    margin-top: -45px;
+    /*border-top: 1px solid #bbb;    */
+}
+.z-loadmore-bottom{
+    margin-bottom: -45px;
+}
+
+.icon_load {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background: url("../../../img/ico_loading.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*margin-right: 10px;*/
+}
+
+.icon_load {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -webkit-transition-duration: 0ms;
+    -webkit-animation-name: ico_loading;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes ico_loading {
+    from {
+        -webkit-transform: rotate(0deg) translateZ(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+}

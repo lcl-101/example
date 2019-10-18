@@ -1,0 +1,93 @@
+.wrap-head-common{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+    background: white;
+    padding: 0 10px;
+    height: 1rem;
+}
+.myOrder-book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1rem;
+    font-family:PingFangSC-Regular;
+    font-size:17px;
+}
+.wrap-message-head{
+    position: relative;
+}
+.lessThanTen{
+    background:#fb5f7e;
+    box-shadow:1px 2px 4px 0 rgba(251,95,126,0.75);
+    width:17px;
+    height:17px;
+    border-radius:100%;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    position: absolute;
+    top: -8px;
+    right: 1px;
+    font-family:ArialMT;
+    font-size:13px;
+    color:#ffffff;
+}
+.moreThanTen{
+    background:#fb5f7e;
+    box-shadow:1px 2px 4px 0 rgba(251,95,126,0.75);
+    width:9px;
+    height:9px;
+    border-radius:100%;
+    position: absolute;
+    top: -3px;
+    right: 7px;
+}
+.myOrder-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1rem;
+    font-family:PingFangSC-Regular;
+    font-size:17px;
+}
+.divideOrder{
+    width: 1px;
+    height: 0.6rem;
+    background: #e7e7e7;
+}
+.head-message{
+    background-image: url("../../../img/xiaoxi_moren@2x.png");
+    width: 0.41rem;
+    height: 0.41rem;
+    background-size: cover;
+    margin-right: 0.2rem;
+}
+.head-set{
+    background-image: url("../../../img/shezhi_moren@2x.png");
+    width: 0.41rem;
+    height: 0.41rem;
+    background-size: cover;
+    margin-right: 0.2rem;
+}
+.currentOrder{
+    border-bottom: 2px solid #2394fb;
+    color:#2394fb;
+}
+.currentSet{
+    background-image: url("../../../img/shezhi_xuanzhong@2x.png");
+    width: 0.41rem;
+    height: 0.41rem;
+    background-size: cover;
+    margin-right: 0.2rem;
+}
+.currentMessage{
+    background-image: url("../../../img/xiaoxi_xuanzhong@2x.png");
+    width: 0.41rem;
+    height: 0.44rem;
+    background-size: cover;
+    margin-right: 0.2rem;
+}
