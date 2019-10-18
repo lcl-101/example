@@ -9,7 +9,7 @@ var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 var merge = require('webpack-merge');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 
-var baseConf = require('./webpack.base.config.js');
+var baseConf = require('./webpack.base.forVue.config');
 
 //各文件夹的路径
 var ROOT_PATH = path.resolve(__dirname);

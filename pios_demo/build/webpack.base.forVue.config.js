@@ -18,9 +18,18 @@ module.exports = {
     module: {
         rules:[
             {
+            test: /\.vue$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'vue-loader',
+            }
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use:[]
+                use:{
+                    loader: 'babel-loader'
+                }
             },
             {
                 test: /\.(html|khtml)$/,
@@ -88,6 +97,6 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.js','.json','.css']
+        extensions: ['.js','.vue','.json','.css']
     }
 };

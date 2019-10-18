@@ -1,7 +1,7 @@
 {
   "name": "pios-vue-jq",
   "version": "1.0.1",
-  "type":"vue-jq",
+  "type": "vue-jq",
   "description": "pios-vue-jq",
   "main": "./app/app.js",
   "scripts": {
@@ -27,7 +27,8 @@
     "vue-progressbar": "^0.7.5",
     "vue-router": "2.7.0",
     "vuex": "2.4.1",
-    "dot": "^1.1.2"
+    "dot": "^1.1.2",
+    "koa": "2.5.1"
   },
   "devDependencies": {
     "add-asset-html-webpack-plugin": "^2.1.1",

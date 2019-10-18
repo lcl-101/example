@@ -11,7 +11,7 @@ var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 var merge = require('webpack-merge');
 
-var baseConf = require('./webpack.base.config.js');
+var baseConf = require('./webpack.base.forVue.config');
 
 
 //各文件夹的路径
