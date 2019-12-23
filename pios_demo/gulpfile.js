@@ -8,7 +8,7 @@ var revCollector = require('gulp-rev-collector');
 var gulpSequence = require('gulp-sequence');
 var replace =require('gulp-replace');           //字符串替换插件
 
-// move common assets 121221
+// move common assets
 gulp.task('move:assets', function () {
     return gulp.src('./static/assets/**')
         .pipe(gulp.dest('./dist/assets/'));
@@ -32,10 +32,10 @@ gulp.task('include:site',function(){
 });
 
 //dev模式构建，不压缩代码
-gulp.task('build-dev', ['build-dev-for-zepto','build-dev-for-vue','move:partials','move:Img','move:static','move:site'], function (callback) {
+gulp.task('build-dev', ['build-dev-for-jq','build-dev-for-vue','move:assets','move:site'], function (callback) {
   gulpSequence('include:site')(callback);
 });
-gulp.task('build-dev-for-zepto', function(callback) {
+gulp.task('build-dev-for-jq', function(callback) {
     webpack(require('./build/webpack.dev.config.js'), function(err, stats) {
         if (err) {
             console.error(err.stack || err);
@@ -91,10 +91,10 @@ gulp.task('build-dev-for-vue', function(callback) {
 });
 
 //线上生产环境构建
-gulp.task('build',['build-for-zepto','build-for-vue','move:partials','move:Img','move:static','move:site'], function (callback) {
+gulp.task('build',['build-for-jq','build-for-vue','move:assets','move:site'], function (callback) {
   gulpSequence('include:site')(callback);
 });
-gulp.task('build-for-zepto', function(callback) {
+gulp.task('build-for-jq', function(callback) {
     webpack(require('./build/webpack.prod.config.js'), function(err, stats) {
         if (err) {
             console.error(err.stack || err);

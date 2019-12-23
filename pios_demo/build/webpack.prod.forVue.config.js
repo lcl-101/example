@@ -24,7 +24,7 @@ var entryTpl = {}; //存放模板对象 用于跟入口js对应
 var pluginTpls = []; //存放动态生成的插件数组
 
 //入口html
-var entryHtml = glob.sync(VIEWS_PATH + '/**/*.html');
+var entryHtml = glob.sync(VIEWS_PATH + '/*/*.html');
 //var entryHtmlArr=[];
 entryHtml.forEach(function(filePath){
     var entryPath = path.dirname(filePath);
@@ -41,13 +41,17 @@ entryHtml.forEach(function(filePath){
 });
 
 //入口js
-var entryFiles = glob.sync(SRC_PATH + '/**/*.{js,vue}');
+var entryFiles = glob.sync(SRC_PATH + '/*/*.{js,vue}');
 var entryJs = {};
 entryFiles.forEach(function(filePath){
+    var entryPath = path.dirname(filePath);
+        entryPath = entryPath.substring(entryPath.lastIndexOf('\/')+1);
     var entryName = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'));
-    if(entryName in entryTpl){
-        entryJs[entryName] = filePath;
-        //console.log(entryPath);
+    if(entryPath == entryName){
+        if(entryName in entryTpl){
+            entryJs[entryName] = filePath;
+            // console.log(entryPath);
+        }
     }
 });
 
