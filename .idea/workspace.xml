@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ce2b72c-ed86-4848-9e0d-fe5bf99bae38" name="Default" comment="" />
+    <list default="true" id="2ce2b72c-ed86-4848-9e0d-fe5bf99bae38" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/jquery练习/function1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery练习/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jquery练习/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +65,8 @@
       <workItem from="1480904278415" duration="1126000" />
       <workItem from="1480906115983" duration="8975000" />
       <workItem from="1593242783716" duration="2686000" />
-      <workItem from="1599820925709" duration="2242000" />
+      <workItem from="1599820925709" duration="2991000" />
+      <workItem from="1600218448173" duration="1901000" />
     </task>
     <servers />
   </component>
