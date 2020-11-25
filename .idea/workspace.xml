@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ce2b72c-ed86-4848-9e0d-fe5bf99bae38" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/cross-demo/domain/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cross-demo/getmessage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cross-demo/iframe/getMessage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cross-demo/iframe/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2ce2b72c-ed86-4848-9e0d-fe5bf99bae38" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +57,7 @@
       <workItem from="1600218448173" duration="1901000" />
       <workItem from="1605608908324" duration="522000" />
       <workItem from="1605693085994" duration="44000" />
-      <workItem from="1606208762317" duration="2002000" />
+      <workItem from="1606208762317" duration="2774000" />
     </task>
     <servers />
   </component>
