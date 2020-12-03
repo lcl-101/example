@@ -1,0 +1,39 @@
+<!--搜索历史 && 搜索建议 模板-->
+{{? !it.data.suggestList}}
+<div class="search-history-title">
+    <span class="title-name">搜索历史</span>
+    <div class="icon_delete_box">
+        <div class="icon_delete_btn">
+            <i class="icon icon_delete">
+                <img class="icon_delete_img" src="{{=KFZ.site.wwws + 'static/kfz-searchHistorySug/icon_delete.png'}}" alt="">
+                <img class="icon_delete_img_hover" src="{{=KFZ.site.wwws + 'static/kfz-searchHistorySug/icon_delete_hover.png'}}" alt="">
+            </i>
+        </div>
+        <div class="edit_btns">
+            <span class="delete_all_btn">全部删除</span>
+            <span class="finish_btn">完成</span>
+        </div>
+    </div>
+</div>
+{{?}}
+<ul class="search-history-list">
+    {{?it.data.suggestList && it.data.historyList.length > 0}}
+    <li class="history-title">搜索历史</li>
+    {{?}}
+    {{~it.data.historyList :item:index}}
+    <li class="search-history-item">
+        <span class="text">{{! item }}</span>
+        <i class="icon icon_delete_item">
+            <img class="icon_delete_item_img" src="{{=KFZ.site.wwws + 'static/kfz-searchHistorySug/icon_delete_item.png'}}" alt="">
+            <img class="icon_delete_item_img_hover" src="{{=KFZ.site.wwws + 'static/kfz-searchHistorySug/icon_delete_item_hover.png'}}" alt="">
+        </i>
+    </li>
+    {{~}}
+</ul>
+<ul class="search-sug-list">
+    {{~it.data.suggestList :item:index}}
+    <li class="search-sug-item">
+        <span class="current-text">{{= it.key || '' }}</span>{{= item.replace(it.key,'') }}
+    </li>
+    {{~}}
+</ul>

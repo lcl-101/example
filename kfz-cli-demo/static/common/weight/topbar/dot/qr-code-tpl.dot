@@ -1,0 +1,16 @@
+
+     <div class="mobile-code clearfix">
+         <div class="app-box">
+             <div class="text">APP客户端</div>
+             <div class="code">
+                 <a href="{{= it.site.app}}kfz.html" class="code-link" target="_blank">
+                     <img src="/dist/assets/images/app.png" alt="">
+                 </a>
+             </div>
+             <div class="tip">
+                 <span>iOS</span>
+                 <span> • </span>
+                 <span>Android</span>
+             </div>
+         </div>
+     </div>

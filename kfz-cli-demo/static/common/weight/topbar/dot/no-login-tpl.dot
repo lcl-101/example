@@ -1,0 +1,29 @@
+
+    <div class="login-box">
+        <div class="login-btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+        <div class="register-btn">免费注册</div>
+        <div class="other-login">
+            <div class="title">其他方式</div>
+            <div class="login-list clearfix">
+                <div class="login-weixin icon-btn" type="weixin">
+                    <div class="icon-box">
+                        <span class="iconfont icon-weixin"></span>
+                    </div>
+                    <div class="text">微信</div>
+                </div>
+                <div class="login-qq icon-btn" type="qq">
+                    <div class="icon-box">
+                        <span class="iconfont icon-qq"></span>
+                    </div>
+                    <div class="text">QQ</div>
+                </div>
+                <div class="login-weibo icon-btn" type="weibo">
+                    <div class="icon-box">
+                        <span class="iconfont icon-weibo"></span>
+                    </div>
+                    <div class="text">微博</div>
+                </div>
+            </div>
+        </div>
+    </div>
+

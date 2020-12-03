@@ -1,0 +1,33 @@
+.header{
+    & .header_box{
+        width: 100%;
+        max-width: 7.5rem;
+        height: 0.96rem;
+        font-size: 0.36rem;
+        text-align: center;
+        line-height: 0.96rem;
+        font-weight: 500;
+        background-color: #fff;
+        color: #262626;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.24rem;
+        box-sizing: border-box;
+        & .iconleft{
+            font-size: 24px;
+        }
+        & .title{
+            margin-left: 0.5rem;
+        }
+        
+    }
+    & .header_place{
+        width: 100%;
+        height: 0.96rem;
+        display: block;
+    }
+}

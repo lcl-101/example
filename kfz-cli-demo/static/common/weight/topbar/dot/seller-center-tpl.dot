@@ -1,0 +1,32 @@
+
+
+    <div class="{{= ((it.userType.indexOf('shopkeeper') != -1 || it.userType.indexOf('bookstaller') != -1) && (it.userType.indexOf('auctioneer') != -1)) ? 'seller-center' : 'no-seller-center' }}">
+        <div class="info-domain">
+            <div class="title">
+                <span class="iconfont icon-dianpu"></span>
+                <span class="text">店铺</span>
+            </div>
+            {{? it.userType.indexOf('shopkeeper') != -1 || it.userType.indexOf('bookstaller') != -1}}
+            <a href="{{= it.site.seller}}pc/upbook/index#/" class="item" target="_blank">添加商品</a>
+            <a href="{{= it.site.seller}}shop/item.html#unsold_9743" class="item" target="_blank">商品管理</a>
+            <a href="{{= it.site.shop}}seller/order/order_list.html" class="item" target="_blank">订单管理</a>
+            {{??}}
+            <a href="{{= it.site.shop}}seller/apply/tan.html" class="item" target="_blank">免费摆书摊</a>
+            <a href="{{= it.site.shop}}seller/apply/shop.html" class="item" target="_blank">申请开店</a>
+            {{?}}
+        </div>
+        <div class="info-domain">
+            <div class="title">
+                <span class="iconfont icon-paimai"></span>
+                <span class="text">拍卖</span>
+            </div>
+            {{? it.userType.indexOf('auctioneer') != -1}}
+            <a href="{{= it.site.pm}}seller/product.html#add" class="item" target="_blank">添加拍品</a>
+            <a href="{{= it.site.pm}}seller/product_list.html" class="item" target="_blank">拍品管理</a>
+            <a href="{{= it.site.pm}}seller/trade_list.html" class="item" target="_blank">交易管理</a>
+            {{??}}
+            <a href="{{= it.site.pm}}index/apply/" class="item" target="_blank" rel="nofollow">申请拍卖会员</a>
+            {{?}}
+        </div>
+    </div>
+

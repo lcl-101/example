@@ -1,0 +1,383 @@
+.header-search .text_foc{
+    border: none !important;
+}
+#searchInput:focus{
+    outline:none;
+}
+.icon-tab-down{
+    position: relative;
+    top: 9px;
+    left: 4px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #999;
+}
+.header-search-box {
+    background: #ffffff;
+    border-bottom: 1px solid #e9e9e9;
+}
+.index{
+    background: #f2f1ea;
+}
+.header-search {
+    position: relative;
+    width: 1000px;
+    height: 86px;
+    margin: 0 auto;
+    padding-top: 31px;
+    box-sizing: border-box;
+}
+.help .header-search {
+    width: 950px;
+}
+.header-search .logo-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;
+    display: block;
+    width: 232px;
+    height: 86px;
+    padding-left: 0px;
+    overflow: hidden;
+    line-height: 84px;
+    font-size: 0px;
+}
+.header-search .logo-text-180 {
+    width: 180px;
+}
+.header-search .logo-text img {
+    width: 100%;
+}
+.header-search .logo-text img.logo-220 {
+    display: none;
+    vertical-align: middle;
+}
+.header-search .logo-text img.logo-220-red {
+    display: inline-block;
+    vertical-align: middle;
+}
+.index .header-search .logo-text img.logo-220, .shop .header-search .logo-text img.logo-220  {
+    display: inline-block;
+}
+.index .header-search .logo-text img.logo-220-red, .shop .header-search .logo-text img.logo-220-red  {
+    display: none;
+}
+.header-search .logo-text img.logo-250 {
+    display: none;
+}
+.header-search .search-box {
+    float: right;
+    width: auto;
+    height: 32px;
+    margin-right: 0;
+}
+.search-box *{
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.header-search .search-box .search-con {
+    position: relative;
+    float: left;
+    width: auto;
+    height: 32px;
+    border: 2px solid #8c222c;
+}
+.header-search .search-box .search-con .search-type {
+    position: absolute;
+    top: -26px;
+    left: -2px;
+    width: 120px;
+    height: 24px;
+    font-size: 12px;
+    color: #333;
+}
+.header-search .search-box .search-con .search-type .item-type {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header-search .search-box .search-con .search-type .indicator {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #8c222c;
+    transition: left 0.5s;
+}
+.header-search .search-box .search-con .search-type.shop .item-type[type="shop"] {
+    color: #8c222c;
+}
+.header-search .search-box .search-con .search-type.shop .indicator {
+    left: 8px;
+}
+.header-search .search-box .search-con .search-type.pm .item-type[type="pm"] {
+    color: #8c222c;
+}
+.header-search .search-box .search-con .search-type.pm .indicator {
+    left: 48px;
+}
+.header-search .search-box .search-con .search-input-box {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 28px;
+    background: #ffffff;
+}
+.header-search .search-box .search-con .search-input-box input {
+    width: 526px;
+    height: 28px;
+    padding: 10px;
+    padding-right: 84px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #333;
+    border: none;
+}
+.search .header-search .search-box .search-con .search-input-box input,.isbnsearch .header-search .search-box .search-con .search-input-box input{
+    padding-right: 15px;
+}
+.header-search .search-box .search-con .search-input-box input.gray9 {
+    font-size: 12px;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 501;
+    width: 74px;
+    line-height: 28px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.search .header-search .search-box .search-con .search-input-box .search-status-box,.isbnsearch .header-search .search-box .search-con .search-input-box .search-status-box{
+    /* display: none; */
+}
+.header-search .search-box .search-con .search-input-box .search-status-box:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 1px;
+    height: 16px;
+    background-color: #ccc;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box .cur-status {
+    text-align: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box .iconfont {
+    color: #999;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box .status-other {
+    display: none;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    text-align: left;
+    background-color: #fff;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box .status-other-end{
+    padding-left: 15px;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box .status-other .text{
+    text-align: left;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box .cur-status:hover {
+    background-color: #f5f5f5;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box .status-other:hover {
+    background-color: #f5f5f5;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box-hover:before {
+    visibility: hidden;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box-hover .cur-status {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box-hover .icon-tab-down {
+    position: relative;
+    top: -9px;
+    left: 4px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: none;
+    border-bottom: 5px solid #999;
+}
+.header-search .search-box .search-con .search-input-box .search-status-box-hover .status-other {
+    display: block;
+}
+.header-search .search-box .search-con .search-input-box .hide .status-other {
+    display: none !important;
+}
+.header-search .search-box .search-con .search-input-box .search-label{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #999;
+    cursor:text;
+}
+.header-search .search-box .search-con .search-input-box .search-history-box {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    min-width: 330px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+}
+.header-search .search-box .search-con .search-input-box .gray9 {
+    color: #999;
+}
+.header-search .search-box .search-con .btn {
+    float: left;
+    width: 88px;
+    height: 28px;
+    border: 0;
+    padding-left: 2px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 0;
+    background-color: #8c222c;
+    text-align: center;
+    cursor: pointer;
+}
+.header-search .search-box .search-con .btn:hover {
+    background-color: #7B111B;
+}
+.header-search .search-box .search-link {
+    float: left;
+    width: 35px;
+    height: 32px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
+.header-search .search-box .search-link a {
+    color: #666;
+}
+.header-search .search-box .search-link a:hover {
+    color: #8c222c;
+}
+.header-search .search-box .hotwords-list {
+    width: 600px;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #7C7C7C;
+    overflow: hidden;
+}
+.header-search .search-box .hotwords-list .hotwords-item {
+    float: left;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.header-search .search-box .hotwords-list .hotwords-item:hover {
+    color: #911D2B;
+}
+.header-search .search-box .hotwords-list .red {
+    color: #911D2B;
+}
+.hotwords-list{
+    width: 600px;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #7C7C7C;
+    overflow: hidden;
+}
+.hotwords-list .hotwords-item{
+    float: left;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.hotwords-list .hotwords-item:hover{
+    color: #911D2B;
+}
+.hotwords-list .red{
+    color: #911D2B;
+}
+/* 搜索条高度控制： 首页和搜索结果页为 高度40px，其他页面 32px */
+.index .header-search .logo-text ,.shop .header-search .logo-text ,.search .header-search .logo-text ,.isbnsearch .header-search .logo-text {
+    height: 100px;
+    line-height: 95px;
+}
+
+.index .header-search ,.shop .header-search ,.search .header-search ,.isbnsearch .header-search {
+    height: 100px;
+}
+.index .header-search .search-box,.shop .header-search .search-box,.search .header-search .search-box,.isbnsearch .header-search .search-box {
+    height: 40px;
+}
+.index .header-search .search-box .search-con,.shop .header-search .search-box .search-con,.search .header-search .search-box .search-con,.isbnsearch .header-search .search-box .search-con{
+    height: 40px;
+}
+.index .header-search .search-box .search-con .search-input-box,.shop .header-search .search-box .search-con .search-input-box,.search .header-search .search-box .search-con .search-input-box,.isbnsearch .header-search .search-box .search-con .search-input-box {
+    height: 36px;
+}
+.index .header-search .search-box .search-con .search-input-box .search-status-box,.shop .header-search .search-box .search-con .search-input-box .search-status-box,.search .header-search .search-box .search-con .search-input-box .search-status-box,.isbnsearch .header-search .search-box .search-con .search-input-box .search-status-box {
+    line-height: 36px;
+}
+.index .header-search .search-box .search-con .search-input-box input,.shop .header-search .search-box .search-con .search-input-box input ,.search .header-search .search-box .search-con .search-input-box input ,.isbnsearch .header-search .search-box .search-con .search-input-box input  {
+    height: 36px;
+}
+.index .header-search .search-box .search-con .search-input-box .search-label,.shop .header-search .search-box .search-con .search-input-box .search-label,.search .header-search .search-box .search-con .search-input-box .search-label,.isbnsearch .header-search .search-box .search-con .search-input-box .search-label{
+    top: 10px;
+}
+.index .header-search .search-box .search-con .search-input-box .search-history-box,.shop .header-search .search-box .search-con .search-input-box .search-history-box,.search .header-search .search-box .search-con .search-input-box .search-history-box,.isbnsearch .header-search .search-box .search-con .search-input-box .search-history-box {
+    top: 38px;
+}
+.index .header-search .search-box .search-con .btn ,.shop .header-search .search-box .search-con .btn ,.search .header-search .search-box .search-con .btn ,.isbnsearch .header-search .search-box .search-con .btn {
+    height: 36px;
+    line-height: 36px;
+}
+.index .header-search .search-box .search-link,.shop .header-search .search-box .search-link ,.search .header-search .search-box .search-link ,.isbnsearch .header-search .search-box .search-link  {
+    height: 40px;
+    padding-top: 4px;
+}
+.index .header-search .search-box .search-con .search-input-box .search-status-box:before ,.shop .header-search .search-box .search-con .search-input-box .search-status-box:before ,.search .header-search .search-box .search-con .search-input-box .search-status-box:before ,.isbnsearch .header-search .search-box .search-con .search-input-box .search-status-box:before {
+    top: 10px;
+}
+
+.index .header-search, .shop .header-search ,.store .header-search , .search .header-search  , .isbnsearch .header-search{
+    width: 1200px !important;
+}
+.index .header-search .logo-text, .shop .header-search .logo-text {
+    width: 262px;
+}
+.index .header-search .logo-text img.logo-220, .shop .header-search .logo-text img.logo-220  {
+    display: none;
+}
+.index .header-search .logo-text img.logo-250 , .shop .header-search .logo-text img.logo-250 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.index .header-search .search-box .search-con , .shop .header-search .search-box .search-con, .store .header-search .search-box .search-con {
+    width: 688px;
+}
+.index .header-search .search-box .search-con .search-input-box , .shop .header-search .search-box .search-con .search-input-box ,.store .header-search .search-box .search-con .search-input-box{
+    width: 596px;
+}
+.index .header-search .search-box .search-con .search-input-box input , .shop .header-search .search-box .search-con .search-input-box input, .store .header-search .search-box .search-con .search-input-box input{
+    width: 596px;
+}

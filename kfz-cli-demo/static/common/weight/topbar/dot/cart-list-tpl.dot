@@ -1,0 +1,31 @@
+
+    <div class="cart-list-box">
+        <div class="title">最近加入的商品:</div>
+        <div class="item-list">
+        {{~it.cartList :item:index}}
+        <div class="item clearfix" shopid="{{= item.shopId}}" itemid="{{= item.itemId}}" cartid="{{= item.id}}">
+            <a class="img-box" href="<%= data.site.book %>{{= item.shopId + '/' + item.itemId + '/' }}" target="_blank">
+                <img src="{{= item.imgUrl}}" alt="" onerror="this.src='/dist/assets/images/error.jpg';">
+            </a>
+            <a  href="<%= data.site.book %>{{= item.shopId + '/' + item.itemId + '/' }}" class="name" target="_blank">{{! item.itemName}}</a>
+            <div class="info">
+                <div class="price">￥{{= item.price}}</div>
+                <div class="del-box">
+                    <span class="del-btn">删除</span>
+                </div>
+            </div>
+        </div>
+        {{~}}
+        </div>
+        <div class="revoke-btn">误删了？点击这里找回商品</div>
+        <div class="btn-box clearfix">
+            {{? it.cartNum > 5}}
+            <div class="tip">
+                <span>购物车里还有</span>
+                <span class="num">{{= it.cartNum - 5}}</span>
+                <span>件商品</span>
+            </div>
+            {{?}}
+            <a href="<%= data.site.cart %>list" class="btn" target="_blank">查看我的购物车</a>
+        </div>
+    </div>

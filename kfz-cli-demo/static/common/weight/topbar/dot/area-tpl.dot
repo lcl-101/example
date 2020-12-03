@@ -1,0 +1,11 @@
+
+<div class="area-box clearfix">
+    {{for(var code in it.areaList) { }}
+    {{? code == it.active}}
+    <div class="item active"><span class="text" code="{{= code}}">{{= it.areaList[code]}}</span></div>
+    {{??}}
+    <div class="item"><span class="text" code="{{= code}}">{{= it.areaList[code]}}</span></div>
+    {{?}}
+    {{ } }}
+</div>
+

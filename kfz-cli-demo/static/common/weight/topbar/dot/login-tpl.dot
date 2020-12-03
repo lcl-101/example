@@ -1,0 +1,13 @@
+
+    <div class="account-box clearfix">
+        <a href="{{= it.site.user}}person/person_info.html" class="pic-box" target="_blank">
+            <img class="pic-img hide" src="" alt="">
+            <span class="iconfont icon-yonghutouxiang pic-ico"></span>
+        </a>
+        <div class="btn-group">
+            <a href="{{= it.site.user}}person/person_info.html" class="btn" target="_blank">账号管理</a>
+            <span class="btn-split">|</span>
+            <span class="btn logout-btn">退出</span>
+        </div>
+    </div>
+
