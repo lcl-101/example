@@ -5,13 +5,15 @@ class EndWebpackPlugin {
     }
 
     apply (compiler){
-        compiler.plugin('done', (stats) => {
+        compiler.hooks.done.tap('done',(stats) => {
             // 在 done 事件中回调 doneCallback
+            console.log("done");
             this.doneCallback(stats);
         });
-        compiler.plugin('failed', (err) => {
-            // 在 failed 事件中回调 failCallback
-            this.failCallback(err);
+        compiler.hooks.failed.tap('failed',(stats) => {
+            // 在 done 事件中回调 doneCallback
+            console.log("failed");
+            this.failCallback(stats);
         });
     }
 }
