@@ -12,15 +12,26 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const EndWebpackPlugin = require('./EndWebpackPlugin');
 const exec = require('child_process').exec;
 const proxy = require("../proxy");
+const util = require("./util/util");
 
 // 打包地址
 const buildPath = path.resolve(__dirname, '../' + config.build.outPath);
 const ROOT_PATH = path.resolve(__dirname, '../'); //源码目录
-const VIEWS_PATH = path.resolve(__dirname, '../static/views/'); //模板目录
+const VIEWS_PATH = path.resolve(__dirname, '../static/template/'); //模板目录
 const JS_PATH = path.resolve(__dirname, '../static/module/'); //模板目录
 
+//生成环境
+const NODE_ENV = process.env.NODE_ENV;
+let isProduction = NODE_ENV === 'production';
+//判断是否启动dev-server
+let isDevServer = process.argv && process.argv.slice(-1) && process.argv.slice(-1)[0].indexOf('--server') !== -1;
+
 // 检查是否有打包目录
-!fs.existsSync(buildPath) && fs.mkdirSync(buildPath);
+// !fs.existsSync(buildPath) && fs.mkdirSync(buildPath);
+util.mkdirs('.' + config.build.outPath, function(err){
+    if (err) throw err;
+    console.log("mkdir success");
+});
 
 // 页面入口
 const pageEntry = {};
@@ -30,37 +41,25 @@ const pageHtml = [];
 const pages = fs.readdirSync(VIEWS_PATH);
 
 pages.forEach((name, index) => {
-    //入口路径
-    const entryPath = path.join(VIEWS_PATH, name);
-
     //检测文件类型
-    const readDir = fs.readdirSync(entryPath);
-    path.join(entryPath,readDir[0]);
-    for (let i = 0; i < readDir.length; i++) {
-        const statInfo = fs.statSync(path.join(entryPath, readDir[i]));
-        console.log("readDir:" + readDir);
-        console.log("statInfo:" + statInfo.isFile());
-        if(statInfo.isFile()){
-            if(!(readDir[i].indexOf('.html') !== -1)){
-                return false;
-            }
-        }
+    if(name.indexOf('.html') === -1){
+        return false;
     }
+    name = name.split('.html')[0];
+    //入口路径
+    const entryPath = path.join(VIEWS_PATH);
     //入口js
     pageEntry[name] = path.join(JS_PATH, `${name}/${name}.js`);
     // 输出页面模板
     pageHtml.push(new HtmlWebpackPlugin({
         entryName: name,
         template: `${entryPath}/${name}.html`,
-        filename: `views/${name}/${name}.html`,
+        filename: isDevServer ? `template/${name}.html` : `../template/${name}.html`,
         inject:'body',
         chunks: ['common',name]
     }));
 });
 
-//生成环境
-const NODE_ENV = process.env.NODE_ENV;
-let isProduction = NODE_ENV === 'production';
 isProduction ? pageHtml.push(new OptimizeCSSAssetsPlugin ()): [];
 
 module.exports = merge(baseConfig, {
@@ -69,7 +68,7 @@ module.exports = merge(baseConfig, {
     }),
     output: {
         path: path.resolve(__dirname, '../'+config.build.outPath),                              // 借助node的path模块来拼接一个绝对路径
-        publicPath: NODE_ENV === 'development' ? config.build.publicPath : config.build.domain + config.build.publicPath,
+        publicPath: isDevServer ? config.build.publicPath : config.build.domain + config.build.publicPath,
         filename: isProduction ? "[name]/[name].[chunkhash].min.js": "[name]/[name].js",
         chunkFilename: isProduction ? '[name].[chunkhash].min.js': '[name].js'
     },

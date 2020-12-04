@@ -11,15 +11,26 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");  //文件拷贝
 const EndWebpackPlugin = require('./EndWebpackPlugin');
 const exec = require('child_process').exec;
 const proxy = require("../proxy");
+const util = require("./util/util");
 
 // 打包地址
 const buildPath = path.resolve(__dirname, '../' + config.build.outPath);
 const ROOT_PATH = path.resolve(__dirname, '../'); //源码目录
-const VIEWS_PATH = path.resolve(__dirname, '../static/views/'); //模板目录
+const VIEWS_PATH = path.resolve(__dirname, '../static/template/'); //模板目录
 const JS_PATH = path.resolve(__dirname, '../static/module/'); //模板目录
 
 // 检查是否有打包目录
-!fs.existsSync(buildPath) && fs.mkdirSync(buildPath);
+// !fs.existsSync(buildPath) && fs.mkdirSync(buildPath);
+util.mkdirs('.' + config.build.outPath, function(err){
+    if (err) throw err;
+    console.log("mkdir success");
+});
+
+//生成环境
+const NODE_ENV = process.env.NODE_ENV;
+let isProduction = NODE_ENV === 'production';
+//判断是否启动dev-server
+let isDevServer = process.argv && process.argv.slice(-1) && process.argv.slice(-1)[0].indexOf('--server') !== -1;
 
 // 页面入口
 const pageEntry = {};
@@ -29,22 +40,13 @@ const pageHtml = [];
 const pages = fs.readdirSync(VIEWS_PATH);
 
 pages.forEach((name, index) => {
-    //入口路径
-    const entryPath = path.join(VIEWS_PATH, name);
-
     //检测文件类型
-    const readDir = fs.readdirSync(entryPath);
-    path.join(entryPath,readDir[0]);
-    for (let i = 0; i < readDir.length; i++) {
-        const statInfo = fs.statSync(path.join(entryPath, readDir[i]));
-        console.log("readDir:" + readDir);
-        console.log("statInfo:" + statInfo.isFile());
-        if(statInfo.isFile()){
-            if(!(readDir[i].indexOf('.ftl') !== -1)){
-                return false;
-            }
-        }
+    if(name.indexOf('.ftl') === -1){
+        return false;
     }
+    name = name.split('.ftl')[0];
+    //入口路径
+    const entryPath = path.join(VIEWS_PATH);
 
     //入口js
     pageEntry[name] = path.join(JS_PATH, `${name}/${name}.ts`);
@@ -52,15 +54,12 @@ pages.forEach((name, index) => {
     pageHtml.push(new HtmlWebpackPlugin({
         entryName: name,
         template: `${entryPath}/${name}.ftl`,
-        filename: `views/${name}/${name}.ftl`,
+        filename: isDevServer ? `template/${name}.ftl` : `../template/${name}.ftl`,
         inject:'body',
-        chunks: ['runtime','babel-polyfill',name]
+        chunks: ['runtime','common',name]
     }));
 });
 
-//生成环境
-const NODE_ENV = process.env.NODE_ENV;
-let isProduction = NODE_ENV === 'production';
 isProduction ? pageHtml.push(new OptimizeCSSAssetsPlugin ()): [];
 
 module.exports = merge(baseConfig, {
@@ -69,7 +68,7 @@ module.exports = merge(baseConfig, {
     }),
     output: {
         path: path.resolve(__dirname, '../'+config.build.outPath),                              // 借助node的path模块来拼接一个绝对路径
-        publicPath: NODE_ENV === 'development' ? config.build.publicPath : config.build.domain + config.build.publicPath,
+        publicPath: isDevServer ? config.build.publicPath : config.build.domain + config.build.publicPath,
         filename: isProduction ? "[name]/[name].[chunkhash].min.js": "[name]/[name].js",
         chunkFilename: isProduction ? '[name].[chunkhash].min.js': '[name].js'
     },
@@ -117,14 +116,6 @@ module.exports = merge(baseConfig, {
                 }
                 console.log('stdout: ' + stdout);
                 console.log('stderr: ' + typeof stderr);
-                exec('npm run clear', function(error, stdout, stderr){
-                    if(error) {
-                        console.error('error: ' + error);
-                        return;
-                    }
-                    console.log('stdout: ' + stdout);
-                    console.log('stderr: ' + typeof stderr);
-                });
             });
         },(err) => {
             console.log(err);

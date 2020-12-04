@@ -29,6 +29,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$USER_HOME$/workspace/kfz/kfz-pm" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -58,6 +59,7 @@
       <workItem from="1605608908324" duration="522000" />
       <workItem from="1605693085994" duration="44000" />
       <workItem from="1606208762317" duration="2774000" />
+      <workItem from="1606980848923" duration="1941000" />
     </task>
     <servers />
   </component>
@@ -73,6 +75,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2221" y="470" key="NewPhpFileDialog" timestamp="1606980912090">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2221" y="470" key="NewPhpFileDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1606980912090" />
     <state x="2101" y="295" width="598" height="490" key="find.popup" timestamp="1605693114844">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
