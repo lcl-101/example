@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ce2b72c-ed86-4848-9e0d-fe5bf99bae38" name="Default" comment="" />
+    <list default="true" id="2ce2b72c-ed86-4848-9e0d-fe5bf99bae38" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +67,9 @@
       <workItem from="1607064209461" duration="324000" />
       <workItem from="1607069425010" duration="808000" />
       <workItem from="1607304905733" duration="283000" />
+      <workItem from="1609991900463" duration="724000" />
+      <workItem from="1611309134248" duration="65000" />
+      <workItem from="1611309545929" duration="305000" />
     </task>
     <servers />
   </component>
@@ -80,14 +85,19 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2144" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609992114291">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2144" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1609992114291" />
     <state x="2221" y="470" key="NewPhpFileDialog" timestamp="1606980912090">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2221" y="470" key="NewPhpFileDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1606980912090" />
-    <state x="2101" y="295" width="598" height="490" key="find.popup" timestamp="1605693114844">
+    <state x="2101" y="295" width="598" height="490" key="find.popup" timestamp="1611309872145">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="2101" y="295" width="598" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605693114844" />
+    <state x="2101" y="295" width="598" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1611309197361" />
+    <state x="2101" y="295" width="598" height="490" key="find.popup/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1611309872145" />
     <state x="2065" y="237" key="run.anything.popup" timestamp="1606209647871">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
