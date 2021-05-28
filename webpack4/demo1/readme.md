@@ -15,6 +15,7 @@ npm i webpack@4.41.5 webpack-cli@3.3.10 webpack-dev-server@3.10.1 --save
 
 3. 创建文件目录结构
 创建src目录,在src下创建modules目录,创建demo.js
+
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0de3fd4dafdd4a94bc262e7c1d4b89f0~tplv-k3u1fbpfcp-watermark.image)
 
 4. 创建webpack.congfig.js文件
